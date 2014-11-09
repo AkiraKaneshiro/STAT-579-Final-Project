@@ -10,5 +10,5 @@ I think visualizing something to do with public transportation might be interest
 
 [Chicago Transportation Authority open data](http://www.transitchicago.com/data/)
 
-[NYC transportation open data sets](https://nycopendata.socrata.com/data?cat=transportation)
+[NYC transportation open datasets](https://nycopendata.socrata.com/data?cat=transportation)
 
