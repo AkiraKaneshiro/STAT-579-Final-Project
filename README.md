@@ -12,4 +12,6 @@ I think visualizing something to do with public transportation might be interest
 
 [NYC transportation open datasets](https://nycopendata.socrata.com/data?cat=transportation)
 
-Also, it would be interesting to examine drug abuse in US metros. I have found datasets about drug-related hospital visits from 2004 to 2011. We could visualize trends in drug misuse across demographics and drug types over time.
+Also, it would be interesting to examine drug abuse in US metros. I have found datasets about drug-related hospital visits from 2004 to 2011. We could visualize trends in drug misuse across demographics and drug types over time. These large datasets have thousands of observations and more than 200 variables. It would take quite a bit of time to clean the data and identify variables of our interest.
+
+[Drug Abuse Warning Network (DAWN)](http://www.icpsr.umich.edu/icpsrweb/SAMHDA/series/97)
