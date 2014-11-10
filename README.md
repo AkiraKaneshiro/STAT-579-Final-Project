@@ -12,3 +12,4 @@ I think visualizing something to do with public transportation might be interest
 
 [NYC transportation open datasets](https://nycopendata.socrata.com/data?cat=transportation)
 
+Also, it would be interesting to examine drug abuse in US metros. I have found datasets about drug-related hospital visits from 2004 to 2011. We could visualize trends in drug misuse across demographics and drug types over time.
