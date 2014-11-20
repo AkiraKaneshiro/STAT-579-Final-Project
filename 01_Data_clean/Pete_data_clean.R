@@ -158,3 +158,7 @@ idx <- grep("lunch': True", food$attributes_Good.For)
 lunch <- food[idx,]
 bfast <- food[grep("breakfast': True", food$attributes_Good.For),]
 dinner <- food[grep("dinner': True", food$attributes_Good.For),]
+
+
+write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
+
