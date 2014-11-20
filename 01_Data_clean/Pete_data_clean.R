@@ -53,7 +53,40 @@ food$attributes_Alcohol[food$attributes_Alcohol == ""] <- NA
 food$attributes_Alcohol <- droplevels(food$attributes_Alcohol)
 food <- food %>% rename(Alcohol = attributes_Alcohol)
 
+# Price range
+food <- food %>% rename(Price = attributes_Price.Range)
 
+# Noise level
+food <- food %>% rename(Noise = attributes_Noise.Level)
+food$Noise[food$Noise == ""] <- NA
+food$Noise <- droplevels(food$Noise)
+
+# More renaming
+food <- food %>% rename(BYOB = attributes_BYOB, 
+                        Corkage = attributes_Corkage,
+                        Dancing = attributes_Good.For.Dancing,
+                        Groups = attributes_Good.For.Groups,
+                        Happy_hour = attributes_Happy.Hour,
+                        Music = attributes_Music,
+                        Outdoor = attributes_Outdoor.Seating,
+                        Smoking = attributes_Smoking,
+                        TV = attributes_Has.TV,
+                        Ages = attributes_Ages.Allowed,
+                        Parking = attributes_Parking,
+                        Reservations = attributes_Takes.Reservations,
+                        Wifi = attributes_Wi.Fi,
+                        Waiters = attributes_Waiter.Service,
+                        Takeout = attributes_Take.out,
+                        Delivery = attributes_Delivery,
+                        BYOB_corkage = attributes_BYOB.Corkage,
+                        Dogs = attributes_Dogs.Allowed,
+                        Payments = attributes_Payment.Types,
+                        Wheelchairs = attributes_Wheelchair.Accessible,
+                        Drivethru = attributes_Drive.Thru,
+                        Dietary = attributes_Dietary.Restrictions)
+
+# Remove some more variables
+food <- food %>% select(-c(9, 4, 1, 8, 18, 19, 24, 25))
 
 idx <- grep("lunch': True", food$attributes_Good.For)
 lunch <- food[idx,]
