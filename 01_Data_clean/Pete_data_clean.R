@@ -1,24 +1,61 @@
 # Initial data cleaning
 
 business <- read.csv("Classes and Work/yelp/business.csv")
+#library(dplyr)
+#library(ggplot2)
 
 # Let's focus on data for restaurants 
 idx <- grep("restaurant", business$categories, ignore.case=T)
 food <- business[idx,]
 rm(business)
 
-names(food)
-unique(food$type)
-unique(food$state)
-summary(food$stars)
-summary(food$review_count)
-head(food$open)
-summary(food$open)
-head(food$name)
-str(food)
-unique(food$neighborhoods)
-unique(food$city)
+# get rid of unwanted variables
+food <- food %>% select(-c(2,9,22,42:49,58))
 
 food$attributes_Good.For <- as.character(food$attributes_Good.For)
+food$name <- as.character(food$name)
+
+# Accepts credit cards?
+food$Accepts_CC <- NA
+food$Accepts_CC[which(food$attributes_Accepts.Credit.Cards == "True")] <- TRUE
+food$Accepts_CC[which(food$attributes_Accepts.Credit.Cards == "False")] <- FALSE
+
+# Attire
+levels(food$attributes_Attire)
+food$attributes_Attire[food$attributes_Attire == ""] <- NA
+food$attributes_Attire <- droplevels(food$attributes_Attire)
+food <- food %>% rename(Attire = attributes_Attire)
+
+# Ambience:
+# romantic, intimate, touristy, hipster, divey, classy, trendy, upscale, casual
+levels(food$attributes_Ambience)
+food$Romantic <- FALSE
+food$Romantic[grep("romantic': True", food$attributes_Ambience)] <- TRUE
+food$Intimate <- F
+food$Intimate[grep("intimate': True", food$attributes_Ambience)] <- TRUE
+food$Touristy <- F
+food$Touristy[grep("touristy': True", food$attributes_Ambience)] <- TRUE
+food$Hipster <- F
+food$Hipster[grep("hipster': True", food$attributes_Ambience)] <- TRUE
+food$Divey <- F
+food$Divey[grep("divey': True", food$attributes_Ambience)] <- TRUE
+food$Classy <- F
+food$Classy[grep("classy': True", food$attributes_Ambience)] <- TRUE
+food$Trendy <- F
+food$Trendy[grep("trendy': True", food$attributes_Ambience)] <- TRUE
+food$Upscale <- F
+food$Upscale[grep("upscale': True", food$attributes_Ambience)] <- TRUE
+food$Casual <- F
+food$Casual[grep("casual': True", food$attributes_Ambience)] <- TRUE
+
+# Alcohol
+food$attributes_Alcohol[food$attributes_Alcohol == ""] <- NA
+food$attributes_Alcohol <- droplevels(food$attributes_Alcohol)
+food <- food %>% rename(Alcohol = attributes_Alcohol)
+
+
+
 idx <- grep("lunch': True", food$attributes_Good.For)
 lunch <- food[idx,]
+bfast <- food[grep("breakfast': True", food$attributes_Good.For),]
+dinner <- food[grep("dinner': True", food$attributes_Good.For),]
