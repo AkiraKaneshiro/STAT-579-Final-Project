@@ -88,6 +88,72 @@ food <- food %>% rename(BYOB = attributes_BYOB,
 # Remove some more variables
 food <- food %>% select(-c(9, 4, 1, 8, 18, 19, 24, 25))
 
+# Remove "ages" because it is not very helpful
+food <- food %>% select(-1)
+
+# BYOB
+food$BYOB <- as.character(food$BYOB)
+food$BYOB[food$BYOB == "True"] <- TRUE
+food$BYOB[food$BYOB == "False"] <- FALSE
+food$BYOB[food$BYOB == ""] <- NA
+food$BYOB <- as.logical(food$BYOB)
+
+# BYOB corkage
+food$BYOB_corkage[food$BYOB_corkage == ""] <- NA
+food$BYOB_corkage <- droplevels(food$BYOB_corkage)
+
+# Corkage
+food$Corkage <- as.logical(food$Corkage)
+
+# Delivery
+food$Delivery <- as.logical(food$Delivery)
+
+# Dogs
+food$Dogs <- as.logical(food$Dogs)
+
+# Dancing
+food$Dancing <- as.logical(food$Dancing)
+
+# Drivethru
+food$Drivethru <- as.logical(food$Drivethru)
+
+# Groups (Good for groups?)
+food$Groups <- as.logical(food$Groups)
+
+# Happy hour
+food$Happy_hour <- as.logical(food$Happy_hour)
+
+# TV
+food$TV <- as.logical(food$TV)
+
+# Outdoor (Outdoor seating?)
+food$Outdoor <- as.logical(food$Outdoor)
+
+# Smoking
+food$Smoking[food$Smoking == ""] <- NA
+food$Smoking <- droplevels(food$Smoking)
+
+# Takeout
+food$Takeout <- as.logical(food$Takeout)
+
+# Reservations
+food$Reservations <- as.logical(food$Reservations)
+
+# Waiters (Waiter service?)
+food$Waiters <- as.logical(food$Waiters)
+
+# Wheelchairs (Wheelchair accessible?)
+food$Wheelchairs <- as.logical(food$Wheelchairs)
+
+# Wifi
+food$Wifi[food$Wifi == ""] <- NA
+food$Wifi <- droplevels(food$Wifi)
+
+# open (Is the restaurant still open?)
+food$open <- as.logical(food$open)
+
+# Need to work on Payments, Parking, Music, and Dietary
+
 idx <- grep("lunch': True", food$attributes_Good.For)
 lunch <- food[idx,]
 bfast <- food[grep("breakfast': True", food$attributes_Good.For),]
