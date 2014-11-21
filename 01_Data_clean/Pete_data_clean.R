@@ -1,8 +1,8 @@
 # Initial data cleaning
 
 business <- read.csv("Classes and Work/yelp/business.csv")
-#library(dplyr)
-#library(ggplot2)
+library(dplyr)
+library(ggplot2)
 
 # Let's focus on data for restaurants 
 idx <- grep("restaurant", business$categories, ignore.case=T)
@@ -152,17 +152,36 @@ food$Wifi <- droplevels(food$Wifi)
 # open (Is the restaurant still open?)
 food$open <- as.logical(food$open)
 
-# Need to work on Payments, Parking, Music, and Dietary
+# get rid of Payments
+food <- food %>% select(-19)
+
+# Parking
+food$Parking_lot <- FALSE
+food$Parking_lot[grep("lot': True", food$Parking)] <- TRUE
+food$Valet <- FALSE
+food$Valet[grep("valet': True", food$Parking)] <- TRUE
+food <- food %>% select(-18)
+
+# Music
+food$Live_music <- FALSE
+food$Live_music[grep("live': True", food$Music)] <- TRUE
+food$karaoke <- FALSE
+food$karaoke[grep("karaoke': True", food$Music)] <- TRUE
+food <- food %>% select(-15)
+
+# Dietary is pretty boring
+food <- food %>% select(-7)
 
 idx <- grep("lunch': True", food$attributes_Good.For)
 lunch <- food[idx,]
 bfast <- food[grep("breakfast': True", food$attributes_Good.For),]
 dinner <- food[grep("dinner': True", food$attributes_Good.For),]
 
-
+names(food) <- tolower(names(food))
 write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
-write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
-write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
-write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
+write.csv()
+# write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
+# write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
+# write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
 
 
