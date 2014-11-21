@@ -161,4 +161,8 @@ dinner <- food[grep("dinner': True", food$attributes_Good.For),]
 
 
 write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
+write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
+write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
+write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
+
 
