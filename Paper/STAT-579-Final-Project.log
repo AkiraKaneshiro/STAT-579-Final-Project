@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 NOV 2014 10:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 NOV 2014 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -99,7 +99,7 @@ Package: nopageno 1989/01/01 no page numbers (DPC)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-No file STAT-579-Final-Project.aux.
+(./STAT-579-Final-Project.aux)
 \openout1 = `STAT-579-Final-Project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -114,6 +114,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -213,11 +214,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-No file STAT-579-Final-Project.toc.
+(./STAT-579-Final-Project.toc)
 \tf@toc=\write3
 \openout3 = `STAT-579-Final-Project.toc'.
 
-[2]
+ [2]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -226,11 +227,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1] (./STAT-579-Final-Project.aux) ) 
 Here is how much of TeX's memory you used:
- 2092 strings out of 493315
- 30273 string characters out of 6137904
+ 2097 strings out of 493315
+ 30396 string characters out of 6137904
  93162 words of memory out of 5000000
- 5541 multiletter control sequences out of 15000+600000
- 6364 words of font info for 23 fonts, out of 8000000 for 9000
+ 5542 multiletter control sequences out of 15000+600000
+ 6671 words of font info for 24 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,10n,43p,255b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/t
@@ -239,7 +240,7 @@ pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr17.pfb>
-Output written on STAT-579-Final-Project.pdf (3 pages, 57179 bytes).
+Output written on STAT-579-Final-Project.pdf (3 pages, 57232 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
