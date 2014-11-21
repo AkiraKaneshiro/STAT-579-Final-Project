@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 NOV 2014 10:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 NOV 2014 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -99,21 +99,57 @@ Package: nopageno 1989/01/01 no page numbers (DPC)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count91
+)
+\c@KVtest=\count92
+\sf@farskip=\skip52
+\sf@captopadj=\dimen120
+\sf@capskip=\skip53
+\sf@nearskip=\skip54
+\c@subfigure=\count93
+\c@subfigure@save=\count94
+\c@lofdepth=\count95
+\c@subtable=\count96
+\c@subtable@save=\count97
+\c@lotdepth=\count98
+\sf@top=\skip55
+\sf@bottom=\skip56
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen121
+)
 (./STAT-579-Final-Project.aux)
 \openout1 = `STAT-579-Final-Project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -151,16 +187,16 @@ LaTeX Font Info:    ... okay on input line 8.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count91
-\scratchdimen=\dimen113
+\scratchcounter=\count99
+\scratchdimen=\dimen122
 \scratchbox=\box26
-\nofMPsegments=\count92
-\nofMParguments=\count93
+\nofMPsegments=\count100
+\nofMParguments=\count101
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count94
-\MPscratchDim=\dimen114
-\MPnumerator=\count95
-\makeMPintoPDFobject=\count96
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen123
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
 \everyMPtoPDFconversion=\toks17
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -206,10 +242,15 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 12.
+(Font)              <14.4> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 12.
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 14.
 
 [1
 
@@ -234,23 +275,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1] [2] (./STAT-579-Final-Project.aux) ) 
 Here is how much of TeX's memory you used:
- 2115 strings out of 493315
- 30596 string characters out of 6137904
- 94162 words of memory out of 5000000
- 5554 multiletter control sequences out of 15000+600000
+ 3316 strings out of 493315
+ 52170 string characters out of 6137904
+ 117833 words of memory out of 5000000
+ 6741 multiletter control sequences out of 15000+600000
  9416 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,10n,43p,255b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,43p,255b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb>
-Output written on STAT-579-Final-Project.pdf (4 pages, 62370 bytes).
+e1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb>
+Output written on STAT-579-Final-Project.pdf (4 pages, 78989 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
