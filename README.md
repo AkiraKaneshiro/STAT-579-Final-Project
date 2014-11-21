@@ -8,6 +8,8 @@ Chelsea Legacy, Lindong Zhou, Evan "Pete" Walsh
 
 Currently examing ```business.csv``` dataset. 
 
+<hr>
+
 >I have filtered the business dataset for restaurants only. I then seperated the restaurants into breakfast,
 dinner, and lunch establishments. I have also cleaned up all of the variables that I thought will be useful.
 -Pete
