@@ -172,16 +172,24 @@ food <- food %>% select(-15)
 # Dietary is pretty boring
 food <- food %>% select(-7)
 
-idx <- grep("lunch': True", food$attributes_Good.For)
-lunch <- food[idx,]
-bfast <- food[grep("breakfast': True", food$attributes_Good.For),]
-dinner <- food[grep("dinner': True", food$attributes_Good.For),]
-
 names(food) <- tolower(names(food))
-write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
-write.csv()
-# write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
-# write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
-# write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
+
+
+idx <- grep("lunch': True", food$attributes_good.for)
+lunch <- food[idx,]
+bfast <- food[grep("breakfast': True", food$attributes_good.for),]
+dinner <- food[grep("dinner': True", food$attributes_good.for),]
+
+# write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
+# variables_food <- names(food)
+# write.csv(variables_food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/variables_food.csv", row.names=F)
+
+lunch <- lunch %>% select(-9)
+bfast <- bfast %>% select(-9)
+dinner <- dinner %>% select(-9)
+
+write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
+write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
+write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
 
 
