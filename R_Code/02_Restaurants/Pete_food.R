@@ -23,7 +23,7 @@ map1 <- qmap("university of wisconsin", zoom = 12, maprange = TRUE,
 wiscmap <- get_googlemap("university of wisconsin", zoom = 12)
 ggmap(wiscmap) + geom_point(aes(x = longitude, y = latitude), data = wisc)
 
-qmap("university of michigan", zoon = 12)
+qmap("university of michigan", zoom = 12)
 mich <- food %>% 
   filter(latitude > 42, latitude < 43, longitude < -83, longitude > -84)
 
