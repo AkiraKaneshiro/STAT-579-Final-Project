@@ -5,6 +5,6 @@
 \contentsline {subsection}{\numberline {3.2}Lunch}{1}
 \contentsline {subsection}{\numberline {3.3}Dinner}{1}
 \contentsline {section}{\numberline {4}Bars}{1}
-\contentsline {section}{\numberline {5}Hotels}{1}
-\contentsline {section}{\numberline {6}Fitness}{1}
+\contentsline {section}{\numberline {5}Hotels}{2}
+\contentsline {section}{\numberline {6}Fitness}{2}
 \contentsline {section}{\numberline {7}Conclusion}{2}
