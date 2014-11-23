@@ -56,8 +56,10 @@ plot(gvis1)
 
 
 
-##################################################
+###########################################################################
+
 food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
+food$location <- as.character(food$location)
 
 library(ggplot2)
 library(dplyr)
@@ -68,11 +70,6 @@ ggplot(subset(food, latitude < 35 & longitude < -105),
 
 # This subset is in Edinburgh, Scotland (state = EDH)
 gvis1 <- food %>% 
-  select(c(24, 26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = " (") %>%
-           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
   subset(latitude > 55 & longitude > -15) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
                                             enableScrollWheel = TRUE,
@@ -82,11 +79,6 @@ plot(gvis1)
 
 # Wisconsin (state = WI)
 gvis2 <- food %>% 
-  select(c(24, 26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = " (") %>%
-           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
   subset(latitude > 40 & longitude < -85) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
                                             enableScrollWheel = TRUE,
@@ -96,11 +88,6 @@ plot(gvis2)
 
 # Ontario (state = ON)
 gvis3 <- food %>% 
-  select(c(24, 26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = " (") %>%
-           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
   subset(latitude > 40 & longitude > -85 & longitude < -75) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
                                             enableScrollWheel = TRUE,
@@ -110,11 +97,6 @@ plot(gvis3)
 
 # Nevada (state = NV)
 gvis4 <- food %>% 
-  select(c(24, 26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = " (") %>%
-           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
   subset(latitude > 35 & longitude < -105) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
                                             enableScrollWheel = TRUE,
@@ -124,11 +106,6 @@ plot(gvis4)
 
 # Arizona (state = AZ)
 gvis5 <- food %>% 
-  select(c(24, 26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = " (") %>%
-           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
   subset(latitude < 35 & longitude < -105) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
                                             enableScrollWheel = TRUE,
