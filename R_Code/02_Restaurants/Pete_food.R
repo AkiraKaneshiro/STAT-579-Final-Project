@@ -114,3 +114,8 @@ gvis5 <- food %>%
                                             useMapTypeControl = TRUE,
                                             mapType = "normal"))
 plot(gvis5)
+
+
+### Data mutating ###
+
+# Make another variable for well-known categories, e.g. Chinese, pizza, etc.
