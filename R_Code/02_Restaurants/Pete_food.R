@@ -53,5 +53,85 @@ gvis1 <- gvisMap(df, "location", "tip",
                                 mapType = "normal"))
 plot(gvis1)
 
-# gvisMap will only show 400 points by default. Need to seperate data by
-# university or figure out a way around this
+
+
+
+##################################################
+food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
+
+library(ggplot2)
+library(dplyr)
+library(googleVis)
+
+ggplot(subset(food, latitude < 35 & longitude < -105),
+       aes(x=longitude, y=latitude,group=state,colour=state))+geom_point()
+
+# This subset is in Edinburgh, Scotland (state = EDH)
+gvis1 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 55 & longitude > -15) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis1)
+
+# Wisconsin (state = WI)
+gvis2 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 40 & longitude < -85) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis2)
+
+# Ontario (state = ON)
+gvis3 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 40 & longitude > -85 & longitude < -75) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis3)
+
+# Nevada (state = NV)
+gvis4 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 35 & longitude < -105) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis4)
+
+# Arizona (state = AZ)
+gvis5 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude < 35 & longitude < -105) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis5)

@@ -175,21 +175,115 @@ food <- food %>% select(-7)
 names(food) <- tolower(names(food))
 
 
+##### Additional cleaning #####
+
+# Add variable for university that the business is near
+food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
+
+library(ggplot2)
+library(dplyr)
+library(googleVis)
+
+ggplot(subset(food, latitude < 35 & longitude < -105),
+       aes(x=longitude, y=latitude,group=state,colour=state))+geom_point()
+
+# This subset is in Edinburgh, Scotland (state = EDH)
+gvis1 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 55 & longitude > -15) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis1)
+
+# Wisconsin (state = WI)
+gvis2 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 40 & longitude < -85) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis2)
+
+# Ontario (state = ON)
+gvis3 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 40 & longitude > -85 & longitude < -75) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis3)
+
+# Nevada (state = NV)
+gvis4 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude > 35 & longitude < -105) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis4)
+
+# Arizona (state = AZ)
+gvis5 <- food %>% 
+  select(c(24, 26, 27, 28, 32)) %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                          sep = ":"),
+         tip = name %>% paste(as.character(stars), sep = " (") %>%
+           paste("stars)", sep = " ") %>% paste(categories, sep = " ")) %>%
+  subset(latitude < 35 & longitude < -105) %>%
+  gvisMap("location", "tip", options = list(showTip = TRUE, 
+                                            enableScrollWheel = TRUE,
+                                            useMapTypeControl = TRUE,
+                                            mapType = "normal"))
+plot(gvis5)
+
+
+
+
+
+#### Output files ########
+
+food <- food %>% 
+  mutate(location = paste(as.character(latitude), as.character(longitude),
+                                         sep = ":"),
+        tip = name %>% paste(as.character(stars), sep = " (") %>%
+            paste("stars)", sep = " ") %>% paste(categories, sep = " "))
+
 idx <- grep("lunch': True", food$attributes_good.for)
 lunch <- food[idx,]
 bfast <- food[grep("breakfast': True", food$attributes_good.for),]
 dinner <- food[grep("dinner': True", food$attributes_good.for),]
 
-# write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/food.csv")
+write.csv(food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv", row.names=F)
 # variables_food <- names(food)
-# write.csv(variables_food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/variables_food.csv", row.names=F)
+# write.csv(variables_food, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/variables_food.csv", row.names=F)
 
 lunch <- lunch %>% select(-9)
 bfast <- bfast %>% select(-9)
 dinner <- dinner %>% select(-9)
 
-write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/lunch.csv")
-write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/bfast.csv")
-write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/dinner.csv")
+write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/lunch.csv", row.names=F)
+write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/bfast.csv", row.names=F)
+write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/dinner.csv", row.names=F)
 
 
