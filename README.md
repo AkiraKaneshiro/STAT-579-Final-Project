@@ -5,6 +5,7 @@ STAT-579-Final-Project
 Chelsey Legacy, Lindong Zhou, Evan "Pete" Walsh
 
 [Yelp academic dataset](https://www.yelp.com/academic_dataset)
+
 [Yelp dataset challenge](http://www.yelp.com/dataset_challenge)
 
 Currently examing ```business.csv``` dataset. 
