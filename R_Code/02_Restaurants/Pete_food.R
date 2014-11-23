@@ -65,10 +65,11 @@ library(ggplot2)
 library(dplyr)
 library(googleVis)
 
-ggplot(subset(food, latitude < 35 & longitude < -105),
+ggplot(subset(food, latitude > 40 & longitude > -85 & longitude < -75),
        aes(x=longitude, y=latitude,group=state,colour=state))+geom_point()
 
-# This subset is in Edinburgh, Scotland (state = EDH)
+# This subset is in Edinburgh, Scotland 
+# (state %in% c("EDH","ELN","FIF","KHL","MLN","XGL"))
 gvis1 <- food %>% 
   subset(latitude > 55 & longitude > -15) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
@@ -77,7 +78,8 @@ gvis1 <- food %>%
                                             mapType = "normal"))
 plot(gvis1)
 
-# Wisconsin (state = WI)
+# Wisconsin (state = WI) note: state = GA is also something near Madison, WI
+# there is only 1 observation, though
 gvis2 <- food %>% 
   subset(latitude > 40 & longitude < -85) %>%
   gvisMap("location", "tip", options = list(showTip = TRUE, 
