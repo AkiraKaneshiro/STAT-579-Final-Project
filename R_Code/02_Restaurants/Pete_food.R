@@ -118,4 +118,51 @@ plot(gvis5)
 
 ### Data mutating ###
 
+# How about a dataset for bars as well?
+
 # Make another variable for well-known categories, e.g. Chinese, pizza, etc.
+# Chinese / Asian, pizza, American, fast food, Italian, Indian, Mediterranean, 
+# Mexican
+
+names(food)
+food$type <- NA
+
+grep("pizza", food$categories[1:10], ignore.case=T)
+food$type[grep("pizza", food$categories, ignore.case=T)] <- "pizza"
+food$type[grep("american", food$categories, ignore.case=T)] <- "american"
+food$type[grep("asian", food$categories, ignore.case=T)] <- "asian"
+food$type[grep("chinese", food$categories, ignore.case=T)] <- "asian"
+food$type[grep("fast food", food$categories, ignore.case=T)] <- "fast food"
+food$type[grep("italian", food$categories, ignore.case=T)] <- "italian"
+food$type[grep("indian", food$categories, ignore.case=T)] <- "indian"
+food$type[grep("mediterranean", food$categories, ignore.case=T)] <- "mediterranean"
+food$type[grep("mexican", food$categories, ignore.case=T)] <- "mexican"
+
+
+##########################################################
+
+# Plotting #
+qplot(type, stars, data=food, geom="jitter")
+qplot(type, stars, data=bfast, geom="jitter")
+qplot(type, stars, data=lunch, geom="jitter")
+qplot(type, stars, data=dinner, geom="jitter")
+
+qplot(type, stars, data=dinner, colour=price, 
+      geom="jitter", size=I(5), alpha=I(0.5))
+
+qplot(type, stars, data=dinner, colour=price, 
+      geom="jitter", size=I(5), alpha=I(0.8))
+
+qplot(type, stars, data=dinner, colour=price, geom="jitter", size=I(5), 
+      alpha=I(0.8), facets=~attire)
+
+qplot(type, price, size=stars, colour=stars,
+      data=dinner, geom="jitter", alpha=I(0.5))
+
+qplot(type, stars, data=dinner, facets=~smoking, geom="jitter")
+
+qplot(open, stars, data=food, geom="jitter")
+
+qplot(price, stars, data=bfast, geom="jitter")
+qplot(price, stars, data=lunch, geom="jitter")
+qplot(hipster, stars, data=food, geom="jitter")
