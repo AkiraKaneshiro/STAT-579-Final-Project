@@ -58,6 +58,8 @@ plot(gvis1)
 
 ###########################################################################
 
+## Mapping ##
+
 food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 food$location <- as.character(food$location)
 
@@ -118,25 +120,23 @@ plot(gvis5)
 
 ### Data mutating ###
 
-# How about a dataset for bars as well?
-
 # Make another variable for well-known categories, e.g. Chinese, pizza, etc.
 # Chinese / Asian, pizza, American, fast food, Italian, Indian, Mediterranean, 
 # Mexican
 
 names(food)
-food$type <- NA
-
-grep("pizza", food$categories[1:10], ignore.case=T)
-food$type[grep("pizza", food$categories, ignore.case=T)] <- "pizza"
-food$type[grep("american", food$categories, ignore.case=T)] <- "american"
-food$type[grep("asian", food$categories, ignore.case=T)] <- "asian"
-food$type[grep("chinese", food$categories, ignore.case=T)] <- "asian"
-food$type[grep("fast food", food$categories, ignore.case=T)] <- "fast food"
-food$type[grep("italian", food$categories, ignore.case=T)] <- "italian"
-food$type[grep("indian", food$categories, ignore.case=T)] <- "indian"
-food$type[grep("mediterranean", food$categories, ignore.case=T)] <- "mediterranean"
-food$type[grep("mexican", food$categories, ignore.case=T)] <- "mexican"
+# food$type <- NA
+# 
+# grep("pizza", food$categories[1:10], ignore.case=T)
+# food$type[grep("pizza", food$categories, ignore.case=T)] <- "pizza"
+# food$type[grep("american", food$categories, ignore.case=T)] <- "american"
+# food$type[grep("asian", food$categories, ignore.case=T)] <- "asian"
+# food$type[grep("chinese", food$categories, ignore.case=T)] <- "asian"
+# food$type[grep("fast food", food$categories, ignore.case=T)] <- "fast food"
+# food$type[grep("italian", food$categories, ignore.case=T)] <- "italian"
+# food$type[grep("indian", food$categories, ignore.case=T)] <- "indian"
+# food$type[grep("mediterranean", food$categories, ignore.case=T)] <- "mediterranean"
+# food$type[grep("mexican", food$categories, ignore.case=T)] <- "mexican"
 
 
 ##########################################################
