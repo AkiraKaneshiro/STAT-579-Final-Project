@@ -12,6 +12,8 @@ library(googleVis)
 names(food)
 unique(food$state)
 
+## Mapping 1 ##
+
 wisc <- bfast %>% 
   filter(latitude > 43, latitude < 44, longitude < -89, longitude > -90)
 
@@ -58,7 +60,7 @@ plot(gvis1)
 
 ###########################################################################
 
-## Mapping ##
+## Mapping 2 ##
 
 food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 food$location <- as.character(food$location)
@@ -117,6 +119,7 @@ gvis5 <- food %>%
                                             mapType = "normal"))
 plot(gvis5)
 
+###########################################################################
 
 ### Data mutating ###
 
@@ -124,7 +127,6 @@ plot(gvis5)
 # Chinese / Asian, pizza, American, fast food, Italian, Indian, Mediterranean, 
 # Mexican
 
-names(food)
 # food$type <- NA
 # 
 # grep("pizza", food$categories[1:10], ignore.case=T)
@@ -139,9 +141,10 @@ names(food)
 # food$type[grep("mexican", food$categories, ignore.case=T)] <- "mexican"
 
 
-##########################################################
+###########################################################################
 
-# Plotting #
+## Plotting ##
+
 qplot(type, stars, data=food, geom="jitter")
 qplot(type, stars, data=bfast, geom="jitter")
 qplot(type, stars, data=lunch, geom="jitter")
@@ -166,3 +169,38 @@ qplot(open, stars, data=food, geom="jitter")
 qplot(price, stars, data=bfast, geom="jitter")
 qplot(price, stars, data=lunch, geom="jitter")
 qplot(hipster, stars, data=food, geom="jitter")
+
+qplot(type, data=food, facets=~open)
+qplot(type, data=food, fill=open)
+
+###########################################################################
+
+## Summaries ##
+
+food %>% group_by(type) %>% summarize(avg.stars = mean(stars),
+                                      s = sd(stars))
+
+food %>% group_by(type, open) %>% summarize(avg.stars = mean(stars),
+                                      s = sd(stars))
+
+food %>% 
+
+###########################################################################
+
+## ggvis plotting ##
+
+library(ggvis)
+
+food %>% ggvis(~type, fill = ~as.factor(open)) %>% layer_bars()
+
+food %>% subset(city == "Las Vegas") %>% 
+  ggvis(~longitude, ~latitude, key := ~tip) %>% 
+  layer_points(size:=input_slider(10, 100, value = 20, label = "size"), 
+               opacity:=input_slider(0.1, 0.9, value=0.5, label="opacity")) %>% 
+  add_tooltip(function(df) df$tip)
+
+
+food %>% subset(city == "Las Vegas") %>% 
+  ggvis(~longitude, ~latitude, key := ~tip) %>% 
+  layer_points(fill:=input_select(c("red", "blue"))) %>% 
+  add_tooltip(function(df) df$tip)
