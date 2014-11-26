@@ -1,109 +1,113 @@
-"city","count"
-"Ahwatukee",3
-"Anthem",24
-"Apache Junction",44
-"Atlanta",1
-"Avondale",100
-"Black Canyon City",1
-"Boulder City",7
-"Buckeye",42
-"Cambridge",2
-"Carefree",16
-"Casa Grande",61
-"Cave Creek",63
-"Central City Village",2
-"Chandler",548
-"City of Edinburgh",1
-"Clark County",1
-"Coolidge",6
-"Cottage Grove",6
-"Dalkeith",2
-"Dane",1
-"De Forest",5
-"DeForest",3
-"Edinburgh",1049
-"El Mirage",14
-"Enterprise",3
-"Fitchburg",38
-"Florence",7
-"Fort Mcdowell",1
-"Fort McDowell",3
-"Fountain Hills",47
-"Gila Bend",9
-"Gilbert",317
-"Glendale",422
-"Glendale Az",1
-"Gold Canyon",15
-"Goodyear",119
-"Green Valley",1
-"Guadalupe",5
-"Henderson",564
-"Higley",1
-"Inverkeithing",1
-"Juniper Green",1
-"Kitchener",96
-"Las Vegas",3855
-"Las Vegas ",1
-"Lasswade",1
-"Laveen",25
-"Litchfield Park",27
-"Loanhead",1
-"Madison",679
-"Maricopa",37
-"Mc Farland",5
-"McFarland",3
-"Mesa",693
-"Middleton",66
-"Monona",32
-"Morristown",2
-"Musselburgh",5
-"N Las Vegas",7
-"N. Las Vegas",2
-"Nellis Afb",1
-"Nellis AFB",1
-"NELLIS AFB",1
-"New River",4
-"New Town",2
-"North Las Vegas",198
-"North Scottsdale",1
-"Old Town",1
-"Paradise",6
-"Paradise Valley",26
-"Peoria",221
-"Pheonix",2
-"Phoenix",2493
-"Phoenix Sky Harbor Center",1
-"Queen Creek",82
-"Queensferry",2
-"Ratho",1
-"Rio Verde",1
-"Saint Jacobs",1
-"San Tan Valley",16
-"Scottsdale",1023
-"Sedona",1
-"South Gyle",1
-"South Queensferry",4
-"Spring Valley",5
-"St Clements",1
-"St Jacobs",1
-"Stockbridge",1
-"Stoughton",2
-"Summerlin",1
-"Summerlin South",1
-"Sun City",31
-"Sun City West",9
-"Sun Lakes",4
-"Sun Prairie",39
-"Surprise",144
-"Tempe",672
-"Tolleson",15
-"Tonopah",2
-"Tortilla Flat",1
-"Trempealeau",1
-"Verona",19
-"Waterloo",117
-"Waunakee",14
-"Wickenburg",31
-"Windsor",3
-"Woolwich",1
-"Youngtown",4
+"city","state","country","count"
+"Ahwatukee","AZ","USA",3
+"Anthem","AZ","USA",24
+"Apache Junction","AZ","USA",44
+"Atlanta","GA","USA",1
+"Avondale","AZ","USA",100
+"Black Canyon City","AZ","USA",1
+"Boulder City","NV","USA",7
+"Buckeye","AZ","USA",42
+"Cambridge","ON","Canada",2
+"Carefree","AZ","USA",16
+"Casa Grande","AZ","USA",61
+"Cave Creek","AZ","USA",63
+"Central City Village","AZ","USA",2
+"Chandler","AZ","USA",548
+"City of Edinburgh","EDH","Scotland",1
+"Clark County","NV","USA",1
+"Coolidge","AZ","USA",6
+"Cottage Grove","WI","USA",6
+"Dalkeith","MLN","Scotland",2
+"Dane","WI","USA",1
+"De Forest","WI","USA",5
+"DeForest","WI","USA",3
+"Edinburgh","EDH","Scotland",1002
+"Edinburgh","KHL","Scotland",1
+"Edinburgh","MLN","Scotland",45
+"Edinburgh","XGL","Scotland",1
+"El Mirage","AZ","USA",14
+"Enterprise","NV","USA",3
+"Fitchburg","WI","USA",38
+"Florence","AZ","USA",7
+"Fort Mcdowell","AZ","USA",1
+"Fort McDowell","AZ","USA",3
+"Fountain Hills","AZ","USA",47
+"Gila Bend","AZ","USA",9
+"Gilbert","AZ","USA",317
+"Glendale","AZ","USA",422
+"Glendale Az","AZ","USA",1
+"Gold Canyon","AZ","USA",15
+"Goodyear","AZ","USA",119
+"Green Valley","NV","USA",1
+"Guadalupe","AZ","USA",5
+"Henderson","NV","USA",564
+"Higley","AZ","USA",1
+"Inverkeithing","FIF","Scotland",1
+"Juniper Green","EDH","Scotland",1
+"Kitchener","ON","Canada",96
+"Las Vegas","NV","USA",3855
+"Las Vegas ","NV","USA",1
+"Lasswade","MLN","Scotland",1
+"Laveen","AZ","USA",25
+"Litchfield Park","AZ","USA",27
+"Loanhead","MLN","Scotland",1
+"Madison","WI","USA",679
+"Maricopa","AZ","USA",37
+"Mc Farland","WI","USA",5
+"McFarland","WI","USA",3
+"Mesa","AZ","USA",693
+"Middleton","WI","USA",66
+"Monona","WI","USA",32
+"Morristown","AZ","USA",2
+"Musselburgh","ELN","Scotland",4
+"Musselburgh","MLN","Scotland",1
+"N Las Vegas","NV","USA",7
+"N. Las Vegas","NV","USA",2
+"Nellis Afb","NV","USA",1
+"Nellis AFB","NV","USA",1
+"NELLIS AFB","NV","USA",1
+"New River","AZ","USA",4
+"New Town","EDH","Scotland",2
+"North Las Vegas","NV","USA",198
+"North Scottsdale","AZ","USA",1
+"Old Town","EDH","Scotland",1
+"Paradise","NV","USA",6
+"Paradise Valley","AZ","USA",26
+"Peoria","AZ","USA",221
+"Pheonix","AZ","USA",2
+"Phoenix","AZ","USA",2493
+"Phoenix Sky Harbor Center","AZ","USA",1
+"Queen Creek","AZ","USA",82
+"Queensferry","EDH","Scotland",2
+"Ratho","EDH","Scotland",1
+"Rio Verde","AZ","USA",1
+"Saint Jacobs","ON","Canada",1
+"San Tan Valley","AZ","USA",16
+"Scottsdale","AZ","USA",1023
+"Sedona","AZ","USA",1
+"South Gyle","EDH","Scotland",1
+"South Queensferry","EDH","Scotland",4
+"Spring Valley","NV","USA",5
+"St Clements","ON","Canada",1
+"St Jacobs","ON","Canada",1
+"Stockbridge","EDH","Scotland",1
+"Stoughton","WI","USA",2
+"Summerlin","NV","USA",1
+"Summerlin South","NV","USA",1
+"Sun City","AZ","USA",31
+"Sun City West","AZ","USA",9
+"Sun Lakes","AZ","USA",4
+"Sun Prairie","WI","USA",39
+"Surprise","AZ","USA",144
+"Tempe","AZ","USA",672
+"Tolleson","AZ","USA",15
+"Tonopah","AZ","USA",2
+"Tortilla Flat","AZ","USA",1
+"Trempealeau","WI","USA",1
+"Verona","WI","USA",19
+"Waterloo","ON","Canada",117
+"Waunakee","WI","USA",14
+"Wickenburg","AZ","USA",31
+"Windsor","WI","USA",3
+"Woolwich","ON","Canada",1
+"Youngtown","AZ","USA",4

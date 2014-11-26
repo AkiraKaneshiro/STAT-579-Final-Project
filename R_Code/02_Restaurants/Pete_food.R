@@ -183,7 +183,11 @@ food %>% group_by(type) %>% summarize(avg.stars = mean(stars),
 food %>% group_by(type, open) %>% summarize(avg.stars = mean(stars),
                                       s = sd(stars))
 
-counts <- food %>% group_by(city) %>% summarize(count = length(name))
+counts <- food %>% group_by(city, state) %>% summarize(count = length(name))
+counts$country <- "Scotland"
+counts$country[counts$state %in% c("AZ", "WI", "GA", "NV")] <- "USA"
+counts$country[counts$state == "ON"] <- "Canada"
+
 
 #write.csv(counts, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/city_counts.csv", row.names=F)
 
