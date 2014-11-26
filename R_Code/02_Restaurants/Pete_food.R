@@ -183,7 +183,9 @@ food %>% group_by(type) %>% summarize(avg.stars = mean(stars),
 food %>% group_by(type, open) %>% summarize(avg.stars = mean(stars),
                                       s = sd(stars))
 
-food %>% 
+counts <- food %>% group_by(city) %>% summarize(count = length(name))
+
+#write.csv(counts, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/city_counts.csv", row.names=F)
 
 ###########################################################################
 
