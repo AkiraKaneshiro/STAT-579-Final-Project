@@ -177,19 +177,67 @@ qplot(type, data=food, fill=open)
 
 ## Summaries ##
 
-food %>% group_by(type) %>% summarize(avg.stars = mean(stars),
-                                      s = sd(stars))
-
-food %>% group_by(type, open) %>% summarize(avg.stars = mean(stars),
-                                      s = sd(stars))
-
 counts <- food %>% group_by(city, state) %>% summarize(count = length(name))
 counts$country <- "Scotland"
 counts$country[counts$state %in% c("AZ", "WI", "GA", "NV")] <- "USA"
 counts$country[counts$state == "ON"] <- "Canada"
-
+counts <- counts[,c(1,2,4,3)]
 
 #write.csv(counts, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/city_counts.csv", row.names=F)
+
+food$country <- "Scotland"
+food$country[food$state %in% c("AZ", "WI", "GA", "NV")] <- "USA"
+food$country[food$state == "ON"] <- "Canada"
+
+# Summaries by country
+
+food %>% group_by(country) %>%
+  summarize(pct.smoking = 100*length(which(smoking == "yes")) / 
+              length(which(!is.na(smoking))),
+            outdoor.smoking = 100*length(which(smoking=="outdoor")) / 
+              length(which(!is.na(smoking))))
+
+food %>% group_by(country) %>%
+  summarize(pct.takes.res = 100*sum(reservations, na.rm=T)/
+              length(which(!is.na(reservations))))
+
+food %>% group_by(country) %>%
+  summarize(pct.live.music = 100*sum(live_music, na.rm=T)/
+              length(which(!is.na(live_music))))
+
+# Summaries by type
+
+food %>% group_by(type) %>%
+  summarize(pct.takes.res = 100*sum(reservations, na.rm=T)/
+             length(which(!is.na(reservations))))
+
+food %>% group_by(type) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars))
+
+food %>% group_by(type) %>% summarize(avg.stars = mean(stars),
+                                      s = sd(stars))
+
+food %>% group_by(type, open) %>% summarize(avg.stars = mean(stars),
+                                            s = sd(stars))
+
+# Question: What is the best deal, i.e. which types of (sit-down) restaurants 
+# provide the greatest average stars for the lowest price?
+
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  group_by(type, reservations) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars))
+# Seems like you pay a premium to be able to make reservations yet don't
+# necessarily get better quality
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  group_by(type, reservations) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars)) %>%
+  mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = price, fill=type)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)")
 
 ###########################################################################
 
@@ -207,6 +255,8 @@ food %>% subset(city == "Las Vegas") %>%
 
 
 food %>% subset(city == "Las Vegas") %>% 
+  mutate(takes_reservations = as.factor(reservations)) %>%
   ggvis(~longitude, ~latitude, key := ~tip) %>% 
-  layer_points(fill:=input_select(c("red", "blue"))) %>% 
+  layer_points(fill = ~takes_reservations,
+               opacity:=input_slider(0.1, 0.9, value=0.5, label="opacity")) %>% 
   add_tooltip(function(df) df$tip)

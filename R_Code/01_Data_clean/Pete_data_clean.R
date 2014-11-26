@@ -257,7 +257,7 @@ gvis5 <- food %>%
                                             mapType = "normal"))
 plot(gvis5)
 
-food$type <- NA
+food$type <- "other"
 
 food$type[grep("pizza", food$categories, ignore.case=T)] <- "pizza"
 food$type[grep("american", food$categories, ignore.case=T)] <- "american"
@@ -268,7 +268,6 @@ food$type[grep("italian", food$categories, ignore.case=T)] <- "italian"
 food$type[grep("indian", food$categories, ignore.case=T)] <- "indian"
 food$type[grep("mediterranean", food$categories, ignore.case=T)] <- "mediterranean"
 food$type[grep("mexican", food$categories, ignore.case=T)] <- "mexican"
-
 
 #### Output files ########
 
