@@ -235,9 +235,20 @@ food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   summarize(price = mean(price, na.rm=T),
             stars = mean(stars)) %>%
   mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
-  ggplot(aes(x = x, y = price, fill=type)) + 
+  ggplot(aes(x = x, y = price)) + 
   geom_bar(stat = "identity") + coord_flip() + 
   xlab("type:(takes reservations)")
+
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  group_by(type, reservations) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars)) %>%
+  mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = stars, fill = type)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)")
+
+
 
 ###########################################################################
 
@@ -260,3 +271,16 @@ food %>% subset(city == "Las Vegas") %>%
   layer_points(fill = ~takes_reservations,
                opacity:=input_slider(0.1, 0.9, value=0.5, label="opacity")) %>% 
   add_tooltip(function(df) df$tip)
+
+
+###########################################################################
+
+## wordclouds ##
+library(wordcloud)
+library(tm)
+
+wordcloud("May our children and our children's children to a
+thousand generations, continue to enjoy the benefits conferred
+upon us by a united country, and have cause yet to rejoice under
+those glorious institutions bequeathed us by Washington and his
+compeers.",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
