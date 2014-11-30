@@ -306,5 +306,5 @@ head(tips)
 tips <- tips %>% select(c(1,4))
 tips$text <- as.character(tips$text)
 
-write.csv(tips, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv", row.names=F)
+
 
