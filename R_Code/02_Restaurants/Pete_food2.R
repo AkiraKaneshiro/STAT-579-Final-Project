@@ -27,7 +27,7 @@ gvisNV <- food %>%
                                             mapType = "normal"))
 plot(gvisNV)
 
-# Pheonix, AZ
+res# Pheonix, AZ
 gvisAZ <- food %>%
   subset(state == "AZ" & (hipster == T | divey == T) & 
            live_music == F & tv == T & review_count > 35) %>%
@@ -35,8 +35,4 @@ gvisAZ <- food %>%
                                             mapType = "normal"))
 plot(gvisAZ)
 
-gvisON <- food %>%
-  subset(state == "ON" & ) %>%
-  gviisMap("location", "tip", options = list(showTip = TRUE,
-                                             mapType = "normal"))
-plot(gvisON)
+
