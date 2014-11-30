@@ -1,10 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Data}{1}
 \contentsline {section}{\numberline {3}Restaurants}{2}
-\contentsline {subsection}{\numberline {3.1}Breakfast}{2}
-\contentsline {subsection}{\numberline {3.2}Lunch}{2}
-\contentsline {subsection}{\numberline {3.3}Dinner}{2}
 \contentsline {section}{\numberline {4}Bars}{2}
 \contentsline {section}{\numberline {5}Hotels}{2}
 \contentsline {section}{\numberline {6}Fitness}{2}
-\contentsline {section}{\numberline {7}Conclusion}{2}
+\contentsline {section}{\numberline {7}Conclusion}{3}

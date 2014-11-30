@@ -12,7 +12,7 @@ library(googleVis)
 names(food)
 unique(food$state)
 
-## Mapping 1 ##
+## Mapping with ggmap ##
 
 wisc <- bfast %>% 
   filter(latitude > 43, latitude < 44, longitude < -89, longitude > -90)
@@ -23,7 +23,9 @@ map1 <- qmap("university of wisconsin", zoom = 12, maprange = TRUE,
   geom_point()
 # same result as above
 wiscmap <- get_googlemap("university of wisconsin", zoom = 12)
-ggmap(wiscmap) + geom_point(aes(x = longitude, y = latitude), data = wisc)
+ggmap(wiscmap) + 
+  geom_point(aes(x = longitude, y = latitude, size=stars, colour=type), 
+             data = wisc)
 
 qmap("university of michigan", zoom = 12)
 mich <- food %>% 
@@ -33,34 +35,10 @@ mich <- food %>%
 map <- get_googlemap("new york city")
 ggmap(map)
 
-# Create gvisGeoMap for dinner ##############
-# Put data in proper format for googleVis
-df <- dinner %>% select(c(26, 27, 28, 32)) %>% 
-  mutate(location = paste(as.character(latitude), as.character(longitude),
-                          sep = ":"),
-         tip = name %>% paste(as.character(stars), sep = ": ") %>%
-           paste("stars", sep = " "))
-# non-interactive
-G1 <- gvisGeoMap(df, locationvar = "location", numvar = "stars", 
-                 hovervar = "name", 
-                 options = list(region = "US",
-                                dataMode = "markers"))
-plot(G1)
-
-# interactive
-gvis1 <- gvisMap(df, "location", "tip",
-                 options = list(showTip = TRUE, 
-                                enableScrollWheel = TRUE,
-                                useMapTypeControl = TRUE,
-                                mapType = "normal"))
-plot(gvis1)
-
-
-
 
 ###########################################################################
 
-## Mapping 2 ##
+## Mapping with googleVis ##
 
 food <- read.csv("Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 food$location <- as.character(food$location)
@@ -68,6 +46,28 @@ food$location <- as.character(food$location)
 library(ggplot2)
 library(dplyr)
 library(googleVis)
+
+# Create gvisGeoMap for dinner 
+# Put data in proper format for googleVis
+# df <- dinner %>% select(c(26, 27, 28, 32)) %>% 
+#   mutate(location = paste(as.character(latitude), as.character(longitude),
+#                           sep = ":"),
+#          tip = name %>% paste(as.character(stars), sep = ": ") %>%
+#            paste("stars", sep = " "))
+# non-interactive
+# G1 <- gvisGeoMap(df, locationvar = "location", numvar = "stars", 
+#                  hovervar = "name", 
+#                  options = list(region = "US",
+#                                 dataMode = "markers"))
+# plot(G1)
+# 
+# # interactive
+# gvis1 <- gvisMap(df, "location", "tip",
+#                  options = list(showTip = TRUE, 
+#                                 enableScrollWheel = TRUE,
+#                                 useMapTypeControl = TRUE,
+#                                 mapType = "normal"))
+# plot(gvis1)
 
 ggplot(subset(food, latitude > 40 & longitude > -85 & longitude < -75),
        aes(x=longitude, y=latitude,group=state,colour=state))+geom_point()
@@ -284,3 +284,9 @@ thousand generations, continue to enjoy the benefits conferred
 upon us by a united country, and have cause yet to rejoice under
 those glorious institutions bequeathed us by Washington and his
 compeers.",colors=brewer.pal(6,"Dark2"),random.order=FALSE)
+
+# Maybe apply this to tips dataset
+
+x <- paste(food$categories[3], food$categories[6], sep=" ")
+x <- gsub(",", ", ", x)
+wordcloud(x, random.order=F)
