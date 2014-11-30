@@ -294,4 +294,17 @@ write.csv(lunch, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Rest
 write.csv(bfast, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/bfast.csv", row.names=F)
 write.csv(dinner, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/dinner.csv", row.names=F)
 
+## Tips ##
+business <- read.csv("Classes and Work/yelp/business.csv")
+tips <- read.csv("Classes and Work/yelp/tip.csv")
+
+idx <- grep("restaurant", business$categories, ignore.case=T)
+business <- business[idx,]
+business <- business %>% select(c(39, 56))
+
+head(tips)
+tips <- tips %>% select(c(1,4))
+tips$text <- as.character(tips$text)
+
+write.csv(tips, "/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv", row.names=F)
 
