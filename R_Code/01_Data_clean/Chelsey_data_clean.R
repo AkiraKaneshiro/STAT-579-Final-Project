@@ -335,19 +335,40 @@ write.csv(bar, "/Users/chelsey1221/Desktop/Stat579/Bars" )
 
 ########Analysis#########################
 
-qplot(attributes_alcohol, data= food)
 
 
-
+#Most have tvs
 qplot(stars, data = bar,  fill  = attributes_has.tv )
+# Symmetric most average or quiet
 qplot(stars, data = bar,  fill  = attributes_noise.level)
+# Not many cheap bars, or very expensive bars
 qplot(stars, data = bar,  fill  = as.factor(attributes_price.range), binwidth=0.5)
-qplot(stars, data = bar,  fill  = attributes_attire)
+
+# Lots of American food served at bars
 qplot(stars, data = bar,  fill  = type)
+#Analysis of food served at bar:
+# Number of each type of restaurant
+
+table(bar$type)
+sum(table(bar$type)) #=3185
+Americanpct = 1594/3185
+Americanpct
+Italianpct = 510/3185
+Italianpct
+Mexpct = 528/3185
+Mexpct
+
+# Number of each type of restaurant given a number of stars
+
+
+
+
+# Good for dancing....
 qplot(stars, data = bar,  fill  = attributes_good.for.dancing)
+# Most are good for groups regardless of what people think to rate them....more facts
 qplot(stars, data = bar,  fill  = attributes_good.for.groups)
-qplot(stars, data = bar,  fill  = attributes_music)
-qplot(stars, data = bar,  fill  = attributes_good.for.dancing)
+
+# Find out if higher rated bars have a higher chance of being open...
 qplot(stars, data = bar,  fill  = open)
 #something with stars and divey
 qplot(casual, data = bar )
