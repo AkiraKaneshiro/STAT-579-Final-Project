@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 NOV 2014 13:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 NOV 2014 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -245,7 +245,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./Pete.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 4.
 )
 \tf@toc=\write3
 \openout3 = `Pete.toc'.
@@ -268,50 +268,85 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: Figures/food_AZ.png Graphic file (type png)
 
 <use Figures/food_AZ.png>
-Package pdftex.def Info: Figures/food_AZ.png used on input line 80.
+Package pdftex.def Info: Figures/food_AZ.png used on input line 82.
 (pdftex.def)             Requested size: 198.38pt x 158.46826pt.
 
 <Figures/food_NV.png, id=26, 502.87875pt x 402.50375pt>
 File: Figures/food_NV.png Graphic file (type png)
 
 <use Figures/food_NV.png>
-Package pdftex.def Info: Figures/food_NV.png used on input line 85.
+Package pdftex.def Info: Figures/food_NV.png used on input line 87.
 (pdftex.def)             Requested size: 198.38pt x 158.78148pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Food_bars.png, id=27, 459.7175pt x 301.125pt>
+<Figures/food_res_price.jpeg, id=27, 622.325pt x 420.57124pt>
+File: Figures/food_res_price.jpeg Graphic file (type jpg)
+
+<use Figures/food_res_price.jpeg>
+Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 102.
+(pdftex.def)             Requested size: 264.51115pt x 178.75645pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2] <Figures/food_res_stars.jpeg, id=31, 622.325pt x 420.57124pt>
+File: Figures/food_res_stars.jpeg Graphic file (type jpg)
+
+<use Figures/food_res_stars.jpeg>
+Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 113.
+(pdftex.def)             Requested size: 264.51115pt x 178.75645pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/food_noise.jpeg, id=32, 622.325pt x 420.57124pt>
+File: Figures/food_noise.jpeg Graphic file (type jpg)
+
+<use Figures/food_noise.jpeg>
+Package pdftex.def Info: Figures/food_noise.jpeg used on input line 124.
+(pdftex.def)             Requested size: 264.51115pt x 178.75645pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Food_bars.png, id=33, 459.7175pt x 301.125pt>
 File: Food_bars.png Graphic file (type png)
  <use Food_bars.png>
-Package pdftex.def Info: Food_bars.png used on input line 104.
+Package pdftex.def Info: Food_bars.png used on input line 141.
 (pdftex.def)             Requested size: 220.42372pt x 144.38213pt.
- [2] [3 <./Figures/food_AZ.png> <./Figures/food_NV.png> <./Food_bars.png>] [4] 
-(./Pete.aux) ) 
+ [3 <./Figures/food_AZ.png> <./Figures/food_NV.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./Figures/food_res_price.jpeg> <./Figures/food_res_stars.jpeg>] [5 <./Figur
+es/food_noise.jpeg> <./Food_bars.png>] [6] (./Pete.aux) ) 
 Here is how much of TeX's memory you used:
- 3263 strings out of 493315
- 51028 string characters out of 6137904
- 118736 words of memory out of 5000000
- 6683 multiletter control sequences out of 15000+600000
+ 3282 strings out of 493315
+ 51504 string characters out of 6137904
+ 119760 words of memory out of 5000000
+ 6698 multiletter control sequences out of 15000+600000
  10031 words of font info for 35 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,43p,1493b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Pete.pdf (6 pages, 354932 bytes).
+</usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Pete.pdf (8 pages, 529774 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

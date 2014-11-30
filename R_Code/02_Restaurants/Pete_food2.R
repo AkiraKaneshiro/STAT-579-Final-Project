@@ -3,21 +3,8 @@
 ## Section: Restaurants
 
 library(ggplot2)
-library(ggmap)
 library(dplyr)
-
-WI <- get_googlemap("university of wisconsin", zoom = 12)
-ggmap(WI) + geom_point(aes(x = longitude, y = latitude, size=stars, 
-                           colour = "red", alpha = 0.7), 
-             data = subset(food, state == "WI"))
-
 library(googleVis)
-# Madison, WI
-gvisWI <- dinner %>% 
-  subset(state == "WI" & reservations == TRUE & parking_lot == TRUE) %>%
-  gvisMap("location", "tip", options = list(showTip = TRUE, 
-                                            mapType = "normal"))
-plot(gvisWI)
 
 # Las Vegas, NV
 gvisNV <- food %>%
@@ -27,7 +14,7 @@ gvisNV <- food %>%
                                             mapType = "normal"))
 plot(gvisNV)
 
-res# Pheonix, AZ
+# Pheonix, AZ
 gvisAZ <- food %>%
   subset(state == "AZ" & (hipster == T | divey == T) & 
            live_music == F & tv == T & review_count > 35) %>%
@@ -36,3 +23,35 @@ gvisAZ <- food %>%
 plot(gvisAZ)
 
 
+## Subsection: Premium of reservations
+
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  group_by(type, reservations) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars)) %>%
+  mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = price, fill = type)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)")
+
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  group_by(type, reservations) %>%
+  summarize(price = mean(price, na.rm=T),
+            stars = mean(stars)) %>%
+  mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = stars, fill = type)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)")
+
+# reorder levels of 'noise' 
+# food$noise <- factor(food$noise, levels = levels(food$noise)[c(3,1,2,4)])
+food %>% subset(!is.na(noise)) %>% 
+  ggplot(aes(x = noise, y = stars, group=live_music)) + 
+  geom_point(position="jitter", alpha = 0.7) + facet_grid(~live_music) + 
+  geom_smooth(method="loess")
+
+food %>% group_by(noise) %>%
+  summarize(stars = mean(stars))
+
+food %>% group_by(noise, live_music) %>%
+  summarize(stars = mean(stars))

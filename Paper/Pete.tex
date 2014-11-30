@@ -61,6 +61,8 @@ Each \textbf{Review} object represents an individual user-based review of a part
 
 To work with the data, we converted the set of all \textbf{Business} objects to a csv file in which the columns are variable names representing each aspect of a \textbf{Business} object, and each row corresponds to a unique business. Each different type of attribute was converted to its own character, numerical, or logical variable depending on what was appropriate. For example, the attribute \textbf{smoking} was converted to a logical variable where the value is ``true" if the smoking is allowed at the establishment, and ``false" if it is not allowed, while the attribute \textbf{price range} was converted to a numerical variable which ranges from 1 to 4.
 
+
+
 \section{Restaurants}
 
 Most of the data about restaurants in the Yelp Academic Dataset are concentrated around the following cities:
@@ -74,7 +76,7 @@ Most of the data about restaurants in the Yelp Academic Dataset are concentrated
 Although the choice of cities is limited, the wealth of information coming from each city is abundant. All together, our data consists of 14,303 restaurants with 45 variables describing their attributes and the collective user sentiment towards each establishment. There is a significant number of restaurants in just about any subcategory that one can imagine. For example, Figure~\ref{fig:food01a} shows all of the restaurants classified as either ``hipster" or ``divey" near Pheonix, AZ that have telivisions, offer live music, and have more than 35 reviews on Yelp. Figure~\ref{fig:food01b} shows all of the Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.
 
 \begin{figure}[h]
-\caption{Restaurant subsets near Pheonix, AZ and Las Vegas, NV\label{fig:food01}}
+\caption{Restaurant subsets near Pheonix, AZ and Las Vegas, NV.\label{fig:food01}}
 \centering
 \begin{subfigure}{0.45\linewidth}
 \includegraphics[width=\linewidth]{Figures/food_AZ.png}
@@ -86,6 +88,41 @@ Although the choice of cities is limited, the wealth of information coming from 
 \caption{All Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.}
 \label{fig:food01b}
 \end{subfigure}
+\end{figure}
+
+\subsection{The Cost of Reservations}
+
+Not suprisingly, it appears that one has to pay a premium, on average, to eat out at a restaurant that accepts reservations. Figure~\ref{fig:food_res_price} shows the average price level of restaurants by type that do and do not accept reservations. For each category, the price level is higher on average for restaurants that accept reservations.
+
+Why? Possibly because a restaurant that takes reservations loses some money in transition time when open tables are kept unoccupied until the party that made the reservation arrives.
+
+\begin{figure}[h]
+\caption{Price scale of restaurants by type and whether they accept reservations.}
+\centering
+\includegraphics[width=0.6\linewidth]{Figures/food_res_price.jpeg}
+\label{fig:food_res_price}
+\end{figure}
+
+Although a premium is payed to eat at restaurants that accept reservations, we find that the quality of the experience does not necessarily increase, as measured by the average stars awarded. Figure~\ref{fig:food_res_stars} compares the average stars received by each categories by whether or not reservations are accepted. While the average number of stars is slightly higher for pizza, fast food, Asian, American, and ``other" style restaurants that take reservations, the average star count is actually lower for Mexican, Mediterranean, Italian, and Indian style restaurants.
+
+Why? Waiting times may be longer at some restaurants for people who don't make reservations.
+
+\begin{figure}[h]
+\caption{Rating of restaurants by type and whether they accept reservations.}
+\centering
+\includegraphics[width=0.6\linewidth]{Figures/food_res_stars.jpeg}
+\label{fig:food_res_stars}
+\end{figure}
+
+\subsection{Noise pollution}
+
+For restaurants that offer live music, loud is good, but not too loud. For restaurants that do not have live music, things are best kept quiet.
+
+\begin{figure}[h]
+\caption{Rating of restaurants by their noise level and whether they host live music. The plot on the left shows the rating of restaurants by noise level that do not have live music, and the plot on the right shows the rating for restaurants with live music.}
+\centering
+\includegraphics[width=0.6\linewidth]{Figures/food_noise.jpeg}
+\label{fig:food_noise}
 \end{figure}
 
 
