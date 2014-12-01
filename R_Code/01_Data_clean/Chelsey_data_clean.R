@@ -340,11 +340,13 @@ write.csv(bar, "/Users/chelsey1221/Desktop/Stat579/Bars" )
 #Most have tvs
 qplot(stars, data = bar,  fill  = attributes_has.tv )
 # Symmetric most average or quiet
+qplot(review_count, data = bar, geom = "boxplot")
+
 qplot(stars, data = bar,  fill  = attributes_noise.level)
 # Not many cheap bars, or very expensive bars
 qplot(stars, data = bar,  fill  = as.factor(attributes_price.range), binwidth=0.5)
 
-# Lots of American food served at bars
+# Lots of American food served at bars *******#
 qplot(stars, data = bar,  fill  = type)
 #Analysis of food served at bar:
 # Number of each type of restaurant
@@ -358,22 +360,35 @@ Italianpct
 Mexpct = 528/3185
 Mexpct
 
-# Number of each type of restaurant given a number of stars
-
 
 
 
 # Good for dancing....
 qplot(stars, data = bar,  fill  = attributes_good.for.dancing)
-# Most are good for groups regardless of what people think to rate them....more facts
-qplot(stars, data = bar,  fill  = attributes_good.for.groups)
+
+
+
+#something with stars and divey
+
+qplot(attributes_has.tv, data = bar, fill = attributes_happy.hour)
+qplot(attributes_has.tv, data = bar, fill = attributes_good.for.dancing)
+
+qplot(casual, data = bar, fill = attributes_good.for.groups)
+
+
+
 
 # Find out if higher rated bars have a higher chance of being open...
 qplot(stars, data = bar,  fill  = open)
-#something with stars and divey
-qplot(casual, data = bar )
-qplot(attributes_happy.hour, data = bar, fill = attributes_has.tv)
-qplot(attributes_wi.fi, data = bar, fill = attributes_happy.hour)
-qplot(attributes_good.for.groups, data = bar, fill = attributes_noise.level)
-qplot(casual, data = bar, fill = attributes_good.for.groups)
-qplot(live_music, data = bar)
+stars5 = subset(bar, stars == 5)
+table(stars5$open) #False = 10, True = 46
+sum(table(stars5$open)) #= 56
+stars2 = subset(bar, stars == 2)  
+table(stars2$open) #False = 47, TRUE = 85
+sum(table(stars2$open)) #= 132
+# stars 5 = 82.1% open
+# stars 1 = 64.3% open
+stars35 = subset(bar, stars == 3.5)
+table(stars35$open) #False = 433, True = 1574
+sum(table(stars35$open)) #= 2007 
+# stars 3.5 = 78.4%
