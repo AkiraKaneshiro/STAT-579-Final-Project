@@ -55,3 +55,25 @@ food %>% group_by(noise) %>%
 
 food %>% group_by(noise, live_music) %>%
   summarize(stars = mean(stars))
+
+## Subsection: wordclouds
+
+library(wordcloud)
+library(tm)
+
+top <- tips %>% subset(stars > 4) %>% select(2)
+top <- sample(top$text, 200) %>% 
+  paste(sep = '', collapse = ' ')
+top <- gsub("[[:punct:]]", " ", top)
+top <- tolower(top)
+top <- gsub("great", '', top)
+top <- gsub("good", '', top)
+top <- gsub("best", '', top)
+top <- gsub("food", '', top)
+top <- gsub("love", '', top)
+top <- gsub("don", '', top)
+top <- gsub("get" , '', top)
+top <- gsub("try", '', top)
+top <- gsub("place", '', top)
+wordcloud(top, max.words = 100, random.order=F, 
+          scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))

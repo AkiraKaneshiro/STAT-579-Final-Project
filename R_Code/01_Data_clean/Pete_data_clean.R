@@ -302,9 +302,10 @@ idx <- grep("restaurant", business$categories, ignore.case=T)
 business <- business[idx,]
 business <- business %>% select(c(39, 56))
 
-head(tips)
+
 tips <- tips %>% select(c(1,4))
 tips$text <- as.character(tips$text)
 
+tips <- inner_join(tips, business)
 
-
+write.csv(tips, "/Users/marianwaitwalsh/Classes and Work/yelp/tips2.csv", row.names=F)
