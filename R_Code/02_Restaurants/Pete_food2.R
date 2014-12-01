@@ -62,7 +62,7 @@ library(wordcloud)
 library(tm)
 
 top <- tips %>% subset(stars > 4) %>% select(2)
-top <- sample(top$text, 200) %>% 
+top <- sample(top$text, 500) %>% 
   paste(sep = '', collapse = ' ')
 top <- gsub("[[:punct:]]", " ", top)
 top <- tolower(top)
@@ -75,5 +75,27 @@ top <- gsub("don", '', top)
 top <- gsub("get" , '', top)
 top <- gsub("try", '', top)
 top <- gsub("place", '', top)
+top <- gsub("amazing", '', top)
 wordcloud(top, max.words = 100, random.order=F, 
           scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
+
+bottom <- tips %>% subset(stars < 2) %>% select(2)
+bottom <- sample(bottom$text, 600) %>% 
+  paste(sep = '', collapse = ' ')
+bottom <- gsub("-", '', bottom)
+bottom <- gsub("[[:punct:]]", " ", bottom)
+bottom <- tolower(bottom)
+bottom <- gsub("great", '', bottom)
+bottom <- gsub("good", '', bottom)
+bottom <- gsub("best", '', bottom)
+bottom <- gsub("food", '', bottom)
+bottom <- gsub("love", '', bottom)
+bottom <- gsub("don", '', bottom)
+bottom <- gsub("get" , '', bottom)
+bottom <- gsub("try", '', bottom)
+bottom <- gsub("place", '', bottom)
+bottom <- gsub("amazing", '', bottom)
+bottom <- gsub("bad", '', bottom)
+wordcloud(bottom, max.words = 100, random.order=F, 
+          scale=c(3,0.5),colors=brewer.pal(4,"Set1"))
+

@@ -2,7 +2,8 @@
 \contentsline {section}{\numberline {2}Data}{1}
 \contentsline {section}{\numberline {3}Restaurants}{2}
 \contentsline {subsection}{\numberline {3.1}The Cost of Reservations}{2}
-\contentsline {subsection}{\numberline {3.2}Noise pollution}{3}
+\contentsline {subsection}{\numberline {3.2}Noise Pollution}{3}
+\contentsline {subsection}{\numberline {3.3}It's All About Service}{3}
 \contentsline {section}{\numberline {4}Bars}{3}
 \contentsline {subsection}{\numberline {4.1}Food}{4}
 \contentsline {section}{\numberline {5}Hotels}{5}
