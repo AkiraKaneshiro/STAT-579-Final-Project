@@ -73,7 +73,7 @@ Most of the data about restaurants in the Yelp Academic Dataset are concentrated
 	\item Waterloo, Ontario, Canada,
 	\item and Edinburgh, Scotland.
 \end{itemize}
-Although the choice of cities is limited, the wealth of information coming from each city is abundant. All together, our data consists of 14,303 restaurants with 45 variables describing their attributes and the collective user sentiment towards each establishment. There is a significant number of restaurants in just about any subcategory that one can imagine. For example, Figure~\ref{fig:food01a} shows all of the restaurants classified as either ``hipster" or ``divey" near Pheonix, AZ that have telivisions, offer live music, and have more than 35 reviews on Yelp. Figure~\ref{fig:food01b} shows all of the Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.
+Although the choice of cities is limited, the wealth of information coming from each city is abundant. All together, our data consists of 14,303 restaurants with 45 variables describing their attributes and the collective user sentiment towards each establishment. There is a significant number of restaurants in just about any subcategory that one can imagine. For example, Figure~\ref{fig:food01a} shows all of the restaurants classified as either ``hipster" or ``divey" near Pheonix, AZ that have televisions, offer live music, and have more than 35 reviews on Yelp. Figure~\ref{fig:food01b} shows all of the Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.
 
 \begin{figure}[h]
 \caption{Restaurant subsets near Pheonix, AZ and Las Vegas, NV.\label{fig:food01}}
@@ -92,76 +92,75 @@ Although the choice of cities is limited, the wealth of information coming from 
 
 \subsection{The Cost of Reservations}
 
-Not suprisingly, it appears that one has to pay a premium, on average, to eat out at a restaurant that accepts reservations. Figure~\ref{fig:food_res_price} shows the average price level of restaurants by type that do and do not accept reservations. For each category, the price level is higher on average for restaurants that accept reservations.
+One question we have explored with the data is whether restaurants that take reservations are more expensive and of higher quality than those that do not. Not suprisingly, it appears that one has to pay a premium, on average, to eat out at a restaurant that accepts reservations. Figure~\ref{fig:food_res_price} shows the average price level of restaurants by type that do or do not accept reservations. For each category, the price level is higher on average for restaurants that accept reservations.
 
-Why? Possibly because a restaurant that takes reservations loses some money in transition time when open tables are kept unoccupied until the party that made the reservation arrives.
+There are a couple potential explanations for this. For one, it could just be that fancier restaurants feel they need to accept reservations to attract their target demographic. Perhaps people who are willing to spend a large amount on a meal will only do so if they know they will be seated right when they arrive. Or maybe restaurants that take reservations lose some money in transition time when open tables are kept unoccupied until the party that made the reservation arrives. The higher average price of restaurants that take reservations could just be making up for this inefficiency.
 
 \begin{figure}[h]
 \caption{Price scale of restaurants by type and whether they accept reservations.}
 \centering
-\includegraphics[width=0.6\linewidth]{Figures/food_res_price.jpeg}
+\includegraphics[width=0.7\linewidth]{Figures/food_res_price.jpeg}
 \label{fig:food_res_price}
 \end{figure}
 
-Although a premium is payed to eat at restaurants that accept reservations, we find that the quality of the experience does not necessarily increase, as measured by the average stars awarded. Figure~\ref{fig:food_res_stars} compares the average stars received by each categories by whether or not reservations are accepted. While the average number of stars is slightly higher for pizza, fast food, Asian, American, and ``other" style restaurants that take reservations, the average star count is actually lower for Mexican, Mediterranean, Italian, and Indian style restaurants.
-
-Why? Waiting times may be longer at some restaurants for people who don't make reservations.
+Although a premium is payed to eat at restaurants that accept reservations, we find that the quality of the experience does not necessarily increase, as measured by the average stars awarded by Yelp users. Figure~\ref{fig:food_res_stars} compares the average stars received by each category by whether or not reservations are accepted. While the average number of stars is slightly higher for pizza, fast food, Asian, American, and ``other" style restaurants that take reservations, the average star count is actually lower for Mexican, Mediterranean, Italian, and Indian style restaurants.
 
 \begin{figure}[h]
 \caption{Rating of restaurants by type and whether they accept reservations.}
 \centering
-\includegraphics[width=0.6\linewidth]{Figures/food_res_stars.jpeg}
+\includegraphics[width=0.7\linewidth]{Figures/food_res_stars.jpeg}
 \label{fig:food_res_stars}
 \end{figure}
 
-\subsection{Noise Pollution}
+The reason for this discrepancy is unclear. Maybe popular restaurants in certain categories just don't accept reservation because it would be too inefficient, and customers are fine with that. Price may also have something to do with it. Figure~\ref{fig:food_res_3} shows the rating of restaurants by type, whether they accept reservations, and price level. For Mexican restaurants, the average rating of low priced establishments is indistinguishable between those that accept reservations and those that do not. Yet for those in the third price level, the rating is clearly higher for those that do not take reservations. The same is true for Asian style restaurants while the opposite holds for Italian and American style restaurants. This could be because people who generally like to eat at pricier Italian and American food restaurants prefer to be able to make reservations, so these restaurants that allow reservations end up with higher ratings.
 
-For restaurants that offer live music, loud is good, but not too loud. For restaurants that do not have live music, things are best kept quiet.
+\begin{figure}[p]
+\caption{Rating of restaurants by type, whether they accept reservations, and price level.}
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/food_res_3.jpeg}
+\label{fig:food_res_3}
+\end{figure}
 
-\begin{figure}[h]
+\subsection{Loud can be Good, but not too Loud}
+
+Another question we sought to answer was how noise pollution affects the quality of a dining experience, especially when we consider whether or not the establishment offers live music. One can imagine that people deliberately going out to eat at a restaurant with a band playing might bear a higher noise level, and thus not be as quick to penalize the restaurant for being too noisy in their review. We find that the data is consistent with this hypothesis.
+
+For restaurants that offer live music, as shown in Figure~\ref{fig:food_noise}, loud places have a higher average rating than places with an average noise level. Yet very loud places have the lowest average rating. For restaurants that do not offer live music, the average rating decreases with the noise level.
+
+\begin{figure}[p]
 \caption{Rating of restaurants by their noise level and whether they host live music. The plot on the left shows the rating of restaurants by noise level that do not have live music, and the plot on the right shows the rating for restaurants with live music.}
 \centering
-\includegraphics[width=0.6\linewidth]{Figures/food_noise.jpeg}
+\includegraphics[width=0.7\linewidth]{Figures/food_noise.jpeg}
 \label{fig:food_noise}
 \end{figure}
 
 
 \subsection{It's All About Service}
 
+Describe how the wordclouds were made: had to remove certain words
+
 \begin{figure}[h]
 \caption{Wordclouds of tips for great restaurants and terrible restaurants.\label{fig:wordcloud}}
 \centering
-\begin{subfigure}{0.45\linewidth}
+\begin{subfigure}{0.49\linewidth}
 \includegraphics[width=\linewidth]{Figures/wordcloud_top.jpeg}
 \caption{\footnotesize{Tips for restaurants with atleast 4.5 stars.}}
 \label{fig:wordcloud_a}
 \end{subfigure}
-\begin{subfigure}{0.45\linewidth}
+\begin{subfigure}{0.49\linewidth}
 \includegraphics[width=\linewidth]{Figures/wordcloud_bottom.jpeg}
 \caption{\footnotesize{Tips for restaurants with less than 2 stars.}}
 \label{fig:wordcloud_b}
 \end{subfigure}
 \end{figure}
 
+
+
+
+
 \section{Bars}
 
-The Business dataset contains a lot of information that can be used to analyze the relationship between different aspects of bar culture.  In order to analyze the bars available in the dataset, the data was subset to get rid of any businesses that did not have a full bar.  Looking at only the businesses with a full bar gives us insight into locations that serve from a full bar such as clubs, hotels, select restaurants, lounges, bowling alleys, and other various entertainment locations.  Through analyzing this data we can explore what attributes are likely to get a bar higher rating, what features bars most commonly share, and if lower ratings indicate a bar   
-could shut down.
-
-\subsection{Food}
-
-\begin{figure}[h!]
-  \caption{Plot of the number of stars a restaurant received filled with the type of food served at the bar.}
-  \centering
-  \label{food}
-    \includegraphics[width=0.5\textwidth]{Food_bars.png}
-\end{figure}
-
-Though not all bars serve food, many bars in restaurants do which begs the question; what is the most common food served in bars?  In order to investigate this question a qplot of the number of starts given to each bar filled with a count of the food types for each different rating will give us the information and more.  This data revealed unsurprisingly that the most common food served in American bars is American food (burgers, fries, etc). Through further analysis it is determined that 50$\%$ of the bars served primarily American style food.  We can see that the majority of each bar of star, no matter what the rating, is colored for American food.  However, looking more closely at the graph we can see that there is some unexpected information.  From Figure~\ref{food} we can see that there are a wide number of food options for people looking for full bars.  Along with American, Italian and Mexican are also abundant options making up 16$\%$ and 16.7$\%$ respectively.  Another piece of information we can infer from this graphic is that along with the plot of the stars a bar receives being a normal distribution, there also is a consistency in the number of each type of food being represented at each level of stars a bar receives.  Thus, we can see there is no preference for food when looking for a certain quality bar. A bar is equally likely to serve American food whether it receives 1 star or 5 stars.  In order to investigate this I ran more analysis.  
-
-
-
-
+Chelsey
 
 \section{Hotels}
 

@@ -43,6 +43,27 @@ food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   geom_bar(stat = "identity") + coord_flip() + 
   xlab("type:(takes reservations)")
 
+food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
+  mutate(price_level = as.factor(price)) %>%
+  group_by(price_level, reservations) %>%
+  summarize(stars = mean(stars)) %>%
+  mutate(x = paste(price_level, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = stars, fill = price_level)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)")
+
+food %>% filter(waiters == TRUE, !is.na(reservations), !is.na(price)) %>%
+  mutate(price_level = as.factor(price)) %>%
+  group_by(price_level, type, reservations) %>%
+  summarize(stars = mean(stars)) %>%
+  mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
+  ggplot(aes(x = x, y = stars, fill = type)) + 
+  geom_bar(stat = "identity") + coord_flip() + 
+  xlab("type:(takes reservations)") + facet_grid(~price_level)
+
+
+## Subsection: noise pollution
+
 # reorder levels of 'noise' 
 # food$noise <- factor(food$noise, levels = levels(food$noise)[c(3,1,2,4)])
 food %>% subset(!is.na(noise)) %>% 
