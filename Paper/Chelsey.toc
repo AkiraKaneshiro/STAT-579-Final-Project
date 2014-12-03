@@ -9,6 +9,6 @@
 \contentsline {subsection}{\numberline {4.1}Food}{3}
 \contentsline {subsection}{\numberline {4.2}Stars}{4}
 \contentsline {subsection}{\numberline {4.3}Popular Features}{4}
-\contentsline {section}{\numberline {5}Hotels}{6}
-\contentsline {section}{\numberline {6}Fitness}{6}
-\contentsline {section}{\numberline {7}Conclusion}{6}
+\contentsline {section}{\numberline {5}Hotels}{5}
+\contentsline {section}{\numberline {6}Fitness}{5}
+\contentsline {section}{\numberline {7}Conclusion}{5}
