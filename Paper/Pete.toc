@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {3.1}The Cost of Reservations}{2}
 \contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{4}
 \contentsline {subsection}{\numberline {3.3}It's All About Service}{6}
-\contentsline {section}{\numberline {4}Bars}{6}
-\contentsline {section}{\numberline {5}Hotels}{6}
-\contentsline {section}{\numberline {6}Fitness}{6}
-\contentsline {section}{\numberline {7}Conclusion}{6}
+\contentsline {section}{\numberline {4}Bars}{7}
+\contentsline {section}{\numberline {5}Hotels}{7}
+\contentsline {section}{\numberline {6}Fitness}{7}
+\contentsline {section}{\numberline {7}Conclusion}{7}

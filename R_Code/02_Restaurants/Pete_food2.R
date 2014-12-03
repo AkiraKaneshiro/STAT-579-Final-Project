@@ -65,6 +65,7 @@ food %>% filter(waiters == TRUE, !is.na(reservations), !is.na(price)) %>%
 ## Subsection: noise pollution
 
 # reorder levels of 'noise' 
+food$noise <- factor(food$noise, levels=levels(food$noise)[c(3,1,2,4)])
 # food$noise <- factor(food$noise, levels = levels(food$noise)[c(3,1,2,4)])
 food %>% subset(!is.na(noise)) %>% 
   ggplot(aes(x = noise, y = stars, group=live_music)) + 

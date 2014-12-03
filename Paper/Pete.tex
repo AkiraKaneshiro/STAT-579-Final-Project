@@ -117,7 +117,7 @@ The reason for this discrepancy is unclear. Maybe popular restaurants in certain
 \begin{figure}[p]
 \caption{Rating of restaurants by type, whether they accept reservations, and price level.}
 \centering
-\includegraphics[width=0.7\linewidth]{Figures/food_res_3.jpeg}
+\includegraphics[width=0.8\linewidth]{Figures/food_res_3.jpeg}
 \label{fig:food_res_3}
 \end{figure}
 
@@ -137,7 +137,11 @@ For restaurants that offer live music, as shown in Figure~\ref{fig:food_noise}, 
 
 \subsection{It's All About Service}
 
-Describe how the wordclouds were made: had to remove certain words
+It will come as no surprise that service is a vital part of the service industry. Friendly, competent staff can make or break the dining experience. To illustrate the validity of this statement, we examined the \textbf{Tips} objects to see which words came up the most when Yelp users were describing either a really bad or really good restaurant experience. We first matched every single restaurant tip with the corresponding restaurant, and then sorted the tips by the average number of stars that each restaurant has. We then used a simple visualization technique on each set, called a wordcloud. 
+
+A wordcloud is formed by displaying the most frequently occuring words from a set together in a random, or partly random, arrangement. The size of each word is weighted by how many times it appears in the set. A coloring scheme is often added to complemented the size weighting.
+
+We first took a random sample of 600 tips corresponding to restaurants with at least 4.5 stars, and 600 corresponding to restaurants with less than 2 stars. We then created a wordcloud for each set of tips after removing certain words like ``great," ``awesome," and ``love" from the high rating group and words like ``bad," ``terrible," and ``don't" from the low rating group, because those words are obvious and appeared so frequently that they ``clouded" out more interesting words. There were also other words like ``try," ``place," and ``get" that were removed from both groups for the same reasons. The resulting wordclouds are shown in Figures~\ref{fig:wordcloud_a}, for the high rating group, and~\ref{fig:wordcloud_b} for the low rating group.
 
 \begin{figure}[h]
 \caption{Wordclouds of tips for great restaurants and terrible restaurants.\label{fig:wordcloud}}
@@ -154,7 +158,7 @@ Describe how the wordclouds were made: had to remove certain words
 \end{subfigure}
 \end{figure}
 
-
+The interesting thing to notice here is that both wordclouds look extremely similar. Words like ``chicken," ``pizza," ``time," and ``order" are found in each set. Further, in both cases the word ``service" was the most frequent word. Thus, it seems that people with either really good or really bad experiences tend to comment on the same types of things, particularly when it comes to service.
 
 
 
