@@ -1,14 +1,14 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Data}{1}
 \contentsline {section}{\numberline {3}Restaurants}{2}
-\contentsline {subsection}{\numberline {3.1}The Cost of Reservations}{2}
-\contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{4}
-\contentsline {subsection}{\numberline {3.3}It's All About Service}{4}
-\contentsline {subsection}{\numberline {3.4}Delivery vs. Takeout}{5}
-\contentsline {section}{\numberline {4}Bars}{8}
+\contentsline {subsection}{\numberline {3.1}The Cost of Reservations}{3}
+\contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{5}
+\contentsline {subsection}{\numberline {3.3}It's All About Service}{5}
+\contentsline {subsection}{\numberline {3.4}Delivery vs. Takeout}{7}
+\contentsline {section}{\numberline {4}Bars}{9}
 \contentsline {subsection}{\numberline {4.1}Food}{9}
 \contentsline {subsection}{\numberline {4.2}Stars}{10}
-\contentsline {subsection}{\numberline {4.3}Popular Features}{10}
-\contentsline {section}{\numberline {5}Hotels}{11}
+\contentsline {subsection}{\numberline {4.3}Popular Features}{11}
+\contentsline {section}{\numberline {5}Hotels}{12}
 \contentsline {section}{\numberline {6}Shopping}{13}
-\contentsline {section}{\numberline {7}Conclusion}{15}
+\contentsline {section}{\numberline {7}Conclusion}{14}
