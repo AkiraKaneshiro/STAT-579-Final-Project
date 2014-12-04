@@ -37,7 +37,7 @@ December 4, 2014}
 \maketitle
 
 \begin{abstract}
-For this project we examined a Yelp Academic Data set with information pertaining to 250 of the closest businesses to 30 large universities. For our analysis we firs cleaned the dataset to get it into usable form. We then focused on analysis on restaurants, bars, hotels and shopping. By splitting the dataset into these smaller subsets we were able to find relationships between the variables and do a different analysis for each subset. For restaurants we find interesting relationships among reservations, noise level, delivery, takeout, price, and number of stars the business receives. We also find that service is key to a restaurants success. For bars we find that there are some relationships between the attributes of a bar will determine what type of group will venture to that bar. We also find that most bars serve American food, though other food are well represented. For hotels and shopping we find that it may not always mean better quality when paying more for services. And that people's reviews are not much affected by whether the place has a parking lot nearby or free wifi. Through this dataset we gain insight the relationships among many variables pertaining to a variety of sources.
+For this project we examined a Yelp Academic Data set with information pertaining to 250 of the closest businesses to 30 large universities. Our analysis explores trends and characteristics in four different types of businesses, namely: restaurants, bars, hotels, and shopping centers. In particular, we investigate how certain factors affect the average user ratings of each establishment from Yelp reviews. Some relationships are intuitive, others are not. For restaurants we find that people will pay a premium to eat at a place that accepts reservations, yet they are not necessarily getting better quality food or service. There are also interesting links between noise level, whether a place delivers or offers takeout, and price level, with number of stars a restaurant receives. For bars, we find that there are some relationships between the attributes of a bar that will determine what type of group will venture to that bar. We also find that most bars serve American food, though other foods are well represented too. For hotels and shopping centers, we find that higher prices are not correlated with higher ratings, and that people's reviews are not much affected by whether the place has a parking lot nearby or free wifi. 
 \end{abstract}
 
 %% End cover page %%
@@ -62,7 +62,7 @@ The Yelp Academic Dataset\footnote{$https://www.yelp.com/academic\_dataset$} pro
 
 In particular, we investigate various factors that affect the rating of restaurants, bars, hotels, and shopping centers. For restaurants, we seek to answer how whether or not an establishment accepts reservations influences the price and the overall quality of the dining experience. We also investigate how noise level effects the rating of restaurants and how this differs between places that offer live music and those that do not. We then use a pair of wordclouds to question the types of things people are most likely to talk about when they write a ``tip"\footnote{In Yelp, a ``tip" is a short comment or description of a business given by a Yelp user. A tip is too short to be considered a review.} about a really bad or really fantastic restaurant. Lastly, we investigate the types of food that are most likely to be offered as take out or delivery, and possible explanations for this.
 
-For bars, 
+For bars, we inspect which types of food are most commonly served and whether or not lower ratings indicate if a bar will be shut down. We also investigate the types of activities that are likely to take place at a given bar.
 
 For hotels and shopping, we explore the question of how price level and popularity (as measured by the count of Yelp reviews) affects rating.
 
@@ -316,7 +316,7 @@ Figure 15 again supports the statement that popularity is not associated with be
 
 Figure 16 shows the distribution of the ratings by price range and availability of parking. Whether or not there are parking lots nearby, the stores are rated roughly the same. It is interesting to see, however, that pricey stores receive more polarized reviews than low-cost stores. In the highest price range, we find more 5-star reviews and more 1-star reviews at the same time. Customers seem to either love or hate the stores that charge them very high prices. One might argue that retail customers are more diverse than hotel customers. In other words, average people tend to focus more on price than quality. Without looking at the demographics of customers, we never know if this argument is true.
 
-\begin{figure}[h!]
+\begin{figure}[h]
            \caption{Histogram of the relative frequency of ratings of shops by price range and whether a parking lot is available or not}
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/shopping2.jpeg}
@@ -325,7 +325,7 @@ Figure 16 shows the distribution of the ratings by price range and availability 
 
 Figure 17 shows another different trend in the distribution of ratings of retail stores in Edinburgh. While pricey stores still receive more polarized reviews than low-cost stores in three states, especially Arizona, the ratings of stores in Edinburgh are again consistent across price levels. Assuming that the demographics are the same everywhere, one could possibly say that quality is better reflected by price in European stores. This implies that the quality of an American product sometimes does not justify its price. Again, we cannot verify the statement without any more information.
 
-\begin{figure}[h!]
+\begin{figure}[h]
            \caption{Histogram of the relative frequency of ratings of shops by price range and region}
 	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/shopping3.jpeg}
@@ -335,7 +335,7 @@ Figure 17 shows another different trend in the distribution of ratings of retail
 
 \section{Conclusion}
 
-The Yelp Academic Dataset has provided us information on a variety of businesses including restaurants, bars, hotels, and shops.  We have used the abundance of data to find key relationships between the available variables and their respective businesses.  For example, we have found that reservations, price, noise level, takeout, delivery, and foremost service are key variables that provide interesting relationships for restaurant data.  We have also found that features such as food type, if a restaurant has a tv, or if it is good for dancing all provide insight into what type of atmosphere we will find at a bar.  When evaluating  hotels and shopping we have found that popularity does not always reflect the quality of the service we will receive.  This data set has provided us with many insights into possible relationships between not only these variables, but also human culture and tendencies.  Though it is impossible to make solid conclusions about any of the relationships we have found based on our limited dataset, we have still come up with some interesting relationships and found even more questions about this topic that could be used for further research on the subject.
+The Yelp Academic Dataset has provided us information on a variety of businesses including restaurants, bars, hotels, and shops.  We have used the abundance of data to find key relationships between the available variables and their respective businesses.  For example, we have found that reservations, price, noise level, takeout, delivery, and foremost service are key variables that provide interesting relationships for restaurant data.  We have also found that features such as food type, if a restaurant has a TV, or if it is good for dancing all provide insight into what type of atmosphere we will find at a bar.  When evaluating hotels and shopping we have found that popularity does not always reflect the quality of the service we will receive.  This data set has provided us with many insights into possible relationships between not only these variables, but also human culture and tendencies.  Though it is impossible to make solid conclusions about any of the relationships we have found based on our limited dataset, we have still come up with some interesting relationships and found even more questions about this topic that could be used for further research on the subject.
 
 
 

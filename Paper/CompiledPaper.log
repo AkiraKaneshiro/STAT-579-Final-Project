@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 DEC 2014 14:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 DEC 2014 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,7 +452,7 @@ Package pdftex.def Info: Figures/shopping3.jpeg used on input line 331.
 (pdftex.def)             Requested size: 220.42372pt x 135.64436pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./Figures/shopping1.jpeg> <./Figures/shopping2.jpeg>] [15 <./Figures/shopp
 ing3.jpeg>] (./CompiledPaper.aux) ) 
@@ -476,7 +476,7 @@ sfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmtt12.pfb>
-Output written on CompiledPaper.pdf (17 pages, 1419715 bytes).
+Output written on CompiledPaper.pdf (17 pages, 1419912 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
