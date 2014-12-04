@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 DEC 2014 14:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 DEC 2014 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,103 +258,100 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
  [2]
 <Figures/food_AZ.png, id=27, 503.8825pt x 402.50375pt>
 File: Figures/food_AZ.png Graphic file (type png)
 
 <use Figures/food_AZ.png>
-Package pdftex.def Info: Figures/food_AZ.png used on input line 86.
+Package pdftex.def Info: Figures/food_AZ.png used on input line 90.
 (pdftex.def)             Requested size: 198.38pt x 158.46826pt.
 
 <Figures/food_NV.png, id=29, 502.87875pt x 402.50375pt>
 File: Figures/food_NV.png Graphic file (type png)
 
 <use Figures/food_NV.png>
-Package pdftex.def Info: Figures/food_NV.png used on input line 91.
+Package pdftex.def Info: Figures/food_NV.png used on input line 95.
 (pdftex.def)             Requested size: 198.38pt x 158.78148pt.
 
 <Figures/food_res_price.jpeg, id=30, 622.325pt x 420.57124pt>
 File: Figures/food_res_price.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_price.jpeg>
-Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 106.
-(pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/food_res_stars.jpeg, id=31, 622.325pt x 420.57124pt>
-File: Figures/food_res_stars.jpeg Graphic file (type jpg)
-
-<use Figures/food_res_stars.jpeg>
-Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 115.
+Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 110.
 (pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./Figures/food_AZ.png> <./Figures/food_NV.png>]
-<Figures/food_res_3.jpeg, id=37, 622.325pt x 420.57124pt>
+<Figures/food_res_stars.jpeg, id=36, 622.325pt x 420.57124pt>
+File: Figures/food_res_stars.jpeg Graphic file (type jpg)
+
+<use Figures/food_res_stars.jpeg>
+Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 119.
+(pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
+ [4 <./Figures/food_res_price.jpeg> <./Figures/food_res_stars.jpeg>]
+<Figures/food_res_3.jpeg, id=40, 622.325pt x 420.57124pt>
 File: Figures/food_res_3.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_3.jpeg>
-Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 124.
+Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 128.
 (pdftex.def)             Requested size: 352.6793pt x 238.34195pt.
 
-<Figures/food_noise.jpeg, id=38, 622.325pt x 420.57124pt>
+<Figures/food_noise.jpeg, id=41, 622.325pt x 420.57124pt>
 File: Figures/food_noise.jpeg Graphic file (type jpg)
 
 <use Figures/food_noise.jpeg>
-Package pdftex.def Info: Figures/food_noise.jpeg used on input line 137.
+Package pdftex.def Info: Figures/food_noise.jpeg used on input line 141.
 (pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
- [4 <./Figures/food_res_price.jpeg>]
+
 <Figures/wordcloud_top.jpeg, id=42, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_top.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_top.jpeg>
-Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 154.
+Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 158.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
 <Figures/wordcloud_bottom.jpeg, id=43, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_bottom.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_bottom.jpeg>
-Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 159.
+Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 163.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./Figures/food_res_stars.jpeg>] [6 <./Figures/food_res_3.jpeg> <./Figures/f
-ood_noise.jpeg>] [7 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.
-jpeg>] (./Pete.aux) ) 
+[5] [6 <./Figures/food_res_3.jpeg> <./Figures/food_noise.jpeg>] [7 <./Figures/w
+ordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg>] (./Pete.aux) ) 
 Here is how much of TeX's memory you used:
  3297 strings out of 493315
  51941 string characters out of 6137904
- 118802 words of memory out of 5000000
+ 119802 words of memory out of 5000000
  6711 multiletter control sequences out of 15000+600000
  10031 words of font info for 35 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,43p,1070b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Pete.pdf (9 pages, 735194 bytes).
+</usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Pete.pdf (9 pages, 735460 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
