@@ -169,12 +169,12 @@ qplot(stars, data = food, fill = as.factor(attributes_price.range), binwidth = 0
 qplot(type, data = food, fill = attributes_delivery) + coord_flip()
 
 #Facet by type.
-# add in delivery. Not terribly interesting
-qplot(stars, data = food, facets = .~type, fill = attributes_delivery) 
+
+qplot(attributes_price.range, data = food, facets = attributes_delivery~type, fill = attributes_delivery) 
 
 #Delviery and type of food
-qplot(review_count, data = food, facets = .~type, fill= attributes_delivery) 
-
+qplot(review_count, data = food, facets = .~type, fill= review_count) 
+qplot(review_count, data = food, facets= .~type, fill = type)
 #takeout
 qplot(stars, data = food, facets = .~type, fill= attributes_take.out) 
 qplot(attributes_take.out, data = food, fill = type) # I like this one better
@@ -182,6 +182,7 @@ qplot(attributes_take.out, data = food, fill = type) # I like this one better
 qplot(stars, data = food, facets = .~type, fill= open)
 qplot(attributes_waiter.service, data = food, fill = type)
 
+qplot(attributes_take.out, data = food, fill = attributes_delivery, facets = .~type)
 
 
 
