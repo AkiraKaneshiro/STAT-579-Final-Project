@@ -8,6 +8,13 @@ output:
 runtime: shiny
 ---
 
+```{r echo=FALSE}
+suppressPackageStartupMessages(require(dplyr))
+suppressPackageStartupMessages(require(googleVis))
+food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
+```
+
+
 ## Abstract {.smaller}
 
 This is our abstract.
@@ -24,53 +31,48 @@ Words
 
 Words
 
-$x^{2} + 3$
+$$x^{2} + 3$$
 
-## Data cleaning process
+## Data cleaning process | Subtitle
 
-## Slide with Interactive Plot | Subtitle
+
+----
 
 ```{r, echo=FALSE}
-inputPanel(
-  selectInput("n_breaks", label = "Number of bins:",
-              choices = c(10, 20, 35, 50), selected = 20),
+shinyApp(
+  ui = fluidPage(responsive = FALSE,
+                 fluidRow(style = "padding-bottom: 20px;",
+                  column(2, selectInput("place", label = "Region", 
+                            c("WI", "NV"), selected = "WI")),
+                  column(5, selectInput("type", label = "Type",
+                            choices = levels(food$type), 
+                            selected = levels(food$type)[1],
+                            multiple = TRUE)),
+                  column(2, selectInput("lower", label = "Lowest rating",
+                            choices = as.character(seq(1,5, by=0.5)),
+                            selected = "4")),
+                  column(2, selectInput("upper", label = "Highest rating",
+                            choices = as.character(seq(1,5,by=0.5)),
+                            selected = "5"))),
+                 htmlOutput("map")
+                 ),
   
-  sliderInput("bw_adjust", label = "Bandwidth adjustment:",
-              min = 0.2, max = 2, value = 1, step = 0.2)
+  server = function(input, output) {
+    dataInput <- reactive({
+      df <- food %>% subset(state == input$place, stars > 4) %>%
+        filter(type %in% input$type) %>%
+        filter(stars >= as.numeric(input$lower) & stars <= as.numeric(input$upper))
+    })
+    output$map <- renderGvis({
+      gvis1 <- gvisMap(dataInput(), "location", "tip",
+                 options = list(showTip = TRUE, 
+                                enableScrollWheel = TRUE,
+                                useMapTypeControl = TRUE,
+                                mapType = "normal"))
+      gvis1
+    })
+  }
 )
-
-renderPlot({
-  hist(faithful$eruptions, probability = TRUE, 
-       breaks = as.numeric(input$n_breaks),
-       xlab = "Duration (minutes)", main = "Geyser eruption duration")
-  
-  dens <- density(faithful$eruptions, adjust = input$bw_adjust)
-  lines(dens, col = "blue")
-})
-```
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with interactive googleVis map
-
-```{r, echo=FALSE}
-# suppressPackageStartupMessages(require(dplyr))
-# suppressPackageStartupMessages(require(googleVis))
-# dinner <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/dinner.csv")
-# output$map <- renderGvis({
-#   gvis1 <- gvisMap(dinner, "location", "tip",
-#                  options = list(showTip = TRUE, 
-#                                 enableScrollWheel = TRUE,
-#                                 useMapTypeControl = TRUE,
-#                                 mapType = "normal"))
-#   gvis1
-# })
-# 
-# htmlOutput("map")
 ```
 
 
