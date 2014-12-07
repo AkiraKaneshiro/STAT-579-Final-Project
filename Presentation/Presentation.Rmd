@@ -14,14 +14,11 @@ suppressPackageStartupMessages(require(googleVis))
 food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 ```
 
-
-## Abstract {.smaller}
-
-This is our abstract.
-
 # Introduction
 
 ## Intro
+
+### Dataset
 
 Words
 
@@ -43,7 +40,7 @@ shinyApp(
   ui = fluidPage(responsive = FALSE,
                  fluidRow(style = "padding-bottom: 20px;",
                   column(2, selectInput("place", label = "Region", 
-                            c("WI", "NV"), selected = "WI")),
+                            levels(food$state), selected = "WI")),
                   column(5, selectInput("type", label = "Type",
                             choices = levels(food$type), 
                             selected = levels(food$type)[1],
