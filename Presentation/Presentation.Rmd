@@ -1,6 +1,6 @@
 ---
 title: "Analysis of the Yelp Academic Dataset"
-author: "Chelsey Legacy, Lindong Zhou, Evan ‚ÄúPete‚Äù Walsh"
+author: "Chelsey Legacy, Lindong Zhou, Evan 'Pete'Äù Walsh"
 date: "November 22, 2014"
 output: 
   ioslides_presentation:
@@ -44,8 +44,6 @@ Our presentation will procede as follows:
 
 Words
 
-$$x^{2} + 3$$
-
 ## Data cleaning process | Subtitle
 
 
@@ -65,7 +63,8 @@ shinyApp(
                             selected = levels(food$type)[1],
                             multiple = TRUE)),
                   column(2, selectInput("hour", label = "Hour",
-                            choices = c("All", "Breakfast", "Lunch", "Dinner"),
+                            choices = c("All", "Breakfast",
+                                        "Lunch", "Dinner"),
                             selected = "All")),
                   column(2, selectInput("lower", label = "Rating low",
                             choices = as.character(seq(1,5, by=0.5)),
@@ -128,23 +127,63 @@ shinyApp(
 ## It's all about service
 
 ```{r echo=FALSE}
-top <- tips %>% subset(stars > 4) %>% select(2)
-top <- sample(top$text, 500) %>% 
-  paste(sep = '', collapse = ' ')
-top <- gsub("[[:punct:]]", " ", top)
-top <- tolower(top)
-top <- gsub("great", '', top)
-top <- gsub("good", '', top)
-top <- gsub("best", '', top)
-top <- gsub("food", '', top)
-top <- gsub("love", '', top)
-top <- gsub("don", '', top)
-top <- gsub("get" , '', top)
-top <- gsub("try", '', top)
-top <- gsub("place", '', top)
-top <- gsub("amazing", '', top)
-top <- gsub("awesome", '', top)
-wordcloud(top, max.words = 100, random.order=F, 
+shinyApp(
+  ui = fluidPage(responsive = FALSE,
+    fluidRow(
+    column(3, wellPanel(
+      sliderInput("n", "Sample size:", min = 300, 
+                  max = 1000, value = 600, step = 10),
+      submitButton("Submit")
+    )),
+    column(6,
+      plotOutput("wordcloud", width = 400, height = 400)
+    )         
+  ),
+  
+  server = function(input, output) {
+    dataInput <- reactive({
+      top <- tips %>% subset(stars > 4) %>% select(2)
+      top <- sample(top$text, input$n) %>% 
+        paste(sep = '', collapse = ' ')
+      top <- gsub("[[:punct:]]", " ", top)
+      top <- tolower(top)
+      top <- gsub("great", '', top)
+      top <- gsub("good", '', top)
+      top <- gsub("best", '', top)
+      top <- gsub("food", '', top)
+      top <- gsub("love", '', top)
+      top <- gsub("don", '', top)
+      top <- gsub("get" , '', top)
+      top <- gsub("try", '', top)
+      top <- gsub("place", '', top)
+      top <- gsub("amazing", '', top)
+      top <- gsub("awesome", '', top)
+      top
+    })
+    output$wordcloud <- renderPlot({
+      wordcloud(dataInput(), max.words = 100, random.order=F, 
           scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
+    })
+  }
+)
+
+# top <- tips %>% subset(stars > 4) %>% select(2)
+# top <- sample(top$text, 500) %>% 
+#   paste(sep = '', collapse = ' ')
+# top <- gsub("[[:punct:]]", " ", top)
+# top <- tolower(top)
+# top <- gsub("great", '', top)
+# top <- gsub("good", '', top)
+# top <- gsub("best", '', top)
+# top <- gsub("food", '', top)
+# top <- gsub("love", '', top)
+# top <- gsub("don", '', top)
+# top <- gsub("get" , '', top)
+# top <- gsub("try", '', top)
+# top <- gsub("place", '', top)
+# top <- gsub("amazing", '', top)
+# top <- gsub("awesome", '', top)
+# wordcloud(top, max.words = 100, random.order=F, 
+#           scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
 ```
 
