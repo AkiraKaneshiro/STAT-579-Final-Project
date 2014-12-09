@@ -83,6 +83,10 @@ food %>% group_by(noise, live_music) %>%
 library(wordcloud)
 library(tm)
 
+#tips <- read.csv("/Users/marianwaitwalsh/Classes and Work/yelp/tips2.csv")
+#tips <- filter(tips, stars > 4 | stars < 2)
+tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv")
+
 top <- tips %>% subset(stars > 4) %>% select(2)
 top <- sample(top$text, 500) %>% 
   paste(sep = '', collapse = ' ')
@@ -98,6 +102,7 @@ top <- gsub("get" , '', top)
 top <- gsub("try", '', top)
 top <- gsub("place", '', top)
 top <- gsub("amazing", '', top)
+top <- gsub("awesome", '', top)
 wordcloud(top, max.words = 100, random.order=F, 
           scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
 

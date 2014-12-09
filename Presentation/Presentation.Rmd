@@ -11,16 +11,32 @@ runtime: shiny
 ```{r echo=FALSE}
 suppressPackageStartupMessages(require(dplyr))
 suppressPackageStartupMessages(require(googleVis))
+suppressPackageStartupMessages(require(wordcloud))
+suppressPackageStartupMessages(require(tm))
 food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
+tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv")
 ```
-
-# Introduction
 
 ## Intro
 
-### Dataset
 
-Words
+
+## Schedule {.smaller}
+
+Our presentation will procede as follows:
+
+> - Brief description of data
+> - Restaurants
+>     + The cost of reservations
+>     + Loud can be good, but not too loud
+>     + It's all about service
+>     + Delivery vs. takeout
+> - Bars
+>     + Food
+>     + Stars
+>     + Popular features
+> - Hotels
+> - Shopping
 
 # Data
 
@@ -33,6 +49,9 @@ $$x^{2} + 3$$
 ## Data cleaning process | Subtitle
 
 
+
+# Restaurants
+
 ----
 
 ```{r, echo=FALSE}
@@ -41,25 +60,53 @@ shinyApp(
                  fluidRow(style = "padding-bottom: 20px;",
                   column(2, selectInput("place", label = "Region", 
                             levels(food$state), selected = "WI")),
-                  column(5, selectInput("type", label = "Type",
+                  column(4, selectInput("type", label = "Type",
                             choices = levels(food$type), 
                             selected = levels(food$type)[1],
                             multiple = TRUE)),
-                  column(2, selectInput("lower", label = "Lowest rating",
+                  column(2, selectInput("hour", label = "Hour",
+                            choices = c("All", "Breakfast", "Lunch", "Dinner"),
+                            selected = "All")),
+                  column(2, selectInput("lower", label = "Rating low",
                             choices = as.character(seq(1,5, by=0.5)),
                             selected = "4")),
-                  column(2, selectInput("upper", label = "Highest rating",
+                  column(2, selectInput("upper", label = "Rating high",
                             choices = as.character(seq(1,5,by=0.5)),
                             selected = "5"))),
                  htmlOutput("map")
                  ),
   
   server = function(input, output) {
-    dataInput <- reactive({
+    dataInput <- reactive({      
+      if (input$hour == "Breakfast") {
+        df <- food %>% subset(state == input$place, stars > 4) %>%
+          filter(type %in% input$type) %>%
+          filter(stars >= as.numeric(input$lower) & 
+                   stars <= as.numeric(input$upper))
+        df <- df[grep("breakfast': True", df$attributes_good.for),]
+      }      
+      else if (input$hour == "Lunch") {
+        df <- food %>% subset(state == input$place, stars > 4) %>%
+          filter(type %in% input$type) %>%
+          filter(stars >= as.numeric(input$lower) & 
+                   stars <= as.numeric(input$upper))
+        df <- df[grep("lunch': True", df$attributes_good.for),]
+      }      
+      else if (input$hour == "Dinner") {
+        df <- food %>% subset(state == input$place, stars > 4) %>%
+          filter(type %in% input$type) %>%
+          filter(stars >= as.numeric(input$lower) & 
+                   stars <= as.numeric(input$upper))
+        df <- df[grep("dinner': True", df$attributes_good.for),]
+      }      
+      else {
       df <- food %>% subset(state == input$place, stars > 4) %>%
         filter(type %in% input$type) %>%
-        filter(stars >= as.numeric(input$lower) & stars <= as.numeric(input$upper))
+        filter(stars >= as.numeric(input$lower) & 
+                 stars <= as.numeric(input$upper))        
+      }
     })
+    
     output$map <- renderGvis({
       gvis1 <- gvisMap(dataInput(), "location", "tip",
                  options = list(showTip = TRUE, 
@@ -72,4 +119,32 @@ shinyApp(
 )
 ```
 
+## The cost of reservations
+
+
+## Noise pollution
+
+
+## It's all about service
+
+```{r echo=FALSE}
+top <- tips %>% subset(stars > 4) %>% select(2)
+top <- sample(top$text, 500) %>% 
+  paste(sep = '', collapse = ' ')
+top <- gsub("[[:punct:]]", " ", top)
+top <- tolower(top)
+top <- gsub("great", '', top)
+top <- gsub("good", '', top)
+top <- gsub("best", '', top)
+top <- gsub("food", '', top)
+top <- gsub("love", '', top)
+top <- gsub("don", '', top)
+top <- gsub("get" , '', top)
+top <- gsub("try", '', top)
+top <- gsub("place", '', top)
+top <- gsub("amazing", '', top)
+top <- gsub("awesome", '', top)
+wordcloud(top, max.words = 100, random.order=F, 
+          scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
+```
 
