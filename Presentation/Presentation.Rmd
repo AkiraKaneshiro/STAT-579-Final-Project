@@ -136,7 +136,8 @@ shinyApp(
         submitButton("Draw")
       )),
       column(6,
-        plotOutput("wordcloud", width = 500, height = 500)
+        h4("Restaurants with more than 4 stars"),
+        plotOutput("wordcloud", width = 400, height = 400)
       )         
     )),
   
