@@ -32,7 +32,7 @@ food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
   ggplot(aes(x = x, y = price, fill = type)) + 
   geom_bar(stat = "identity") + coord_flip() + 
-  xlab("type:(takes reservations)")
+  xlab("type:(takes reservations)") + scale_fill_brewer(palette="RdYlGn")
 
 food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   group_by(type, reservations) %>%
@@ -41,7 +41,7 @@ food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
   ggplot(aes(x = x, y = stars, fill = type)) + 
   geom_bar(stat = "identity") + coord_flip() + 
-  xlab("type:(takes reservations)")
+  xlab("type:(takes reservations)") + scale_fill_brewer(palette="RdYlGn")
 
 food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   mutate(price_level = as.factor(price)) %>%
@@ -50,7 +50,7 @@ food %>% filter(waiters == TRUE, !is.na(reservations)) %>%
   mutate(x = paste(price_level, as.character(reservations), sep = ":")) %>%
   ggplot(aes(x = x, y = stars, fill = price_level)) + 
   geom_bar(stat = "identity") + coord_flip() + 
-  xlab("type:(takes reservations)")
+  xlab("type:(takes reservations)") + scale_fill_brewer(palette="RdYlGn")
 
 food %>% filter(waiters == TRUE, !is.na(reservations), !is.na(price)) %>%
   mutate(price_level = as.factor(price)) %>%
@@ -59,7 +59,9 @@ food %>% filter(waiters == TRUE, !is.na(reservations), !is.na(price)) %>%
   mutate(x = paste(type, as.character(reservations), sep = ":")) %>%
   ggplot(aes(x = x, y = stars, fill = type)) + 
   geom_bar(stat = "identity") + coord_flip() + 
-  xlab("type:(takes reservations)") + facet_grid(~price_level)
+  xlab("type:(takes reservations)") + 
+  facet_grid(~price_level) + scale_fill_brewer(palette="RdYlGn") + 
+  theme(legend.position="none")
 
 
 ## Subsection: noise pollution

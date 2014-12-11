@@ -4,7 +4,7 @@ author: "Chelsey Legacy, Lindong Zhou, Evan 'Pete' Walsh"
 date: "November 22, 2014"
 output: 
   ioslides_presentation:
-    logo: logo.jpg
+    logo: yelp2.png
 runtime: shiny
 ---
 
@@ -45,7 +45,6 @@ Our presentation will procede as follows:
 Words
 
 ## Data cleaning process | Subtitle
-
 
 
 # Restaurants
