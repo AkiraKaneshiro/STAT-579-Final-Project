@@ -53,7 +53,7 @@ Words
 
 ```{r, echo=FALSE}
 shinyApp(
-  ui = fluidPage(responsive = FALSE,
+  ui = fluidPage(responsive = FALSE, 
                  fluidRow(style = "padding-bottom: 20px;",
                   column(2, selectInput("place", label = "Region", 
                             levels(food$state), selected = "WI")),
