@@ -1,6 +1,6 @@
 ---
 title: "Analysis of the Yelp Academic Dataset"
-author: "Chelsey Legacy, Lindong Zhou, Evan 'Pete'?? Walsh"
+author: "Chelsey Legacy, Lindong Zhou, Evan 'Pete' Walsh"
 date: "November 22, 2014"
 output: 
   ioslides_presentation:
@@ -130,42 +130,85 @@ shinyApp(
 shinyApp(
   ui = fluidPage(responsive = FALSE,
     fluidRow(
-      column(3, wellPanel(
+      sidebarPanel(
+        selectInput("category", "Category:", 
+                    choices = c("More than 4 stars", "Less than 2 stars"), 
+                    selected = "More than 4 stars"),
         sliderInput("n", "Sample size:", min = 300, 
                   max = 1000, value = 600, step = 10),
-        submitButton("Draw")
-      )),
-      column(6,
-        h4("Restaurants with more than 4 stars"),
-        plotOutput("wordcloud", width = 400, height = 400)
+        submitButton("Draw"),
+        br(),
+        conditionalPanel(
+         condition = "input.n > 686 & input.category == 'Less than 2 stars'",
+         helpText("Note: there are only 600 tips for restaurants that have less 
+                  than 2 stars, so sampling will be done with replacement.")
+        )
+      ),
+      mainPanel(
+        h4(textOutput("title")),
+        plotOutput("wordcloud", width = 450, height = 400)
       )         
     )),
   
   server = function(input, output) {
     dataInput <- reactive({
-      top <- tips %>% subset(stars > 4) %>% select(2)
-      top <- sample(top$text, input$n) %>% 
-        paste(sep = '', collapse = ' ')
-      top <- gsub("[[:punct:]]", " ", top)
-      top <- tolower(top)
-      top <- gsub("great", '', top)
-      top <- gsub("good", '', top)
-      top <- gsub("best", '', top)
-      top <- gsub("food", '', top)
-      top <- gsub("love", '', top)
-      top <- gsub("don", '', top)
-      top <- gsub("get" , '', top)
-      top <- gsub("try", '', top)
-      top <- gsub("place", '', top)
-      top <- gsub("amazing", '', top)
-      top <- gsub("awesome", '', top)
-      top
+      if (input$category == "More than 4 stars") {
+        data <- tips %>% subset(stars > 4) %>% select(2)
+        data <- sample(data$text, input$n) %>% 
+          paste(sep = '', collapse = ' ')
+      } else {
+        data <- tips %>% subset(stars < 2) %>% select(2)
+        if (input$n > 686) {
+          data <- sample(data$text, input$n, replace = TRUE) %>% 
+            paste(sep = '', collapse = ' ')
+        } else {
+          data <- sample(data$text, input$n) %>% 
+            paste(sep = '', collapse = ' ')          
+        }
+      }
+      data <- gsub("[[:punct:]]", " ", data)
+      data <- tolower(data)
+      data <- gsub("great", '', data)
+      data <- gsub("good", '', data)
+      data <- gsub("best", '', data)
+      data <- gsub("food", '', data)
+      data <- gsub("love", '', data)
+      data <- gsub("don", '', data)
+      data <- gsub("get" , '', data)
+      data <- gsub("try", '', data)
+      data <- gsub("place", '', data)
+      data <- gsub("amazing", '', data)
+      data <- gsub("awesome", '', data)
+      data <- gsub("delicious", '', data)
+      data
     })
     output$wordcloud <- renderPlot({
-      wordcloud(dataInput(), max.words = 100, random.order=F, 
+      if (input$category == "More than 4 stars") {
+        wordcloud(dataInput(), max.words = 100, random.order=F, 
           scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
+      } else {
+        wordcloud(dataInput(), max.words = 100, random.order=F, 
+          scale=c(3,0.5),colors=brewer.pal(4,"Set1"))
+      }
+    })
+    output$title <- renderText({
+      if (input$category == "More than 4 stars") {
+        "Wordcloud of user tips for high rated restaurants"
+      } else {
+        "Wordcloud of user tips for low rated restaurants"
+      }
     })
   }
 )
 ```
 
+## It's all about service | Comparison of top and bottom rated restaurants
+
+<table>
+<tr><td>Below 2 stars</td>
+    <td>Above 4 stars</td>
+</tr>
+<tr><td><img src="/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Paper/Figures/wordcloud_bottom.jpeg"></td>
+    <td><img src="/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Paper/Figures/wordcloud_top.jpeg"></td>
+</tr>
+</table>
