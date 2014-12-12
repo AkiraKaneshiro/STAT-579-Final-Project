@@ -144,58 +144,56 @@ shinyApp(
         )
       ),
       mainPanel(
-        h4(textOutput("title")),
         plotOutput("wordcloud", width = 450, height = 400)
       )         
     )),
   
   server = function(input, output) {
-    dataInput <- reactive({
-      if (input$category == "More than 4 stars") {
-        data <- tips %>% subset(stars > 4) %>% select(2)
-        data <- sample(data$text, input$n) %>% 
-          paste(sep = '', collapse = ' ')
-      } else {
-        data <- tips %>% subset(stars < 2) %>% select(2)
-        if (input$n > 686) {
-          data <- sample(data$text, input$n, replace = TRUE) %>% 
-            paste(sep = '', collapse = ' ')
-        } else {
-          data <- sample(data$text, input$n) %>% 
-            paste(sep = '', collapse = ' ')          
-        }
-      }
-      data <- gsub("[[:punct:]]", " ", data)
-      data <- tolower(data)
-      data <- gsub("great", '', data)
-      data <- gsub("good", '', data)
-      data <- gsub("best", '', data)
-      data <- gsub("food", '', data)
-      data <- gsub("love", '', data)
-      data <- gsub("don", '', data)
-      data <- gsub("get" , '', data)
-      data <- gsub("try", '', data)
-      data <- gsub("place", '', data)
-      data <- gsub("amazing", '', data)
-      data <- gsub("awesome", '', data)
-      data <- gsub("delicious", '', data)
-      data
-    })
+    
     output$wordcloud <- renderPlot({
-      if (input$category == "More than 4 stars") {
-        wordcloud(dataInput(), max.words = 100, random.order=F, 
-          scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
-      } else {
-        wordcloud(dataInput(), max.words = 100, random.order=F, 
-          scale=c(3,0.5),colors=brewer.pal(4,"Set1"))
-      }
-    })
-    output$title <- renderText({
-      if (input$category == "More than 4 stars") {
-        "Wordcloud of user tips for high rated restaurants"
-      } else {
-        "Wordcloud of user tips for low rated restaurants"
-      }
+      
+      withProgress(message = 'Creating wordcloud', value = 0, {
+        incProgress(0.25, detail = 'Subsetting data')
+        if (input$category == "More than 4 stars") {
+          data <- tips %>% subset(stars > 4) %>% select(2)
+          data <- sample(data$text, input$n) %>% 
+            paste(sep = '', collapse = ' ')
+          } else {
+            data <- tips %>% subset(stars < 2) %>% select(2)
+            if (input$n > 686) {
+              data <- sample(data$text, input$n, replace = TRUE) %>% 
+                paste(sep = '', collapse = ' ')
+            } else {
+              data <- sample(data$text, input$n) %>% 
+                paste(sep = '', collapse = ' ')          
+            }
+          }
+        data <- gsub("[[:punct:]]", " ", data)
+        data <- tolower(data)
+        data <- gsub("great", '', data)
+        data <- gsub("good", '', data)
+        data <- gsub("best", '', data)
+        data <- gsub("food", '', data)
+        data <- gsub("love", '', data)
+        data <- gsub("don", '', data)
+        data <- gsub("get" , '', data)
+        data <- gsub("try", '', data)
+        data <- gsub("place", '', data)
+        data <- gsub("amazing", '', data)
+        data <- gsub("awesome", '', data)
+        data <- gsub("delicious", '', data)
+        #data
+        incProgress(0.25, detail = 'Plotting words')
+        if (input$category == "More than 4 stars") {
+          plot <- wordcloud(data, max.words = 100, random.order=F, 
+            scale=c(3,0.5),colors=brewer.pal(4,"Dark2"))
+        } else {
+          plot <- wordcloud(data, max.words = 100, random.order=F, 
+            scale=c(3,0.5),colors=brewer.pal(4,"Set1"))
+        }
+        incProgress(0.5, detail = '')
+        plot
+      })
     })
   }
 )
