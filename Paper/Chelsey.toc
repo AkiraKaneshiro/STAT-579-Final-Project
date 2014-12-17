@@ -4,11 +4,11 @@
 \contentsline {subsection}{\numberline {3.1}Breakfast}{2}
 \contentsline {subsection}{\numberline {3.2}Lunch}{2}
 \contentsline {subsection}{\numberline {3.3}Dinner}{2}
-\contentsline {subsection}{\numberline {3.4}Food By Type}{2}
-\contentsline {section}{\numberline {4}Bars}{3}
-\contentsline {subsection}{\numberline {4.1}Food}{3}
-\contentsline {subsection}{\numberline {4.2}Stars}{4}
-\contentsline {subsection}{\numberline {4.3}Popular Features}{4}
-\contentsline {section}{\numberline {5}Hotels}{5}
-\contentsline {section}{\numberline {6}Fitness}{5}
-\contentsline {section}{\numberline {7}Conclusion}{5}
+\contentsline {subsection}{\numberline {3.4}Delivery vs. Takeout}{2}
+\contentsline {section}{\numberline {4}Bars}{4}
+\contentsline {subsection}{\numberline {4.1}Food}{4}
+\contentsline {subsection}{\numberline {4.2}Stars}{5}
+\contentsline {subsection}{\numberline {4.3}Popular Features}{6}
+\contentsline {section}{\numberline {5}Hotels}{7}
+\contentsline {section}{\numberline {6}Fitness}{7}
+\contentsline {section}{\numberline {7}Conclusion}{7}

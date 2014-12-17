@@ -166,7 +166,8 @@ qplot(stars, data = food, fill = as.factor(attributes_price.range), binwidth = 0
 
 
 #Category with delivery
-qplot(type, data = food, fill = attributes_delivery) + coord_flip()
+
+qplot(type, data = food, fill = attributes_delivery, position="fill" ) + coord_flip()
 
 #Facet by type.
 
