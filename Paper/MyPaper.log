@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.30)  17 DEC 2014 16:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.30)  17 DEC 2014 16:41
 entering extended mode
 **C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/MyPaper.tex
 (C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/MyPaper.tex
@@ -215,6 +215,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 61.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
+ (C:\Users\Linton\Downloads\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -222,33 +228,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
- (C:\Users\Linton\Downloads\MiKTeX\tex\latex\base\omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
- [2]
-<Figures/food_AZ.png, id=25, 503.8825pt x 402.50375pt>
+[1] <Figures/food_AZ.png, id=22, 503.8825pt x 402.50375pt>
 File: Figures/food_AZ.png Graphic file (type png)
 
 <use Figures/food_AZ.png>
-Package pdftex.def Info: Figures/food_AZ.png used on input line 115.
+Package pdftex.def Info: Figures/food_AZ.png used on input line 110.
 (pdftex.def)             Requested size: 198.38pt x 158.46826pt.
 
-<Figures/food_NV.png, id=27, 502.87875pt x 402.50375pt>
+<Figures/food_NV.png, id=24, 502.87875pt x 402.50375pt>
 File: Figures/food_NV.png Graphic file (type png)
 
 <use Figures/food_NV.png>
-Package pdftex.def Info: Figures/food_NV.png used on input line 120.
+Package pdftex.def Info: Figures/food_NV.png used on input line 115.
 (pdftex.def)             Requested size: 198.38pt x 158.78148pt.
 
-<Figures/food_res_price.jpeg, id=28, 604.2575pt x 420.57124pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2] <Figures/food_res_price.jpeg, id=28, 604.2575pt x 420.57124pt>
 File: Figures/food_res_price.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_price.jpeg>
-Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 135.
+Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 130.
+(pdftex.def)             Requested size: 308.59187pt x 214.78369pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/food_res_stars.jpeg, id=29, 604.2575pt x 420.57124pt>
+File: Figures/food_res_stars.jpeg Graphic file (type jpg)
+
+<use Figures/food_res_stars.jpeg>
+Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 139.
 (pdftex.def)             Requested size: 308.59187pt x 214.78369pt.
 
 
@@ -256,100 +267,95 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food_
 AZ.png> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/
-food_NV.png>] <Figures/food_res_stars.jpeg, id=34, 604.2575pt x 420.57124pt>
-File: Figures/food_res_stars.jpeg Graphic file (type jpg)
-
-<use Figures/food_res_stars.jpeg>
-Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 144.
-(pdftex.def)             Requested size: 308.59187pt x 214.78369pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/food_res_3.jpeg, id=35, 604.2575pt x 420.57124pt>
+food_NV.png>] <Figures/food_res_3.jpeg, id=35, 604.2575pt x 420.57124pt>
 File: Figures/food_res_3.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_3.jpeg>
-Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 153.
+Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 148.
 (pdftex.def)             Requested size: 352.6793pt x 245.47166pt.
- [4 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food
-_res_price.jpeg>]
-<Figures/food_noise.jpeg, id=39, 622.325pt x 420.57124pt>
+
+<Figures/food_noise.jpeg, id=36, 622.325pt x 420.57124pt>
 File: Figures/food_noise.jpeg Graphic file (type jpg)
 
 <use Figures/food_noise.jpeg>
-Package pdftex.def Info: Figures/food_noise.jpeg used on input line 166.
+Package pdftex.def Info: Figures/food_noise.jpeg used on input line 161.
 (pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
-
+ [4 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food
+_res_price.jpeg>]
 <Figures/wordcloud_top.jpeg, id=40, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_top.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_top.jpeg>
-Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 183.
+Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 178.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
 <Figures/wordcloud_bottom.jpeg, id=41, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_bottom.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_bottom.jpeg>
-Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 188.
+Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 183.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food_
-res_stars.jpeg>] [6 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pa
-per/Figures/food_res_3.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-P
-roject/Paper/Figures/food_noise.jpeg>]
-<Figures/delivery.png, id=49, 401.5pt x 301.125pt>
+<Figures/delivery.png, id=42, 401.5pt x 301.125pt>
 File: Figures/delivery.png Graphic file (type png)
  <use Figures/delivery.png>
-Package pdftex.def Info: Figures/delivery.png used on input line 204.
+Package pdftex.def Info: Figures/delivery.png used on input line 199.
 (pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
 
-<Figures/takeoutdelivery.png, id=50, 869.2475pt x 352.31625pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/takeoutdelivery.png, id=43, 869.2475pt x 352.31625pt>
 File: Figures/takeoutdelivery.png Graphic file (type png)
 
 <use Figures/takeoutdelivery.png>
-Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 210.
+Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 205.
 (pdftex.def)             Requested size: 396.76001pt x 160.81485pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/wordc
-loud_top.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/F
-igures/wordcloud_bottom.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-
-Project/Paper/Figures/delivery.png>] [8 <C:/Users/Linton/Documents/GitHub/STAT-
-579-Final-Project/Paper/Figures/takeoutdelivery.png>]
-<Figures/Food_bars.png, id=59, 679.53876pt x 343.2825pt>
+[5 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food_
+res_stars.jpeg>] [6 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pa
+per/Figures/food_res_3.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-P
+roject/Paper/Figures/food_noise.jpeg>] [7 <C:/Users/Linton/Documents/GitHub/STA
+T-579-Final-Project/Paper/Figures/wordcloud_top.jpeg> <C:/Users/Linton/Document
+s/GitHub/STAT-579-Final-Project/Paper/Figures/wordcloud_bottom.jpeg> <C:/Users/
+Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/delivery.png>]
+<Figures/Food_bars.png, id=55, 679.53876pt x 343.2825pt>
 File: Figures/Food_bars.png Graphic file (type png)
 
 <use Figures/Food_bars.png>
-Package pdftex.def Info: Figures/Food_bars.png used on input line 229.
+Package pdftex.def Info: Figures/Food_bars.png used on input line 224.
 (pdftex.def)             Requested size: 330.63559pt x 167.02608pt.
- [9 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/Food
-_bars.png>]
-<Figures/barstatus.png, id=64, 427.5975pt x 298.11375pt>
+ [8 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/take
+outdelivery.png>]
+<Figures/barstatus.png, id=60, 427.5975pt x 298.11375pt>
 File: Figures/barstatus.png Graphic file (type png)
 
 <use Figures/barstatus.png>
-Package pdftex.def Info: Figures/barstatus.png used on input line 239.
+Package pdftex.def Info: Figures/barstatus.png used on input line 234.
 (pdftex.def)             Requested size: 330.63559pt x 230.51265pt.
 
-<Figures/tvhappyhour.png, id=65, 427.5975pt x 298.11375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/Food_
+bars.png>] <Figures/tvhappyhour.png, id=65, 427.5975pt x 298.11375pt>
 File: Figures/tvhappyhour.png Graphic file (type png)
 
 <use Figures/tvhappyhour.png>
-Package pdftex.def Info: Figures/tvhappyhour.png used on input line 248.
+Package pdftex.def Info: Figures/tvhappyhour.png used on input line 243.
 (pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
 
 <Figures/tvdancing.png, id=66, 427.5975pt x 298.11375pt>
 File: Figures/tvdancing.png Graphic file (type png)
 
 <use Figures/tvdancing.png>
-Package pdftex.def Info: Figures/tvdancing.png used on input line 254.
+Package pdftex.def Info: Figures/tvdancing.png used on input line 249.
 (pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
  [10 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/bar
 status.png>]
@@ -359,69 +365,62 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [11 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/tvh
-appyhour.png> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Fi
-gures/tvdancing.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-<Figures/hotels1.jpeg, id=77, 602.25pt x 351.3125pt>
+<Figures/hotels1.jpeg, id=71, 602.25pt x 351.3125pt>
 File: Figures/hotels1.jpeg Graphic file (type jpg)
 
 <use Figures/hotels1.jpeg>
-Package pdftex.def Info: Figures/hotels1.jpeg used on input line 285.
+Package pdftex.def Info: Figures/hotels1.jpeg used on input line 280.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
-
+ [11 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/tvh
+appyhour.png> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Fi
+gures/tvdancing.png>]
 <Figures/hotels2.jpeg, id=78, 602.25pt x 351.3125pt>
 File: Figures/hotels2.jpeg Graphic file (type jpg)
 
 <use Figures/hotels2.jpeg>
-Package pdftex.def Info: Figures/hotels2.jpeg used on input line 296.
+Package pdftex.def Info: Figures/hotels2.jpeg used on input line 291.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[12 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/hote
-ls1.jpeg>]
+ [12 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/hot
+els1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figur
+es/hotels2.jpeg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- <Figures/shopping1.jpeg, id=82, 602.25pt x 351.3125pt>
+
+<Figures/shopping1.jpeg, id=82, 602.25pt x 351.3125pt>
 File: Figures/shopping1.jpeg Graphic file (type jpg)
 
 <use Figures/shopping1.jpeg>
-Package pdftex.def Info: Figures/shopping1.jpeg used on input line 315.
+Package pdftex.def Info: Figures/shopping1.jpeg used on input line 310.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/hote
-ls2.jpeg>] <Figures/shopping2.jpeg, id=86, 602.25pt x 351.3125pt>
+<Figures/shopping2.jpeg, id=83, 602.25pt x 351.3125pt>
 File: Figures/shopping2.jpeg Graphic file (type jpg)
 
 <use Figures/shopping2.jpeg>
-Package pdftex.def Info: Figures/shopping2.jpeg used on input line 326.
+Package pdftex.def Info: Figures/shopping2.jpeg used on input line 321.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
- [14 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/sho
-pping1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Fig
-ures/shopping2.jpeg>] [15]
+ [13 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/sho
+pping1.jpeg>] [14 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pape
+r/Figures/shopping2.jpeg>]
 (C:\Users\Linton\Documents\GitHub\STAT-579-Final-Project\Paper\MyPaper.aux) ) 
 Here is how much of TeX's memory you used:
  3036 strings out of 493921
  47774 string characters out of 3145274
- 109787 words of memory out of 3000000
+ 111787 words of memory out of 3000000
  6302 multiletter control sequences out of 15000+200000
  10507 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -438,9 +437,9 @@ KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Linton/Downloads/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Linton/Downloads/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Linton/Downloads/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MyPaper.pdf (17 pages, 1155156 bytes).
+Output written on MyPaper.pdf (16 pages, 1153940 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
