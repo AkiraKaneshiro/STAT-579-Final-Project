@@ -77,20 +77,7 @@ The Yelp Academic Dataset includes details and reviews on 250 of the closest bus
 
 Each \textbf{Review} object represents an individual user-based review of a particular business. The unique encrypted business ID is given along with the date of the review, the number of stars (out of 5) that were awarded, the number and type of votes that the review received, and an optional text description provided by the user. \textbf{User} objects are unique to every person that has an active Yelp account. Each user has a name, a unique encrypted user ID, the number of votes they have cast, the average number of stars they have given, and the date they signed up for Yelp, among other things. A \textbf{Check-in} object represents the count and time of all the registered check-ins for a particular business, and \textbf{Tip} objects represent a tip given by user for a particular business. Tips include the user's ID, the business's ID, the date, and the message that the user gave. While these objects all provide a rich source of information, for the scope of this paper we will only be examing the \textbf{Business} objects.
 
-\textbf{Business} objects are unique to business ID's, and include the following information:
-\begin{itemize}
-	\item the name of the business,
-	\item the name of neighborhood in which the business is located,
-	\item the city in which the business is located,
-	\item the full address of the business,
-	\item the exact latidude and longitude coordinates of the business,
-	\item the average number of stars awarded to the business,
-	\item the number of reviews received by the business,
-	\item whether or not the business is still open,
-	\item the hours that the business is open,
-	\item the categories that the business falls under,
-	\item and a number of different attributes which mostly concern restaurants and bars, such as whether or not smoking is allowed and the price range of the food.
-\end{itemize}
+\textbf{Business} objects are unique to business ID's, and include the following information: the name of the business, the name of neighborhood in which the business is located, the city in which the business is located, the full address of the business, the exact latidude and longitude coordinates of the business, the average number of stars awarded to the business, the number of reviews received by the business, whether or not the business is still open, the hours that the business is open, the categories that the business falls under, and a number of different attributes which mostly concern restaurants and bars, such as whether or not smoking is allowed and the price range of the food.
 
 To work with the data, we converted the set of all \textbf{Business} objects to a csv file in which the columns are variable names representing each aspect of a \textbf{Business} object, and each row corresponds to a unique business. Each different type of attribute was converted to its own character, numerical, or logical variable depending on what was appropriate. For example, the attribute \textbf{smoking} was converted to a logical variable where the value is ``true" if the smoking is allowed at the establishment, and ``false" if it is not allowed, while the attribute \textbf{price range} was converted to a numerical variable which ranges from 1 to 4.
 
@@ -99,22 +86,7 @@ To work with the data, we converted the set of all \textbf{Business} objects to 
 
 Most of the data about restaurants in the Yelp Academic Dataset are concentrated around the following cities: Madison, WI, Las Vegas, NV, Pheonix, AZ, Waterloo, Ontario, Canada, and Edinburgh, Scotland.
 
-Although the choice of cities is limited, the wealth of information coming from each city is abundant. All together, our data consists of 14,303 restaurants with 45 variables describing their attributes and the collective user sentiment towards each establishment. There is a significant number of restaurants in just about any subcategory that one can imagine. For example, Figure~\ref{fig:food01a} shows all of the restaurants classified as either ``hipster" or ``divey" near Pheonix, AZ that have televisions, offer live music, and have more than 35 reviews on Yelp. Figure~\ref{fig:food01b} shows all of the Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.
-
-\begin{figure}[h]
-\caption{Restaurant subsets near Pheonix, AZ and Las Vegas, NV.\label{fig:food01}}
-\centering
-\begin{subfigure}{0.45\linewidth}
-\includegraphics[width=\linewidth]{Figures/food_AZ.png}
-\caption{\footnotesize{All restaurants near Pheonix, AZ classified as ``hipster" or ``divey" that have live music, TV's, and more than 35 reviews on Yelp.}}
-\label{fig:food01a}
-\end{subfigure}
-\begin{subfigure}{0.45\linewidth}
-\includegraphics[width=\linewidth]{Figures/food_NV.png}
-\caption{\footnotesize{All Asian and Indian food restaurants near Las Vegas, NV that offer take-out and have a full bar.}}
-\label{fig:food01b}
-\end{subfigure}
-\end{figure}
+Although the choice of cities is limited, the wealth of information coming from each city is abundant. All together, our data consists of 14,303 restaurants with 45 variables describing their attributes and the collective user sentiment towards each establishment. 
 
 \subsection{The Cost of Reservations}
 
@@ -194,8 +166,7 @@ The interesting thing to notice here is that both wordclouds look extremely simi
   \label{takeout}
     \includegraphics[width=0.9\textwidth]{Figures/takeoutdelivery.png}
 \end{figure}
-Now we know have gained some insight into restaurants' price and reservation style, but what about when you do not want to go eat at the restaurant? Some days there is little time for cooking, so people commonly call out for delivery or take out.  But what types of food are most likely to have delivery or takeout?  In other words, if we are ordering out, what is it likely we will be able to have delivered to us and what can we pick up on our way home? In 
-Figure~\ref{takeout} we can see that the food types that most likely have delivery are those that serve pizza, Asian, or possibly Italian.  Most likely you will not be able to find an American or fast food place that delivers.  This could be due to the fact that some of these foods do not stay good if they sit too long.  Foods like pizza and rice are fine to sit for a while,  are easy to keep warm and fresh tasting, and can also be easily reheated. Thus, these are qualities that make them good options for delivery.  However, American food, or fast food like burgers and fries are not good if they sit too long, and do not reheat to the quality they were when they left the restaurant.  Thus, there are fewer, if any of these places that offer delivery.
+Now we know have gained some insight into restaurants' price and reservation style, but what about when you do not want to go eat at the restaurant? Some days there is little time for cooking, so people commonly call out for delivery or take out.  But what types of food are most likely to have delivery or takeout?  In other words, if we are ordering out, what is it likely we will be able to have delivered to us and what can we pick up on our way home? In Figure~\ref{takeout} we can see that the food types that most likely have delivery are those that serve pizza, Asian, or possibly Italian.  Most likely you will not be able to find an American or fast food place that delivers.  This could be due to the fact that some of these foods do not stay good if they sit too long.  Foods like pizza and rice are fine to sit for a while,  are easy to keep warm and fresh tasting, and can also be easily reheated. Thus, these are qualities that make them good options for delivery.  However, American food, or fast food like burgers and fries are not good if they sit too long, and do not reheat to the quality they were when they left the restaurant.  Thus, there are fewer, if any of these places that offer delivery.
 
 We can see in more detail in Figure~\ref{takeout} that restaurants of all types are much more likely to offer takeout than delivery to customers.  We can also see that the restaurant is more likely to offer delivery if they offer a takeout option.  Restaurants of all types may be more inclined to offer delivery than takeout for a number of reasons.  They could only have a limited number of people working and do not want to spare any or pay extra people to deliver the food.  Delivery also means transportation costs for the business, and as discussed above it means more time for the food to decrease in quality while a driver makes several deliveries.  However, takeout is a great option for restaurants, because they get to sell more food, without have to seat as many people in the restaurant.  Takeout also reduces the responsibility of the quality of the food once it arrives at its destination.  If it took the customer a long time to get home and the food is not as good as it once was, this is not the restaurant's fault.  
 
@@ -310,8 +281,8 @@ Figure 13b shows a different trend in the distribution of ratings of retail stor
 
 \section{Conclusion}
 
-The Yelp Academic Dataset has provided us information on a variety of businesses including restaurants, bars, hotels, and shops.  We have used the abundance of data to find key relationships between the available variables and their respective businesses.  For example, we have found that reservations, price, noise level, takeout, delivery, and foremost service are key variables that provide interesting relationships for restaurant data.  We have also found that features such as food type, if a restaurant has a TV, or if it is good for dancing all provide insight into what type of atmosphere we will find at a bar.  When evaluating hotels and shopping we have found that popularity does not always reflect the quality of the service we will receive.  This data set has provided us with many insights into possible relationships between not only these variables, but also human culture and tendencies.  Though it is impossible to make solid conclusions about any of the relationships we have found based on our limited dataset, we have still come up with some interesting relationships and found even more questions about this topic that could be used for further research on the subject.
+The Yelp Academic Dataset has provided us information on a variety of businesses including restaurants, bars, hotels, and shops.  We have used the abundance of data to find key relationships between the available variables and their respective businesses.  For example, we have found that reservations, price, noise level, takeout, delivery, and foremost service are key variables that provide interesting relationships for restaurant data.  We have also found that features such as food type, if a restaurant has a TV, or if it is good for dancing all provide insight into what type of atmosphere we will find at a bar.  When evaluating hotels and shopping we have found that popularity does not always reflect the quality of the service we will receive.  This data set has provided us with many insights into possible relationships between not only these variables, but also human culture and tendencies.  
 
-
+Though it is impossible to make solid conclusions about any of the relationships we have found based on our limited dataset and lack of modeling, future studies could go far with a more complete dataset to try and predict rating based on certain features for restaurants, bars, hotels and shopping centers based on geographic area, general user sentiment, and many other the many attributes that were part of the data. This could be valuable information particularly for small business owners running local establishments.
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 DEC 2014 16:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 DEC 2014 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -268,186 +268,171 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
- [2]
-<Figures/food_AZ.png, id=26, 503.8825pt x 402.50375pt>
-File: Figures/food_AZ.png Graphic file (type png)
-
-<use Figures/food_AZ.png>
-Package pdftex.def Info: Figures/food_AZ.png used on input line 108.
-(pdftex.def)             Requested size: 198.38pt x 158.46826pt.
-
-<Figures/food_NV.png, id=28, 502.87875pt x 402.50375pt>
-File: Figures/food_NV.png Graphic file (type png)
-
-<use Figures/food_NV.png>
-Package pdftex.def Info: Figures/food_NV.png used on input line 113.
-(pdftex.def)             Requested size: 198.38pt x 158.78148pt.
-
-<Figures/food_res_price.jpeg, id=29, 604.2575pt x 420.57124pt>
+[1] [2] <Figures/food_res_price.jpeg, id=25, 604.2575pt x 420.57124pt>
 File: Figures/food_res_price.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_price.jpeg>
-Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 128.
+Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 100.
 (pdftex.def)             Requested size: 308.59187pt x 214.78369pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/food_res_stars.jpeg, id=30, 604.2575pt x 420.57124pt>
+<Figures/food_res_stars.jpeg, id=26, 604.2575pt x 420.57124pt>
 File: Figures/food_res_stars.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_stars.jpeg>
-Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 137.
+Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 109.
 (pdftex.def)             Requested size: 308.59187pt x 214.78369pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./Figures/food_AZ.png> <./Figures/food_NV.png>]
-<Figures/food_res_3.jpeg, id=36, 604.2575pt x 420.57124pt>
+<Figures/food_res_3.jpeg, id=27, 604.2575pt x 420.57124pt>
 File: Figures/food_res_3.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_3.jpeg>
-Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 146.
+Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 118.
 (pdftex.def)             Requested size: 352.6793pt x 245.47166pt.
-
-<Figures/food_noise.jpeg, id=37, 622.325pt x 420.57124pt>
+ [3 <./Figures/food_res_price.jpeg>]
+<Figures/food_noise.jpeg, id=31, 622.325pt x 420.57124pt>
 File: Figures/food_noise.jpeg Graphic file (type jpg)
 
 <use Figures/food_noise.jpeg>
-Package pdftex.def Info: Figures/food_noise.jpeg used on input line 159.
+Package pdftex.def Info: Figures/food_noise.jpeg used on input line 131.
 (pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
- [4 <./Figures/food_res_price.jpeg>]
-<Figures/wordcloud_top.jpeg, id=41, 622.325pt x 420.57124pt>
+ [4 <./Figures/food_res_stars.jpeg>] [5 <./Figures/food_res_3.jpeg> <./Figures/
+food_noise.jpeg>]
+<Figures/wordcloud_top.jpeg, id=39, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_top.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_top.jpeg>
-Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 176.
+Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 148.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
-<Figures/wordcloud_bottom.jpeg, id=42, 622.325pt x 420.57124pt>
+<Figures/wordcloud_bottom.jpeg, id=40, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_bottom.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_bottom.jpeg>
-Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 181.
+Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 153.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./Figures/food_res_stars.jpeg>] [6 <./Figures/food_res_3.jpeg> <./Figures/f
-ood_noise.jpeg>]
-<Figures/takeoutdelivery.png, id=50, 869.2475pt x 352.31625pt>
+<Figures/takeoutdelivery.png, id=41, 869.2475pt x 352.31625pt>
 File: Figures/takeoutdelivery.png Graphic file (type png)
 
 <use Figures/takeoutdelivery.png>
-Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 195.
+Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 167.
 (pdftex.def)             Requested size: 396.76001pt x 160.81485pt.
- [7 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg> <./Figures
-/takeoutdelivery.png>]
-<Figures/Food_bars.png, id=55, 679.53876pt x 343.2825pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg>]
+<Figures/Food_bars.png, id=46, 679.53876pt x 343.2825pt>
 File: Figures/Food_bars.png Graphic file (type png)
 
 <use Figures/Food_bars.png>
-Package pdftex.def Info: Figures/Food_bars.png used on input line 214.
+Package pdftex.def Info: Figures/Food_bars.png used on input line 185.
 (pdftex.def)             Requested size: 330.63559pt x 167.02608pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] <Figures/barstatus.png, id=59, 427.5975pt x 298.11375pt>
+[7 <./Figures/takeoutdelivery.png>]
+<Figures/barstatus.png, id=51, 427.5975pt x 298.11375pt>
 File: Figures/barstatus.png Graphic file (type png)
 
 <use Figures/barstatus.png>
-Package pdftex.def Info: Figures/barstatus.png used on input line 224.
+Package pdftex.def Info: Figures/barstatus.png used on input line 195.
 (pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
- [9 <./Figures/Food_bars.png> <./Figures/barstatus.png>] <Figures/tvhappyhour.p
-ng, id=65, 427.5975pt x 298.11375pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./Figures/Food_bars.png>]
+<Figures/tvhappyhour.png, id=56, 427.5975pt x 298.11375pt>
 File: Figures/tvhappyhour.png Graphic file (type png)
 
 <use Figures/tvhappyhour.png>
-Package pdftex.def Info: Figures/tvhappyhour.png used on input line 233.
+Package pdftex.def Info: Figures/tvhappyhour.png used on input line 204.
 (pdftex.def)             Requested size: 165.31778pt x 115.25404pt.
 
-<Figures/tvdancing.png, id=66, 427.5975pt x 298.11375pt>
+<Figures/tvdancing.png, id=57, 427.5975pt x 298.11375pt>
 File: Figures/tvdancing.png Graphic file (type png)
 
 <use Figures/tvdancing.png>
-Package pdftex.def Info: Figures/tvdancing.png used on input line 239.
+Package pdftex.def Info: Figures/tvdancing.png used on input line 210.
 (pdftex.def)             Requested size: 165.31778pt x 115.25404pt.
- [10 <./Figures/tvhappyhour.png> <./Figures/tvdancing.png>]
+ [9 <./Figures/barstatus.png> <./Figures/tvhappyhour.png> <./Figures/tvdancing.
+png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- <Figures/hotels1.jpeg, id=72, 602.25pt x 351.3125pt>
+
+<Figures/hotels1.jpeg, id=64, 602.25pt x 351.3125pt>
 File: Figures/hotels1.jpeg Graphic file (type jpg)
 
 <use Figures/hotels1.jpeg>
-Package pdftex.def Info: Figures/hotels1.jpeg used on input line 268.
+Package pdftex.def Info: Figures/hotels1.jpeg used on input line 239.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 268--269
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 239--240
  [][] 
  []
 
-<Figures/hotels2.jpeg, id=73, 602.25pt x 351.3125pt>
+<Figures/hotels2.jpeg, id=65, 602.25pt x 351.3125pt>
 File: Figures/hotels2.jpeg Graphic file (type jpg)
 
 <use Figures/hotels2.jpeg>
-Package pdftex.def Info: Figures/hotels2.jpeg used on input line 274.
+Package pdftex.def Info: Figures/hotels2.jpeg used on input line 245.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 274--275
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 245--246
  [][] 
  []
 
-[11 <./Figures/hotels1.jpeg> <./Figures/hotels2.jpeg>]
-<Figures/shopping1.jpeg, id=78, 602.25pt x 351.3125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] <Figures/shopping1.jpeg, id=69, 602.25pt x 351.3125pt>
 File: Figures/shopping1.jpeg Graphic file (type jpg)
 
 <use Figures/shopping1.jpeg>
-Package pdftex.def Info: Figures/shopping1.jpeg used on input line 295.
+Package pdftex.def Info: Figures/shopping1.jpeg used on input line 266.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 295--296
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 266--267
  [][] 
  []
 
-<Figures/shopping2.jpeg, id=79, 602.25pt x 351.3125pt>
+<Figures/shopping2.jpeg, id=70, 602.25pt x 351.3125pt>
 File: Figures/shopping2.jpeg Graphic file (type jpg)
 
 <use Figures/shopping2.jpeg>
-Package pdftex.def Info: Figures/shopping2.jpeg used on input line 301.
+Package pdftex.def Info: Figures/shopping2.jpeg used on input line 272.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 301--302
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 272--273
  [][] 
  []
 
-[12 <./Figures/shopping1.jpeg> <./Figures/shopping2.jpeg>] [13]
-(./CompiledPaper.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./Figures/hotels1.jpeg> <./Figures/hotels2.jpeg>] [12 <./Figures/shopping1
+.jpeg> <./Figures/shopping2.jpeg>] (./CompiledPaper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3373 strings out of 493315
- 53608 string characters out of 6137904
- 119207 words of memory out of 5000000
- 6773 multiletter control sequences out of 15000+600000
+ 3341 strings out of 493315
+ 53019 string characters out of 6137904
+ 119159 words of memory out of 5000000
+ 6746 multiletter control sequences out of 15000+600000
  10507 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,10n,43p,1564b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,1564b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
@@ -457,12 +442,11 @@ local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on CompiledPaper.pdf (15 pages, 1130773 bytes).
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on CompiledPaper.pdf (14 pages, 917101 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
