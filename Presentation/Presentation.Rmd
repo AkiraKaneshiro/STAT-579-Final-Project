@@ -1,6 +1,6 @@
 ---
 title: "Analysis of the Yelp Academic Dataset"
-author: "Chelsey Legacy, Lindong Zhou, Evan 'Pete' Walsh"
+author: "Chelsey Legacy, Lindong 'Linton' Zhou, Evan 'Pete' Walsh"
 date: "November 22, 2014"
 output: 
   ioslides_presentation:
@@ -18,8 +18,6 @@ tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Rest
 ```
 
 ## Intro
-
-
 
 ## Schedule {.smaller}
 
