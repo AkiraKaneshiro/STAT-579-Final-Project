@@ -1,0 +1,60 @@
+---
+title: "chelseysides"
+output: 
+ ioslides_presentation
+
+    
+---
+
+## Delivery vs. Takeout
+- Most likely to deliver: 
+    + Pizza
+    + Asian food
+- More likely to offer takeout
+![deliveryvstakeout](takeoutdelivery.png)
+
+
+
+## Food in Bars
+- American most common in all star levels
+- All types of food prepresented
+<div class="centered">
+![barfood](Food_bars.png)
+<div>
+
+## Bar Status
+- Are bars with lower ratings more likely to be closed?
+<div class="centered">
+![barstatus](barstatus.png)
+<div>
+## Bar Atmosphere
+- Noise level
+- Attire
+- Style
+    + Hipster
+    + Divey
+    + Casual
+    + Etc.
+- Good for groups
+- Good for dancing
+- Has a television
+- Has happy hour specials
+
+## Bar Atmosphere Cont.
+<div class="rows-2">
+
+- Has tv most likely not good for dancing
+- Has tv most likely has happy hour specials
+<div class="columns-2">
+![baratmosphere](tvdancing.png)
+![baratmospherecont](tvhappyhour.png)
+<div>
+<div>
+
+# Conclusion/Further Reseach
+
+
+
+
+
+
