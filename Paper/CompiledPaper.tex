@@ -274,62 +274,56 @@ Next, I thought it would be interesting to look at features of bars with televis
 
 We created a subset of the Yelp data to get only businesses whose categories contain “Hotels”. Focusing on the variables that have relatively few missing values, we included price range, wifi, location and rating in our analysis. Most of hotels in the dataset are located in the US states of Arizona, Nevada and Wisconsin as well as Edinburgh in Scotland. The dataset is helpful for us to find out whether popularity, price level, wifi and location influence the rating of a hotel.
 
-Popularity does not necessarily mean better products and services. This statement is supported by Figure 12 which shows the distribution of ratings by popularity. We determined the popularity of a hotel based on the total number of user reviews. Hotels that have fewer than 100 reviews are considered as least popular, whereas hotels with more than 100 and 1000 reviews have medium and high popularity respectively. Across levels of popularity, there is no significant difference in the distribution of ratings. 4-star reviews are posted on the website most frequently, followed by 5-star and 3-star reviews. Thus, switching to a better promoted hotel does not seem to affect people’s lodging experience.
+Popularity does not necessarily mean better products and services. This statement is supported by Figure which shows the distribution of ratings by popularity. We determined the popularity of a hotel based on the total number of user reviews. Hotels that have fewer than 100 reviews are considered as least popular, whereas hotels with more than 100 and 1000 reviews have medium and high popularity respectively. Across levels of popularity, there is no significant difference in the distribution of ratings. 4-star reviews are posted on the website most frequently, followed by 5-star and 3-star reviews. Thus, switching to a better promoted hotel does not seem to affect people’s lodging experience.
 
-\begin{figure}[h!]
-           \caption{Histogram of the relative frequency of ratings of hotels by popularity}
+Wifi does not seem to matter as well. Figure 12a shows the distribution of ratings by price range and availability of wifi. Within each price range, the distribution pattern appears roughly the same whether Wifi is free, paid or not provided. However, the graph suggests a correlation between price range and customer satisfaction. High-priced hotels receive better reviews compared to budget hotels. One possible explanation is that overnight stay in a hotel is mostly attractive to high-end customers who value quality of amenities and customer service more than just price. This observation supports the commonly held belief among travelers that you get what you pay for.
+
+Paying more for a better service might not be true outside the United States. The notion of “you get what you pay for” is clearly refuted by Figure 12b which shows the distribution of ratings by price range and region. While high-priced hotels are still rated higher than budget hotels in Arizona, Nevada and Wisconsin, the ratings of hotels in Edinburgh seem to be consistent across price levels. Perhaps European customers receive equal treatment regardless of how much they pay, whereas American customers have to pay more to get better treatment. Nevertheless, we cannot justify the claim without examining more data about American and European hotels.
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/hotels1.jpeg}
+           \caption{Histogram of the relative frequency of ratings of hotels by price range}
+	\includegraphics[width=1\textwidth]{Figures/hotels1.jpeg}
            \label{hotels1}
-\end{figure}
-
-Wifi does not seem to matter as well. Figure 13 shows the distribution of ratings by price range and availability of wifi. Within each price range, the distribution pattern appears roughly the same whether Wifi is free, paid or not provided. However, the graph suggests a correlation between price range and customer satisfaction. High-priced hotels receive better reviews compared to budget hotels. One possible explanation is that overnight stay in a hotel is mostly attractive to high-end customers who value quality of amenities and customer service more than just price. This observation supports the commonly held belief among travelers that you get what you pay for.
-
-\begin{figure}[h!]
-           \caption{Histogram of the relative frequency of ratings of hotels by price range and whether Wifi is free, paid or unavailable}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/hotels2.jpeg}
-           \label{hotels2}
-\end{figure}
-
-Paying more for a better service might not be true outside the United States. The notion of “you get what you pay for” is clearly refuted by Figure 14 which shows the distribution of ratings by price range and region. While high-priced hotels are still rated higher than budget hotels in Arizona, Nevada and Wisconsin, the ratings of hotels in Edinburgh seem to be consistent across price levels. Perhaps European customers receive equal treatment regardless of how much they pay, whereas American customers have to pay more to get better treatment. Nevertheless, we cannot justify the claim without examining more data about American and European hotels.
-
-\begin{figure}[h!]
            \caption{Histogram of the relative frequency of ratings of hotels by price range and region}
-	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/hotels3.jpeg}
-           \label{hotels3}
+	\includegraphics[width=1\textwidth]{Figures/hotels2.jpeg}
+           \label{hotels2}
+\end{subfigure}
+\caption{}
+\label{}
 \end{figure}
 
 \section{Shopping}
 
 To examine all types of shops in the dataset, we subset the data to get only businesses whose categories contain “Shopping”. Considering missing values, we included variables price range, parking lot, location and rating in our analysis. Like hotels, most of the shops in the dataset are located in Arizona, Nevada, Wisconsin and Edinburgh. We use the data to explore the effects of popularity, price range, parking lot and location on the rating of a retail store.
 
-Figure 15 again supports the statement that popularity is not associated with better products and services. We determined the popularity of a retail store using the same criteria (see Section 5). The graph shows that the pattern does not change much as popularity goes up. So, customers do not seem to improve their shopping experience by joining a crowd.
+Figure again supports the statement that popularity is not associated with better products and services. We determined the popularity of a retail store using the same criteria (see Section 5). The graph shows that the pattern does not change much as popularity goes up. So, customers do not seem to improve their shopping experience by joining a crowd.
 
-\begin{figure}[h!]
-           \caption{Histogram of the relative frequency of ratings of shops by popularity}
+Figure 13a shows the distribution of the ratings by price range and availability of parking. Whether or not there are parking lots nearby, the stores are rated roughly the same. It is interesting to see, however, that pricey stores receive more polarized reviews than low-cost stores. In the highest price range, we find more 5-star reviews and more 1-star reviews at the same time. Customers seem to either love or hate the stores that charge them very high prices. One might argue that retail customers are more diverse than hotel customers. In other words, average people tend to focus more on price than quality. Without looking at the demographics of customers, we never know if this argument is true.
+
+Figure 13b shows another different trend in the distribution of ratings of retail stores in Edinburgh. While pricey stores still receive more polarized reviews than low-cost stores in three states, especially Arizona, the ratings of stores in Edinburgh are again consistent across price levels. Assuming that the demographics are the same everywhere, one could possibly say that quality is better reflected by price in European stores. This implies that the quality of an American product sometimes does not justify its price. Again, we cannot verify the statement without any more information.
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/shopping1.jpeg}
+           \caption{Histogram of the relative frequency of ratings of shops by price range}
+	\includegraphics[width=1\textwidth]{Figures/shopping1.jpeg}
            \label{shopping1}
-\end{figure}
-
-Figure 16 shows the distribution of the ratings by price range and availability of parking. Whether or not there are parking lots nearby, the stores are rated roughly the same. It is interesting to see, however, that pricey stores receive more polarized reviews than low-cost stores. In the highest price range, we find more 5-star reviews and more 1-star reviews at the same time. Customers seem to either love or hate the stores that charge them very high prices. One might argue that retail customers are more diverse than hotel customers. In other words, average people tend to focus more on price than quality. Without looking at the demographics of customers, we never know if this argument is true.
-
-\begin{figure}[h]
-           \caption{Histogram of the relative frequency of ratings of shops by price range and whether a parking lot is available or not}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/shopping2.jpeg}
-           \label{shopping2}
-\end{figure}
-
-Figure 17 shows another different trend in the distribution of ratings of retail stores in Edinburgh. While pricey stores still receive more polarized reviews than low-cost stores in three states, especially Arizona, the ratings of stores in Edinburgh are again consistent across price levels. Assuming that the demographics are the same everywhere, one could possibly say that quality is better reflected by price in European stores. This implies that the quality of an American product sometimes does not justify its price. Again, we cannot verify the statement without any more information.
-
-\begin{figure}[h]
            \caption{Histogram of the relative frequency of ratings of shops by price range and region}
-	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/shopping3.jpeg}
-           \label{shopping3}
+	\includegraphics[width=1\textwidth]{Figures/shopping2.jpeg}
+           \label{shopping2}
+\end{subfigure}
+\caption{}
+\label{}
 \end{figure}
 
 

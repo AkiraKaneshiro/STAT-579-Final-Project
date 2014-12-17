@@ -1,14 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 DEC 2014 13:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.30)  17 DEC 2014 09:53
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**CompiledPaper.tex
-(./CompiledPaper.tex
+**C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/CompiledPaper.t
+ex
+
+(C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/CompiledPaper.te
+x
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\base\size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,22 +33,22 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\generic\oberdiek\ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\generic\oberdiek\ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -53,28 +63,29 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-)
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\geometry\geometry.cfg))
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\graphics\trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\pdftex-def\pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\generic\oberdiek\infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -82,7 +93,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -93,19 +104,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/nopageno/nopageno.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\nopageno\nopageno.sty
 Package: nopageno 1989/01/01 no page numbers (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/parskip/parskip.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\ltxmisc\parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\multirow\multirow.sty
 \bigstrutjot=\dimen113
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen114
@@ -118,14 +129,20 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 \c@ContinuedFloat=\count91
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
+(C:\Users\Linton\Downloads\MiKTeX\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count92
 \c@subtable=\count93
 )
-(./CompiledPaper.aux)
-\openout1 = `CompiledPaper.aux'.
+(C:\Users\Linton\Documents\GitHub\STAT-579-Final-Project\Paper\CompiledPaper.au
+x
 
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
@@ -173,7 +190,7 @@ LaTeX Font Info:    ... okay on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+(C:\Users\Linton\Downloads\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count94
 \scratchdimen=\dimen121
@@ -186,50 +203,7 @@ LaTeX Font Info:    ... okay on input line 12.
 \MPnumerator=\count98
 \makeMPintoPDFobject=\count99
 \everyMPtoPDFconversion=\toks17
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -238,17 +212,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 37.
+ [1
 
-[1
-
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./CompiledPaper.toc
+{C:/Users/Linton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\Users\Linton\Documents\GitHub\STAT-579-Final-Project\Paper\CompiledPaper.to
+c
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 4.
 )
 \tf@toc=\write3
-\openout3 = `CompiledPaper.toc'.
-
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 61.
@@ -263,27 +235,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+ (C:\Users\Linton\Downloads\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
  [2]
-<Figures/food_AZ.png, id=26, 503.8825pt x 402.50375pt>
+<Figures/food_AZ.png, id=25, 503.8825pt x 402.50375pt>
 File: Figures/food_AZ.png Graphic file (type png)
 
 <use Figures/food_AZ.png>
 Package pdftex.def Info: Figures/food_AZ.png used on input line 114.
 (pdftex.def)             Requested size: 198.38pt x 158.46826pt.
 
-<Figures/food_NV.png, id=28, 502.87875pt x 402.50375pt>
+<Figures/food_NV.png, id=27, 502.87875pt x 402.50375pt>
 File: Figures/food_NV.png Graphic file (type png)
 
 <use Figures/food_NV.png>
 Package pdftex.def Info: Figures/food_NV.png used on input line 119.
 (pdftex.def)             Requested size: 198.38pt x 158.78148pt.
 
-<Figures/food_res_price.jpeg, id=29, 604.2575pt x 420.57124pt>
+<Figures/food_res_price.jpeg, id=28, 604.2575pt x 420.57124pt>
 File: Figures/food_res_price.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_price.jpeg>
@@ -293,8 +265,9 @@ Package pdftex.def Info: Figures/food_res_price.jpeg used on input line 134.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./Figures/food_AZ.png> <./Figures/food_NV.png>]
-<Figures/food_res_stars.jpeg, id=35, 604.2575pt x 420.57124pt>
+[3 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food_
+AZ.png> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/
+food_NV.png>] <Figures/food_res_stars.jpeg, id=34, 604.2575pt x 420.57124pt>
 File: Figures/food_res_stars.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_stars.jpeg>
@@ -304,28 +277,29 @@ Package pdftex.def Info: Figures/food_res_stars.jpeg used on input line 143.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/food_res_3.jpeg, id=36, 604.2575pt x 420.57124pt>
+<Figures/food_res_3.jpeg, id=35, 604.2575pt x 420.57124pt>
 File: Figures/food_res_3.jpeg Graphic file (type jpg)
 
 <use Figures/food_res_3.jpeg>
 Package pdftex.def Info: Figures/food_res_3.jpeg used on input line 152.
 (pdftex.def)             Requested size: 352.6793pt x 245.47166pt.
- [4 <./Figures/food_res_price.jpeg>]
-<Figures/food_noise.jpeg, id=40, 622.325pt x 420.57124pt>
+ [4 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food
+_res_price.jpeg>]
+<Figures/food_noise.jpeg, id=39, 622.325pt x 420.57124pt>
 File: Figures/food_noise.jpeg Graphic file (type jpg)
 
 <use Figures/food_noise.jpeg>
 Package pdftex.def Info: Figures/food_noise.jpeg used on input line 165.
 (pdftex.def)             Requested size: 308.59187pt x 208.54599pt.
 
-<Figures/wordcloud_top.jpeg, id=41, 622.325pt x 420.57124pt>
+<Figures/wordcloud_top.jpeg, id=40, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_top.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_top.jpeg>
 Package pdftex.def Info: Figures/wordcloud_top.jpeg used on input line 182.
 (pdftex.def)             Requested size: 216.01767pt x 145.98283pt.
 
-<Figures/wordcloud_bottom.jpeg, id=42, 622.325pt x 420.57124pt>
+<Figures/wordcloud_bottom.jpeg, id=41, 622.325pt x 420.57124pt>
 File: Figures/wordcloud_bottom.jpeg Graphic file (type jpg)
 
 <use Figures/wordcloud_bottom.jpeg>
@@ -335,15 +309,17 @@ Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 187.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./Figures/food_res_stars.jpeg>] [6 <./Figures/food_res_3.jpeg> <./Figures/f
-ood_noise.jpeg>] <Figures/delivery.png, id=50, 401.5pt x 301.125pt>
+[5 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/food_
+res_stars.jpeg>] [6 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pa
+per/Figures/food_res_3.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-P
+roject/Paper/Figures/food_noise.jpeg>]
+<Figures/delivery.png, id=49, 401.5pt x 301.125pt>
 File: Figures/delivery.png Graphic file (type png)
-
-<use Figures/delivery.png>
+ <use Figures/delivery.png>
 Package pdftex.def Info: Figures/delivery.png used on input line 203.
 (pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
 
-<Figures/takeoutdelivery.png, id=51, 803.0pt x 524.96124pt>
+<Figures/takeoutdelivery.png, id=50, 803.0pt x 524.96124pt>
 File: Figures/takeoutdelivery.png Graphic file (type png)
 
 <use Figures/takeoutdelivery.png>
@@ -353,30 +329,35 @@ Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 209.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg> <./Figures/
-delivery.png>] [8 <./Figures/takeoutdelivery.png>]
-<Figures/Food_bars.png, id=60, 459.7175pt x 301.125pt>
+[7 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/wordc
+loud_top.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/F
+igures/wordcloud_bottom.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-
+Project/Paper/Figures/delivery.png>] [8 <C:/Users/Linton/Documents/GitHub/STAT-
+579-Final-Project/Paper/Figures/takeoutdelivery.png>]
+<Figures/Food_bars.png, id=59, 459.7175pt x 301.125pt>
 File: Figures/Food_bars.png Graphic file (type png)
 
 <use Figures/Food_bars.png>
 Package pdftex.def Info: Figures/Food_bars.png used on input line 228.
 (pdftex.def)             Requested size: 330.63559pt x 216.58467pt.
- [9 <./Figures/Food_bars.png>]
-<Figures/barstatus.png, id=65, 401.5pt x 301.125pt>
+ [9 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/Food
+_bars.png>]
+<Figures/barstatus.png, id=64, 401.5pt x 301.125pt>
 File: Figures/barstatus.png Graphic file (type png)
 
 <use Figures/barstatus.png>
 Package pdftex.def Info: Figures/barstatus.png used on input line 238.
 (pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
- [10 <./Figures/barstatus.png>]
-<Figures/tvhappyhour.png, id=70, 401.5pt x 301.125pt>
+ [10 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/bar
+status.png>]
+<Figures/tvhappyhour.png, id=69, 401.5pt x 301.125pt>
 File: Figures/tvhappyhour.png Graphic file (type png)
 
 <use Figures/tvhappyhour.png>
 Package pdftex.def Info: Figures/tvhappyhour.png used on input line 247.
 (pdftex.def)             Requested size: 220.42372pt x 165.32059pt.
 
-<Figures/tvdancing.png, id=71, 401.5pt x 301.125pt>
+<Figures/tvdancing.png, id=70, 401.5pt x 301.125pt>
 File: Figures/tvdancing.png Graphic file (type png)
 
 <use Figures/tvdancing.png>
@@ -388,105 +369,85 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [11 <./Figures/tvhappyhour.png> <./Figures/tvdancing.png>]
+ [11 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/tvh
+appyhour.png> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Fi
+gures/tvdancing.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <Figures/hotels1.jpeg, id=78, 620.3175pt x 356.33125pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+<Figures/hotels1.jpeg, id=77, 602.25pt x 351.3125pt>
 File: Figures/hotels1.jpeg Graphic file (type jpg)
 
 <use Figures/hotels1.jpeg>
-Package pdftex.def Info: Figures/hotels1.jpeg used on input line 282.
-(pdftex.def)             Requested size: 220.42372pt x 126.61537pt.
- <Figures/hotels2.jpeg, id=79, 620.3175pt x 401.5pt>
+Package pdftex.def Info: Figures/hotels1.jpeg used on input line 288.
+(pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
+
+<Figures/hotels2.jpeg, id=78, 602.25pt x 351.3125pt>
 File: Figures/hotels2.jpeg Graphic file (type jpg)
 
 <use Figures/hotels2.jpeg>
-Package pdftex.def Info: Figures/hotels2.jpeg used on input line 291.
-(pdftex.def)             Requested size: 220.42372pt x 142.6652pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package pdftex.def Info: Figures/hotels2.jpeg used on input line 294.
+(pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-<Figures/hotels3.jpeg, id=80, 652.4375pt x 401.5pt>
-File: Figures/hotels3.jpeg Graphic file (type jpg)
- <use Figures/hotels3.jpeg>
-Package pdftex.def Info: Figures/hotels3.jpeg used on input line 300.
-(pdftex.def)             Requested size: 220.42372pt x 135.64436pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-[12 <./Figures/hotels1.jpeg>]
-<Figures/shopping1.jpeg, id=84, 620.3175pt x 356.33125pt>
+ [12] [13 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figure
+s/hotels1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/
+Figures/hotels2.jpeg>]
+<Figures/shopping1.jpeg, id=85, 602.25pt x 351.3125pt>
 File: Figures/shopping1.jpeg Graphic file (type jpg)
 
 <use Figures/shopping1.jpeg>
-Package pdftex.def Info: Figures/shopping1.jpeg used on input line 313.
-(pdftex.def)             Requested size: 220.42372pt x 126.61537pt.
+Package pdftex.def Info: Figures/shopping1.jpeg used on input line 316.
+(pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13 <./Figures/hotels2.jpeg> <./Figures/hotels3.jpeg>]
-<Figures/shopping2.jpeg, id=88, 620.3175pt x 401.5pt>
+<Figures/shopping2.jpeg, id=86, 602.25pt x 351.3125pt>
 File: Figures/shopping2.jpeg Graphic file (type jpg)
 
 <use Figures/shopping2.jpeg>
 Package pdftex.def Info: Figures/shopping2.jpeg used on input line 322.
-(pdftex.def)             Requested size: 220.42372pt x 142.6652pt.
+(pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
+ [14] [15 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figure
+s/shopping1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pape
+r/Figures/shopping2.jpeg>]
+(C:\Users\Linton\Documents\GitHub\STAT-579-Final-Project\Paper\CompiledPaper.au
+x)
 
-<Figures/shopping3.jpeg, id=89, 652.4375pt x 401.5pt>
-File: Figures/shopping3.jpeg Graphic file (type jpg)
-
-<use Figures/shopping3.jpeg>
-Package pdftex.def Info: Figures/shopping3.jpeg used on input line 331.
-(pdftex.def)             Requested size: 220.42372pt x 135.64436pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14 <./Figures/shopping1.jpeg> <./Figures/shopping2.jpeg>] [15 <./Figures/shopp
-ing3.jpeg>] (./CompiledPaper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3387 strings out of 493315
- 53923 string characters out of 6137904
- 119158 words of memory out of 5000000
- 6784 multiletter control sequences out of 15000+600000
- 10507 words of font info for 37 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,10n,43p,1563b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on CompiledPaper.pdf (17 pages, 1412206 bytes).
+ 3040 strings out of 493921
+ 47902 string characters out of 3145274
+ 109787 words of memory out of 3000000
+ 6306 multiletter control sequences out of 15000+200000
+ 10507 words of font info for 37 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,10n,43p,1625b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Linton/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+C:/Users/Linton/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Users/Linton/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/User
+s/Linton/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Li
+nton/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Linton
+/Downloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Linton/Dow
+nloads/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Linton/Download
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Linton/Downloads/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Linton/Downloads/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Linton/Downloads/MiKTeX/font
+s/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on CompiledPaper.pdf (17 pages, 1153582 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,5 +10,5 @@
 \contentsline {subsection}{\numberline {4.2}Stars}{10}
 \contentsline {subsection}{\numberline {4.3}Popular Features}{11}
 \contentsline {section}{\numberline {5}Hotels}{12}
-\contentsline {section}{\numberline {6}Shopping}{13}
+\contentsline {section}{\numberline {6}Shopping}{12}
 \contentsline {section}{\numberline {7}Conclusion}{14}
