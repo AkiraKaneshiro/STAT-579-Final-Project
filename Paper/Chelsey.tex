@@ -33,51 +33,8 @@ Analysis of the Yelp Academic Dataset.
 \cfoot{}%removes default page number at bottom center
 
 
-\section{Introduction}
-
-Lindong
-
-
-\section{Data}
-
-The Yelp Academic Dataset\footnote{$https://www.yelp.com/academic\_dataset$} provides data enthusiants with the exciting opportunity to explore an incredible collection of information regarding the characteristics and quality of hundreds of businesses across the United States, Canada, and the UK. Specifically, the data includes details and reviews on 250 of the closest businesses to 30 large universities, including the Arizona State, UNLV, the University of Edinburgh, the University of Wisconsin, and the University of Waterloo, to name a few. The raw data is in json format and contains five different types of json objects: \textbf{Business}, \textbf{Review}, \textbf{User}, \textbf{Check-in}, and \textbf{Tip}.
-
-Each \textbf{Review} object represents an individual user-based review of a particular business. The unique encrypted business ID is given along with the date of the review, the number of stars (out of 5) that were awarded, the number and type of votes that the review received, and an optional text description provided by the user. \textbf{User} objects are unique to every person that has an active Yelp account. Each user has a name, a unique encrypted user ID, the number of votes they have cast, the average number of stars they have given, and the date they signed up for Yelp, among other things. A \textbf{Check-in} object represents the count and time of all the registered check-ins for a particular business, and \textbf{Tip} objects represent a tip given by user for a particular business. Tips include the user's ID, the business's ID, the date, and the message that the user gave. While these objects all provide a rich source of information, for the scope of this paper we will only be examing the \textbf{Business} objects.
-
-\textbf{Business} objects are unique to business ID's, and include the following information:
-\begin{itemize}
-	\item the name of the business,
-	\item the name of neighborhood in which the business is located,
-	\item the city in which the business is located,
-	\item the full address of the business,
-	\item the exact latidude and longitude coordinates of the business,
-	\item the average number of stars awarded to the business,
-	\item the number of reviews received by the business,
-	\item whether or not the business is still open,
-	\item the hours that the business is open,
-	\item the categories that the business falls under,
-	\item and a number of different attributes which mostly concern restaurants and bars, such as whether or not smoking is allowed and the price range of the food.
-\end{itemize}
-
-To work with the data, we converted the set of all \textbf{Business} objects to a csv file in which the columns are variable names representing each aspect of a \textbf{Business} object, and each row corresponds to a unique business. Each different type of attribute was converted to its own character, numerical, or logical variable depending on what was appropriate. For example, the attribute \textbf{smoking} was converted to a logical variable where the value is ``true" if the smoking is allowed at the establishment, and ``false" if it is not allowed, while the attribute \textbf{price range} was converted to a numerical variable which ranges from 1 to 4.
-
-\section{Restaurants}
-
-\subsection{Breakfast}
-
-\subsection{Lunch}
-
-\subsection{Dinner}
-
-
 \subsection{Delivery vs. Takeout}
 
-\begin{figure}[h!]
-  \caption{Plot of the counts of each type of food filled by if they have delivery or not.}
-  \centering
-  \label{delivery}
-    \includegraphics[width=0.75\textwidth]{Figures/delivery.png}
-\end{figure}
 \begin{figure}[h!]
   \caption{Plot of if a restaurant does takeout orders colored by if they do deliveries and faceted by the type of food the restaurant serves.}
   \centering
@@ -85,7 +42,7 @@ To work with the data, we converted the set of all \textbf{Business} objects to 
     \includegraphics[width=0.9\textwidth]{Figures/takeoutdelivery.png}
 \end{figure}
 Now we know have gained some insight into restaurants' price and reservation style, but what about when you do not want to go eat at the restaurant? Some days there is little time for cooking, so people commonly call out for delivery or take out.  But what types of food are most likely to have delivery or takeout?  In other words, if we are ordering out, what is it likely we will be able to have delivered to us and what can we pick up on our way home? In 
-Figure~\ref{delivery} we can see that the food types that most likely have delivery are those that serve pizza, Asian, or possibly Italian.  Most likely you will not be able to find an American or fast food place that delivers.  This could be due to the fact that some of these food do not stay good if they sit too long.  Food like pizza and rice are fine to sit for a while,  are easy to keep warm and fresh tasting, and can also be easily reheated. Thus, these are qualities that make them good options for delivery.  However, American food, or fast food like burgers and fries are not good if they sit too long, and do not reheat to the quality they were when they left the restaurant.  Thus, there are fewer, if any of these places that offer delivery.
+Figure~\ref{takeout} we can see that the food types that most likely have delivery are those that serve pizza, Asian, or possibly Italian.  Most likely you will not be able to find an American or fast food place that delivers.  This could be due to the fact that some of these food do not stay good if they sit too long.  Food like pizza and rice are fine to sit for a while,  are easy to keep warm and fresh tasting, and can also be easily reheated. Thus, these are qualities that make them good options for delivery.  However, American food, or fast food like burgers and fries are not good if they sit too long, and do not reheat to the quality they were when they left the restaurant.  Thus, there are fewer, if any of these places that offer delivery.
 
 We can see in more detail in Figure~\ref{takeout} that restaurants of all types are much more likely to offer takeout than delivery to customers.  We can also see that the restaurant is more likely to offer delivery if they offer a takeout option.  Restaurants of all types may be more inclined to offer delivery than takeout for a number of reasons.  They could only have a limited number of people working and do not want to spare any or pay extra people to deliver the food.  Delivery also means transportation costs for the business, and as discussed above it means more time for the food to decrease in quality while a driver makes several deliveries.  However, takeout is a great option for restaurants, because they get to sell more food, without have to seat as many people in the restaurant.  Takeout also reduces the responsibility of the quality of the food once it arrives at its destination.  If it took the customer a long time to get home and the food is not as good as it once was, this is not the restaurant's fault.  
 
@@ -93,7 +50,7 @@ We can see in more detail in Figure~\ref{takeout} that restaurants of all types 
 
 \section{Bars}
 
-The Business dataset contains a lot of information that can be used to analyze the relationship between different aspects of bar culture.  In order to analyze the bars available in the dataset, the data was subset to get rid of any businesses that did not have a full bar.  Looking at only the businesses with a full bar gives us insight into locations that serve from a full bar such as clubs, hotels, select restaurants, lounges, bowling alleys, and other various entertainment locations.  Through analyzing this data we can explore what types of food are servied at bars (if any), if lower ratings indicate a bar could shut down, and the type of activities that might take place at a given bar.
+The Business dataset contains a lot of information that can be used to analyze the relationship between different aspects of bar culture.  In order to analyze the bars available in the dataset, the data was subset to get rid of any businesses that did not have a full bar.  Looking at only the businesses with a full bar gives us insight into locations that serve from a full bar such as clubs, hotels, select restaurants, lounges, bowling alleys, and other various entertainment locations.  Through analyzing this data we can explore what types of food are served at bars (if any), if lower ratings indicate a bar could shut down, and the type of activities that might take place at a given bar.
 
 \subsection{Food}
 
@@ -113,7 +70,7 @@ Though not all bars serve food, many bars in restaurants do which begs the quest
   \label{open}
     \includegraphics[width=0.75\textwidth]{Figures/barstatus.png}
 \end{figure}
-The purpose of yelp is to provide review of businesses for others in the community to take into consideration.  Since this dataset provides the number stars a bar receives and the status of the bar (open or closed) as of when the data was collected.  I decided to investigate the idea that possibly if the bar has lower ratings it has more of a chance of being closed.  It is hard to discern any sort of relationship from the plot, except that there are more restaurants open than closed.  However, if inspected closely looking at the extreme endpoints of the graph you can see it appears the percent of open restaurants at the 5 star level is higher than the percent of 1 star restaurants that are open. In order to look into this further I created several subsets of the data.  I created a subset of data for 2 stars(1 star had 0 observations), 3.5 stars (which is the median of the data), and 5 stars.  I then found the percent of open bars for each level.  I found that the 2 stars had 64.3$\%$ open, the 3.5 stars had 78.4$\%$ and 5 stars had 82.1$\%$ open.  As we can see the percentages of bars open increases as the number of stars the bar is rated increases.  Though we can make no assumptions of causation, this is still an interesting trend tp consider for further more complex analysis.
+The purpose of yelp is to provide review of businesses for others in the community to take into consideration.  Since this dataset provides the number stars a bar receives and the status of the bar (open or closed) as of when the data was collected.  We decided to investigate the idea that possibly if the bar has lower ratings it has more of a chance of being closed.  It is hard to discern any sort of relationship from the plot, except that there are more restaurants open than closed.  However, if inspected closely looking at the extreme endpoints of the graph you can see it appears the percent of open restaurants at the 5 star level is higher than the percent of 1 star restaurants that are open. In order to look into this further we created several subsets of the data.  We created a subset of data for 2 stars(1 star had 0 observations), 3.5 stars (which is the median of the data), and 5 stars.  We then found the percent of open bars for each level.  We found that the 2 stars had 64.3$\%$ open, the 3.5 stars had 78.4$\%$ and 5 stars had 82.1$\%$ open.  As we can see the percentages of bars open increases as the number of stars the bar is rated increases.  Though we can make no assumptions of causation, this is still an interesting trend tp consider for further more complex analysis.
 
 \subsection{Popular Features}
 \begin{figure}
@@ -135,29 +92,18 @@ The purpose of yelp is to provide review of businesses for others in the communi
 \end{figure}
 
 \vspace{5mm}
-Each bar in a community has its own unique features, special pricing promotions, or atmosphere.  Some bars are good for dancing, watching televisions broadcasting sports games, happy hour, or some are more quiet and laid back for just talking and relaxing with friends.  What are the relationships between these variables, if any?  I wanted to find characteristics for each of the  different atmospheres a bar may have: romantic, intimate, touristy, hipster, divey, classy, trendy, upscale, and casual.  However, it quickly became clear that there are not many bars in each of these categories.  Most bars are just classified as casual.  Thus, there wasn't much to investigate.
+Each bar in a community has its own unique features, special pricing promotions, or atmosphere.  Some bars are good for dancing, watching televisions broadcasting sports games, happy hour, or some are more quiet and laid back for just talking and relaxing with friends.  What are the relationships between these variables, if any?  We wanted to find characteristics for each of the  different atmospheres a bar may have: romantic, intimate, touristy, hipster, divey, classy, trendy, upscale, and casual.  However, it quickly became clear that there are not many bars in each of these categories.  Most bars are just classified as casual.  Thus, there wasn't much to investigate.
 
 
 
-Next, I thought it would be interesting to look at features of bars with televisions.  Since, not all bars have televisions there must be certain characteristics for those that choose to have a television and those that do not.   In  Figure~\ref{happy} we can see that most bars that have a tv also have happy hour specials.  These are probably more causal places that people go after work to relax with coworkers and friends.  We can gain even more insight into the bars with tvs when we look at  Figure~\ref{dance}.  In this plot it is interestingly apparent that if a bar has a tv it is more likely that it is not good for dancing.  This again reinforces that the bars with televisions are more of a relaxed atmosphere to hang out and chat or watch sports.  Most likely a place like this would be an in inappropriate atmosphere for a group looking to go dancing.  Places people go dancing are more apt to be louder places people go later at night, when happy hour specials would be over and there would be no need for televisions while dancing.  
+Next, we thought it would be interesting to look at features of bars with televisions.  Since, not all bars have televisions there must be certain characteristics for those that choose to have a television and those that do not.   In  Figure~\ref{happy} we can see that most bars that have a tv also have happy hour specials.  These are probably more causal places that people go after work to relax with coworkers and friends.  We can gain even more insight into the bars with tvs when we look at  Figure~\ref{dance}.  In this plot it is interestingly apparent that if a bar has a tv it is more likely that it is not good for dancing.  This again reinforces that the bars with televisions are more of a relaxed atmosphere to hang out and chat or watch sports.  Most likely a place like this would be an in inappropriate atmosphere for a group looking to go dancing.  Places people go dancing are more apt to be louder places people go later at night, when happy hour specials would be over and there would be no need for televisions while dancing.  
 
-
-
-
-
-\section{Hotels}
-
-Lindong
-
-\section{Fitness}
-
-Lindong
 
 
 \section{Conclusion}
 
+The Yelp Academic Dataset has provided us information on a variety of businesses including restaurants, bars, hotels, and shops.  We have used the abundance of data to find key relationships between the available variables and their respective businesses.  For example, we have found that reservations, price, noise level, takeout, delivery, and foremost service are key variables that provide interesting relationships for restaurant data.  We have also found that features such as food type, if a restaurant has a TV, or if it is good for dancing all provide insight into what type of atmosphere we will find at a bar.  When evaluating hotels and shopping we have found that popularity does not always reflect the quality of the service we will receive.  This data set has provided us with many insights into possible relationships between not only these variables, but also human culture and tendencies.  Though it is impossible to make solid conclusions about any of the relationships we have found based on our limited dataset, we have still come up with some interesting relationships and found even more questions about this topic that could be used for further research on the subject.
 
-Chelsey
 
 
 

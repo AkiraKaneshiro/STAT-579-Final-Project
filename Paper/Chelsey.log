@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  11 DEC 2014 13:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  17 DEC 2014 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,19 +255,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./Chelsey.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
+(Font)              <10.95> on input line 1.
 )
 \tf@toc=\write3
 \openout3 = `Chelsey.toc'.
 
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 49.
+<Figures/takeoutdelivery.png, id=17, 869.2475pt x 352.31625pt>
+File: Figures/takeoutdelivery.png Graphic file (type png)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+<use Figures/takeoutdelivery.png>
+Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 42.
+(pdftex.def)             Requested size: 396.76001pt x 160.81485pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -275,88 +274,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] <Figures/delivery.png, id=24, 401.5pt x 301.125pt>
-File: Figures/delivery.png Graphic file (type png)
-
-<use Figures/delivery.png>
-Package pdftex.def Info: Figures/delivery.png used on input line 79.
-(pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
-
-<Figures/takeoutdelivery.png, id=26, 803.0pt x 524.96124pt>
-File: Figures/takeoutdelivery.png Graphic file (type png)
-
-<use Figures/takeoutdelivery.png>
-Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 85.
-(pdftex.def)             Requested size: 396.76001pt x 259.38802pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./Figures/delivery.png>]
-
-LaTeX Warning: Reference `takeout' on page 3 undefined on input line 90.
-
-[3 <./Figures/takeoutdelivery.png>]
-<Figures/Food_bars.png, id=35, 459.7175pt x 301.125pt>
+[1 <./Figures/takeoutdelivery.png>]
+<Figures/Food_bars.png, id=23, 679.53876pt x 343.2825pt>
 File: Figures/Food_bars.png Graphic file (type png)
 
 <use Figures/Food_bars.png>
-Package pdftex.def Info: Figures/Food_bars.png used on input line 104.
-(pdftex.def)             Requested size: 330.63559pt x 216.58467pt.
- [4 <./Figures/Food_bars.png>]
-<Figures/barstatus.png, id=40, 401.5pt x 301.125pt>
+Package pdftex.def Info: Figures/Food_bars.png used on input line 61.
+(pdftex.def)             Requested size: 330.63559pt x 167.02608pt.
+ [2 <./Figures/Food_bars.png>]
+<Figures/barstatus.png, id=28, 427.5975pt x 298.11375pt>
 File: Figures/barstatus.png Graphic file (type png)
 
 <use Figures/barstatus.png>
-Package pdftex.def Info: Figures/barstatus.png used on input line 114.
-(pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
+Package pdftex.def Info: Figures/barstatus.png used on input line 71.
+(pdftex.def)             Requested size: 330.63559pt x 230.51265pt.
 
-<Figures/tvhappyhour.png, id=41, 401.5pt x 301.125pt>
+<Figures/tvhappyhour.png, id=29, 427.5975pt x 298.11375pt>
 File: Figures/tvhappyhour.png Graphic file (type png)
 
 <use Figures/tvhappyhour.png>
-Package pdftex.def Info: Figures/tvhappyhour.png used on input line 123.
-(pdftex.def)             Requested size: 220.42372pt x 165.32059pt.
+Package pdftex.def Info: Figures/tvhappyhour.png used on input line 80.
+(pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
 
-<Figures/tvdancing.png, id=42, 401.5pt x 301.125pt>
+<Figures/tvdancing.png, id=30, 427.5975pt x 298.11375pt>
 File: Figures/tvdancing.png Graphic file (type png)
 
 <use Figures/tvdancing.png>
-Package pdftex.def Info: Figures/tvdancing.png used on input line 129.
-(pdftex.def)             Requested size: 220.42372pt x 165.32059pt.
- [5 <./Figures/barstatus.png>] [6 <./Figures/tvhappyhour.png> <./Figures/tvdanc
-ing.png>] [7] (./Chelsey.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+Package pdftex.def Info: Figures/tvdancing.png used on input line 86.
+(pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
+ [3 <./Figures/barstatus.png>] [4 <./Figures/tvhappyhour.png> <./Figures/tvdanc
+ing.png>] [5] (./Chelsey.aux) ) 
 Here is how much of TeX's memory you used:
- 3172 strings out of 493633
- 49417 string characters out of 3143378
- 115876 words of memory out of 3000000
- 6433 multiletter control sequences out of 15000+200000
+ 3148 strings out of 493633
+ 48973 string characters out of 3143378
+ 116876 words of memory out of 3000000
+ 6413 multiletter control sequences out of 15000+200000
  10031 words of font info for 35 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,43p,1569b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Chelsey.pdf (9 pages, 211986 bytes).
+ 38i,11n,43p,1557b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb>
+Output written on Chelsey.pdf (7 pages, 161826 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

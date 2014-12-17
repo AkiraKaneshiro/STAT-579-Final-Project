@@ -183,8 +183,17 @@ qplot(attributes_take.out, data = food, fill = type) # I like this one better
 qplot(stars, data = food, facets = .~type, fill= open)
 qplot(attributes_waiter.service, data = food, fill = type)
 
-qplot(attributes_take.out, data = food, fill = attributes_delivery, facets = .~type)
 
+library(RColorBrewer)
+# The palette with black:
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+# To use for fills, add
+scale_fill_manual(values=cbPalette)
+
+
+#This is in the takeout delivery part of the project ********************
+qplot(attributes_take.out, data = food, fill = attributes_delivery, facets = .~type)+ scale_fill_manual(values=c("#377eb8", "#4daf4a"))
 
 
 
@@ -348,8 +357,19 @@ qplot(stars, data = bar,  fill  = attributes_noise.level)
 # Not many cheap bars, or very expensive bars
 qplot(stars, data = bar,  fill  = as.factor(attributes_price.range), binwidth=0.5)
 
-# Lots of American food served at bars *******#
-qplot(stars, data = bar,  fill  = type)
+
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+# The palette with black:
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+# To use for fills, add
+scale_fill_manual(values=cbPalette)
+
+# Lots of American food served at bars *******This is in the report
+
+qplot(stars, data = bar,  fill  = type, binwidth= 0.25)+scale_fill_manual(values=c("#660033", "#006699", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7"))
+
 #Analysis of food served at bar:
 # Number of each type of restaurant
 
@@ -372,16 +392,17 @@ qplot(stars, data = bar,  fill  = attributes_good.for.dancing)
 
 #something with stars and divey
 
-qplot(attributes_has.tv, data = bar, fill = attributes_happy.hour)
-qplot(attributes_has.tv, data = bar, fill = attributes_good.for.dancing)
-
+qplot(attributes_has.tv, data = bar, fill = attributes_happy.hour, position = "dodge")
+qplot(attributes_has.tv, data = bar, fill = attributes_good.for.dancing, position = "dodge")
 qplot(casual, data = bar, fill = attributes_good.for.groups)
 
 
 
 
 # Find out if higher rated bars have a higher chance of being open...
-qplot(stars, data = bar,  fill  = open)
+qplot(stars, data = bar,  fill  = open, binwidth = 0.25, position = "fill")+scale_fill_manual(values=c("#003366", "#FF9966"))
+
+
 stars5 = subset(bar, stars == 5)
 table(stars5$open) #False = 10, True = 46
 sum(table(stars5$open)) #= 56
