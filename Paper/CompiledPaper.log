@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 DEC 2014 16:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 DEC 2014 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,124 +343,111 @@ Package pdftex.def Info: Figures/wordcloud_bottom.jpeg used on input line 181.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./Figures/food_res_stars.jpeg>] [6 <./Figures/food_res_3.jpeg> <./Figures/f
-ood_noise.jpeg>] <Figures/delivery.png, id=50, 401.5pt x 301.125pt>
-File: Figures/delivery.png Graphic file (type png)
-
-<use Figures/delivery.png>
-Package pdftex.def Info: Figures/delivery.png used on input line 197.
-(pdftex.def)             Requested size: 330.63559pt x 247.99467pt.
-
-<Figures/takeoutdelivery.png, id=51, 869.2475pt x 352.31625pt>
+ood_noise.jpeg>]
+<Figures/takeoutdelivery.png, id=50, 869.2475pt x 352.31625pt>
 File: Figures/takeoutdelivery.png Graphic file (type png)
 
 <use Figures/takeoutdelivery.png>
-Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 203.
+Package pdftex.def Info: Figures/takeoutdelivery.png used on input line 195.
 (pdftex.def)             Requested size: 396.76001pt x 160.81485pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg> <./Figures/
-delivery.png>] [8 <./Figures/takeoutdelivery.png>]
-<Figures/Food_bars.png, id=60, 679.53876pt x 343.2825pt>
+ [7 <./Figures/wordcloud_top.jpeg> <./Figures/wordcloud_bottom.jpeg> <./Figures
+/takeoutdelivery.png>]
+<Figures/Food_bars.png, id=55, 679.53876pt x 343.2825pt>
 File: Figures/Food_bars.png Graphic file (type png)
 
 <use Figures/Food_bars.png>
-Package pdftex.def Info: Figures/Food_bars.png used on input line 222.
+Package pdftex.def Info: Figures/Food_bars.png used on input line 214.
 (pdftex.def)             Requested size: 330.63559pt x 167.02608pt.
-
-<Figures/barstatus.png, id=61, 427.5975pt x 298.11375pt>
-File: Figures/barstatus.png Graphic file (type png)
-
-<use Figures/barstatus.png>
-Package pdftex.def Info: Figures/barstatus.png used on input line 232.
-(pdftex.def)             Requested size: 330.63559pt x 230.51265pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <./Figures/Food_bars.png>]
-<Figures/tvhappyhour.png, id=66, 427.5975pt x 298.11375pt>
+[8] <Figures/barstatus.png, id=59, 427.5975pt x 298.11375pt>
+File: Figures/barstatus.png Graphic file (type png)
+
+<use Figures/barstatus.png>
+Package pdftex.def Info: Figures/barstatus.png used on input line 224.
+(pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
+ [9 <./Figures/Food_bars.png> <./Figures/barstatus.png>] <Figures/tvhappyhour.p
+ng, id=65, 427.5975pt x 298.11375pt>
 File: Figures/tvhappyhour.png Graphic file (type png)
 
 <use Figures/tvhappyhour.png>
-Package pdftex.def Info: Figures/tvhappyhour.png used on input line 241.
-(pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
+Package pdftex.def Info: Figures/tvhappyhour.png used on input line 233.
+(pdftex.def)             Requested size: 165.31778pt x 115.25404pt.
 
-<Figures/tvdancing.png, id=67, 427.5975pt x 298.11375pt>
+<Figures/tvdancing.png, id=66, 427.5975pt x 298.11375pt>
 File: Figures/tvdancing.png Graphic file (type png)
 
 <use Figures/tvdancing.png>
-Package pdftex.def Info: Figures/tvdancing.png used on input line 247.
-(pdftex.def)             Requested size: 220.42372pt x 153.67358pt.
- [10 <./Figures/barstatus.png>] [11 <./Figures/tvhappyhour.png> <./Figures/tvda
-ncing.png>]
+Package pdftex.def Info: Figures/tvdancing.png used on input line 239.
+(pdftex.def)             Requested size: 165.31778pt x 115.25404pt.
+ [10 <./Figures/tvhappyhour.png> <./Figures/tvdancing.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-
-<Figures/hotels1.jpeg, id=78, 602.25pt x 351.3125pt>
+ <Figures/hotels1.jpeg, id=72, 602.25pt x 351.3125pt>
 File: Figures/hotels1.jpeg Graphic file (type jpg)
 
 <use Figures/hotels1.jpeg>
-Package pdftex.def Info: Figures/hotels1.jpeg used on input line 279.
+Package pdftex.def Info: Figures/hotels1.jpeg used on input line 268.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 279--280
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
-<Figures/hotels2.jpeg, id=79, 602.25pt x 351.3125pt>
+<Figures/hotels2.jpeg, id=73, 602.25pt x 351.3125pt>
 File: Figures/hotels2.jpeg Graphic file (type jpg)
 
 <use Figures/hotels2.jpeg>
-Package pdftex.def Info: Figures/hotels2.jpeg used on input line 285.
+Package pdftex.def Info: Figures/hotels2.jpeg used on input line 274.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 285--286
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 274--275
  [][] 
  []
 
-[12 <./Figures/hotels1.jpeg> <./Figures/hotels2.jpeg>]
-<Figures/shopping1.jpeg, id=83, 602.25pt x 351.3125pt>
+[11 <./Figures/hotels1.jpeg> <./Figures/hotels2.jpeg>]
+<Figures/shopping1.jpeg, id=78, 602.25pt x 351.3125pt>
 File: Figures/shopping1.jpeg Graphic file (type jpg)
 
 <use Figures/shopping1.jpeg>
-Package pdftex.def Info: Figures/shopping1.jpeg used on input line 307.
+Package pdftex.def Info: Figures/shopping1.jpeg used on input line 295.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 307--308
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 295--296
  [][] 
  []
 
-<Figures/shopping2.jpeg, id=84, 602.25pt x 351.3125pt>
+<Figures/shopping2.jpeg, id=79, 602.25pt x 351.3125pt>
 File: Figures/shopping2.jpeg Graphic file (type jpg)
 
 <use Figures/shopping2.jpeg>
-Package pdftex.def Info: Figures/shopping2.jpeg used on input line 313.
+Package pdftex.def Info: Figures/shopping2.jpeg used on input line 301.
 (pdftex.def)             Requested size: 237.62074pt x 138.61414pt.
 
-Overfull \hbox (21.60307pt too wide) in paragraph at lines 313--314
+Overfull \hbox (21.60307pt too wide) in paragraph at lines 301--302
  [][] 
  []
 
-[13 <./Figures/shopping1.jpeg> <./Figures/shopping2.jpeg>] [14]
+[12 <./Figures/shopping1.jpeg> <./Figures/shopping2.jpeg>] [13]
 (./CompiledPaper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3379 strings out of 493315
- 53729 string characters out of 6137904
- 119217 words of memory out of 5000000
- 6778 multiletter control sequences out of 15000+600000
+ 3373 strings out of 493315
+ 53608 string characters out of 6137904
+ 119207 words of memory out of 5000000
+ 6773 multiletter control sequences out of 15000+600000
  10507 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,43p,1563b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,1564b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
@@ -472,10 +459,10 @@ cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on CompiledPaper.pdf (16 pages, 1140436 bytes).
+Output written on CompiledPaper.pdf (15 pages, 1130773 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 122 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
