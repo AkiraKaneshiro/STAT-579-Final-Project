@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{4}
 \contentsline {subsection}{\numberline {3.3}It's All About Service}{5}
 \contentsline {subsection}{\numberline {3.4}Delivery vs. Takeout}{7}
-\contentsline {section}{\numberline {4}Bars}{9}
+\contentsline {section}{\numberline {4}Bars}{8}
 \contentsline {subsection}{\numberline {4.1}Food}{9}
-\contentsline {subsection}{\numberline {4.2}Stars}{10}
-\contentsline {subsection}{\numberline {4.3}Popular Features}{11}
-\contentsline {section}{\numberline {5}Hotels}{12}
+\contentsline {subsection}{\numberline {4.2}Stars}{9}
+\contentsline {subsection}{\numberline {4.3}Popular Features}{10}
+\contentsline {section}{\numberline {5}Hotels}{11}
 \contentsline {section}{\numberline {6}Shopping}{13}
 \contentsline {section}{\numberline {7}Conclusion}{14}
