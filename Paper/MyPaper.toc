@@ -1,8 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Data}{1}
-\contentsline {section}{\numberline {3}Restaurants}{3}
+\contentsline {section}{\numberline {3}Restaurants}{2}
 \contentsline {subsection}{\numberline {3.1}The Cost of Reservations}{3}
-\contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{5}
+\contentsline {subsection}{\numberline {3.2}Loud can be Good, but not too Loud}{4}
 \contentsline {subsection}{\numberline {3.3}It's All About Service}{5}
 \contentsline {subsection}{\numberline {3.4}Delivery vs. Takeout}{7}
 \contentsline {section}{\numberline {4}Bars}{9}
