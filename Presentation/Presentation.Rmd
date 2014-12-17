@@ -115,11 +115,23 @@ shinyApp(
 )
 ```
 
-## The cost of reservations
+## The cost of reservations {.flexbox .vcenter}
 
+The relationship of price and reservations
 
-## Noise pollution
+![Price of reservations](/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Paper/Figures/food_res_price.jpeg)
 
+## The cost of reservations {.flexbox .vcenter}
+
+The effect on stars of reservations
+
+![Stars and reservations](/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Paper/Figures/food_res_stars.jpeg)
+
+## Noise pollution {.flexbox .vcenter}
+
+Loud can be good, but never too loud
+
+![Noise level](/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Paper/Figures/food_noise.jpeg)
 
 ## It's all about service
 
