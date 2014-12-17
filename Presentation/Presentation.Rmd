@@ -18,7 +18,23 @@ food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Rest
 tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv")
 ```
 
-## Intro
+# Intro
+
+## About Yelp
+
+- Quality service establishes brand loyalty and attracts new customers.
+- Price, atmosphere, reservation and delivery are also important.
+- Yelp is an excellent platform to provide feedback and share experience with others
+
+## What We Have Done
+
+- Examine Yelp Academic Data about 250 businesses close to 30 Universities
+- Explore trends and characteristics in four types of businesses:
+  - restaurants
+  - bars
+  - hotels
+  - shopping centers
+- Investigate factors that affect the average ratings from Yelp reviews
 
 ## Schedule {.smaller}
 
