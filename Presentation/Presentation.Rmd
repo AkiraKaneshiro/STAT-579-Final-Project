@@ -13,6 +13,7 @@ suppressPackageStartupMessages(require(dplyr))
 suppressPackageStartupMessages(require(googleVis))
 suppressPackageStartupMessages(require(wordcloud))
 suppressPackageStartupMessages(require(tm))
+suppressPackageStartupMessages(require(ggplot2))
 food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv")
 ```
@@ -268,5 +269,85 @@ shinyApp(
 ![baratmospherecont](tvhappyhour.png)
 <div>
 <div>
+
+## Hotels | Getting the Data
+
+Analyze the data about businesses in "Hotel" category to see if the rating of a hotel correlates with the following variables:
+
+- popularity
+- availability of wifi
+- price range
+- location
+
+## Hotels | Results
+
+- no effect of popularity and availability of wifi
+- higher price associated with better customer satisfaction
+- pay more to get better treatment everywhere
+
+## Hotels | Visualization
+
+```{r, echo=F}
+hotels <- read.csv("/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Data/Hotels_and_Shopping/hotels.csv", header=T)
+hotels <- na.omit(hotels)
+
+summary1 <- hotels %>% group_by(price.range) %>% mutate(N=length(rating))
+summary2 <- summary1 %>% group_by(price.range, rating) %>% 
+  summarise(perc=length(rating)/N[1])
+qplot(factor(rating), perc, facets=~price.range, data=summary2, geom="bar", 
+      stat="identity", fill=factor(rating)) + scale_fill_brewer(palette="Set2")
+```
+
+## Hotels {.flexbox .vcenter}
+
+```{r, echo=F}
+hotel <- subset(hotels, state %in% c("AZ", "EDH", "NV", "WI"))
+
+summary3 <- hotel %>% group_by(price.range, state) %>% mutate(N=length(rating))
+summary4 <- summary3 %>% group_by(price.range, state, rating) %>% 
+  summarise(perc=length(rating)/N[1])
+qplot(factor(rating), perc, facets=price.range~state, data=summary4, geom="bar", 
+      stat="identity", fill=factor(rating)) + scale_fill_brewer(palette="Set2")
+```
+
+## Shopping | Getting the Data
+
+Analyze the data about businesses in "Shopping" category to examine the relationship between the rating of a retail store and the following variables:
+
+- popularity
+- availability of parking
+- price range
+- location
+
+## Shopping | Results
+
+- no effect of popularity and availability of parking
+- more polarized reviews for pricey stores
+- consistent shopping experience in Edinburgh
+
+## Shopping {.flexbox .vcenter}
+
+```{r, echo=F}
+shopping <- read.csv("/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Data/Hotels_and_Shopping/shopping.csv", header=T)
+shopping <- na.omit(shopping)
+
+summary1 <- shopping %>% group_by(price.range) %>% mutate(N=length(rating))
+summary2 <- summary1 %>% group_by(price.range, rating) %>% 
+  summarise(perc=length(rating)/N[1])
+qplot(factor(rating), perc, facets=~price.range, data=summary2, geom="bar", 
+      stat="identity", fill=factor(rating)) + scale_fill_brewer(palette="Set2")
+```
+
+## Shopping {.flexbox .vcenter}
+
+```{r, echo=F}
+shops <- subset(shopping, state %in% c("AZ", "EDH", "NV", "WI"))
+
+summary3 <- shops %>% group_by(price.range, state) %>% mutate(N=length(rating))
+summary4 <- summary3 %>% group_by(price.range, state, rating) %>% 
+  summarise(perc=length(rating)/N[1])
+qplot(factor(rating), perc, facets=price.range~state, data=summary4, geom="bar", 
+      stat="identity", fill=factor(rating)) + scale_fill_brewer(palette="Set2")
+```
 
 # Conclusion/Further Reseach
