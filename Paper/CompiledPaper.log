@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.30)  17 DEC 2014 09:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.30)  17 DEC 2014 09:57
 entering extended mode
 **C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/CompiledPaper.t
 ex
@@ -395,31 +395,34 @@ File: Figures/hotels2.jpeg Graphic file (type jpg)
 <use Figures/hotels2.jpeg>
 Package pdftex.def Info: Figures/hotels2.jpeg used on input line 294.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [12] [13 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figure
-s/hotels1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/
-Figures/hotels2.jpeg>]
-<Figures/shopping1.jpeg, id=85, 602.25pt x 351.3125pt>
+[12] <Figures/shopping1.jpeg, id=82, 602.25pt x 351.3125pt>
 File: Figures/shopping1.jpeg Graphic file (type jpg)
 
 <use Figures/shopping1.jpeg>
 Package pdftex.def Info: Figures/shopping1.jpeg used on input line 316.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
 
-<Figures/shopping2.jpeg, id=86, 602.25pt x 351.3125pt>
+<Figures/shopping2.jpeg, id=83, 602.25pt x 351.3125pt>
 File: Figures/shopping2.jpeg Graphic file (type jpg)
 
 <use Figures/shopping2.jpeg>
 Package pdftex.def Info: Figures/shopping2.jpeg used on input line 322.
 (pdftex.def)             Requested size: 220.42372pt x 128.5791pt.
- [14] [15 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figure
-s/shopping1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Pape
-r/Figures/shopping2.jpeg>]
+ [13 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figures/hot
+els1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/Paper/Figur
+es/hotels2.jpeg>] [14 <C:/Users/Linton/Documents/GitHub/STAT-579-Final-Project/
+Paper/Figures/shopping1.jpeg> <C:/Users/Linton/Documents/GitHub/STAT-579-Final-
+Project/Paper/Figures/shopping2.jpeg>] [15]
 (C:\Users\Linton\Documents\GitHub\STAT-579-Final-Project\Paper\CompiledPaper.au
 x)
 
@@ -445,7 +448,7 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Linton/Downloads/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Linton/Downloads/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Linton/Downloads/MiKTeX/font
 s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on CompiledPaper.pdf (17 pages, 1153582 bytes).
+Output written on CompiledPaper.pdf (17 pages, 1153677 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
