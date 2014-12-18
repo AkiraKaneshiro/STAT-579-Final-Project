@@ -16,6 +16,7 @@ suppressPackageStartupMessages(require(tm))
 suppressPackageStartupMessages(require(ggplot2))
 food <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/food.csv")
 tips <- read.csv("/Users/marianwaitwalsh/Github/STAT-579-Final-Project/Data/Restaurants/tips.csv")
+hotels <- read.csv("/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Data/Hotels_and_Shopping/hotels.csv", header=T)
 ```
 
 # Intro
@@ -53,14 +54,11 @@ Our presentation will procede as follows:
 > - Hotels
 > - Shopping
 
-# Data
+## Data
 
-## Raw data format
-
-Words
-
-## Data cleaning process | Subtitle
-
+- Downloaded from Yelp
+- Originally in .json format
+- Converted to csv..
 
 # Restaurants
 
@@ -249,7 +247,7 @@ shinyApp(
 ## Food in Bars
 
 - American most common in all star levels
-- All types of food prepresented
+- All types of food represented
 <div class="centered">
 ![barfood](Food_bars.png)
 <div>
@@ -270,7 +268,7 @@ shinyApp(
 >     + Divey
 >     + Casual
 >     + Etc.
->  - Good for groups
+> - Good for groups
 > - Good for dancing
 > - Has a television
 > - Has happy hour specials
@@ -304,7 +302,6 @@ Analyze the data about businesses in "Hotel" category to see if the rating of a 
 ## Hotels | Visualization
 
 ```{r, echo=F}
-hotels <- read.csv("/Users/marianwaitwalsh/GitHub/STAT-579-Final-Project/Data/Hotels_and_Shopping/hotels.csv", header=T)
 hotels <- na.omit(hotels)
 
 summary1 <- hotels %>% group_by(price.range) %>% mutate(N=length(rating))
@@ -366,4 +363,8 @@ qplot(factor(rating), perc, facets=price.range~state, data=summary4, geom="bar",
       stat="identity", fill=factor(rating)) + scale_fill_brewer(palette="Set2")
 ```
 
-# Conclusion/Further Reseach
+# Conclusion | Future Research
+
+- Use the data to predict ratings
+- Could be very valuable particularly for small businessess
+
